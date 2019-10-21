@@ -2,22 +2,28 @@
 DAFE1200 - Final Project
 
 # Tasks assigned:
-> Andreas
-Browser: Edge
+### Andreas
+-Browser: Edge
+-Tasks:
 
-> Mohamed
-Browser: Chrome
+### Mohamed
+-Browser: Chrome
+-Tasks:
 
-> Marius
-Browser: Firefox
+### Marius
+-Browser: Firefox
+-Tasks:
 
-> Ruben
-Browser: Chrome
-Task: Graphics
+### Ruben
+-Browser: Chrome
+-Tasks: 
+	-Graphics
 
-> Uy
-Browser: Firefox
-Task: Navigation
+### Uy
+-Browser: Firefox
+-Tasks: 
+	-Navigation
 
-> Anders
-Browser: Edge
+### Anders
+-Browser: Edge
+-Tasks:
