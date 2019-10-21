@@ -5,8 +5,8 @@ body{
 }
 
 nav{
-    border-top: 1px solid black;
-    border-bottom: 1px solid black;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
     width: 70%;
     margin: 10% auto 0 auto;
 
@@ -30,4 +30,19 @@ nav ul li a{
     text-transform: uppercase;
     text-decoration: none;
     color: black;
+}
+
+.stickyTest{
+    background-color: black;
+    height: 100px;
+    width: 100vw;
+    text-align: center;
+
+    color: white;
+
+    margin: 0 auto;
+
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
 }
