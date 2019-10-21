@@ -32,17 +32,8 @@ nav ul li a{
     color: black;
 }
 
-.stickyTest{
-    background-color: black;
-    height: 100px;
-    width: 100vw;
-    text-align: center;
-
-    color: white;
-
-    margin: 0 auto;
-
-    position: -webkit-sticky; /* Safari */
-    position: sticky;
-    top: 0;
+.imgTest{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
 }
