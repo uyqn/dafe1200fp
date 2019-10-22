@@ -21,7 +21,7 @@ nav ul{
     margin-block-end: .5em;
 }
 
-nav ul li:nth-child(1), li:nth-child(2), li:nth-child(3){
+nav ul li:nth-last-child(n+2){
     list-style: none;
     grid-column: 1/2;
     opacity: 0;
