@@ -19,21 +19,23 @@ nav ul{
 
     margin-block-start: .5em;
     margin-block-end: .5em;
+    overflow: hidden;
 }
 
 nav ul li:nth-last-child(n+2){
     list-style: none;
     grid-column: 1/2;
+
     opacity: 0;
-    transform: translate(177.5%);
-    transition: opacity 600ms ease-in-out, transform 500ms ease-in-out;
+    transform: translateX(200%);
+    transition: opacity 250ms ease-in, transform 500ms ease-in-out;
     z-index: -1;
 }
 
 nav ul li:last-child{
     list-style: none;
     grid-column: 2/2;
-    grid-row: 1/10000;
+    grid-row: 1/10;
     justify-self: flex-end;
     align-self: center;
 }
@@ -72,7 +74,7 @@ nav ul li a{
 .burger-activate:checked ~ nav ul li{
     opacity: 1;
     transform: translate(0);
-    transition: opacity 150ms ease-in-out, transform 500ms ease-in-out;
+    transition: opacity 150ms ease-out, transform 500ms ease-in-out;
     z-index: 1;
 }
 

@@ -13,6 +13,6 @@ body{
 
 header{
     width: 70%;
-    margin-left: 15%;
+    margin: 0 auto 0 auto;
     filter: invert(100%);
 }
