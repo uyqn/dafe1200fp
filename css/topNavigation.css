@@ -33,9 +33,9 @@ nav ul li:nth-child(1), li:nth-child(2), li:nth-child(3){
 nav ul li:last-child{
     list-style: none;
     grid-column: 2/2;
-    grid-row: 2/2;
+    grid-row: 1/10000;
     justify-self: flex-end;
-    align-self: flex-start;
+    align-self: center;
 }
 
 nav ul li a{
