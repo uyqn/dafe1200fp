@@ -1,0 +1,48 @@
+nav{
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+    
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    width: 70%;
+    margin: 10% auto 0 auto;
+}
+
+nav ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    padding-inline-start: 0;
+}
+
+nav ul li:nth-child(1), li:nth-child(2), li:nth-child(3){
+    list-style: none;
+    grid-column: 1/2;
+}
+
+nav ul li:last-child{
+    list-style: none;
+    grid-column: 2/2;
+    grid-row: 1/2;
+    justify-self: flex-end;
+    align-self: flex-start;
+}
+
+nav ul li a{
+    text-transform: uppercase;
+    text-decoration: none;
+    color: black;
+}
+
+.burger{
+    cursor: pointer;
+}
+
+.burger div{
+    height: 1.5px;
+    width: 40px;
+    background-color: black;
+    margin-bottom: 7px;
+    grid-column: 2/2;
+}
