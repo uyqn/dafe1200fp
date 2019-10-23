@@ -2,9 +2,9 @@ nav{
     position: -webkit-sticky; /* Safari */
     position: sticky;
     top: 0;
-    
     width: 70%;
     margin: 0 auto 0 auto;
+    z-index: 299;
 }
 
 .burger-activate{
@@ -16,7 +16,6 @@ nav ul{
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     padding-inline-start: 0;
-
     margin-block-start: .5em;
     margin-block-end: .5em;
 }
@@ -47,7 +46,6 @@ nav ul li a{
 
 .burger{
     cursor: pointer;
-    z-index: 1;
 }
 
 .burger div{
