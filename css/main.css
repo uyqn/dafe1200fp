@@ -4,12 +4,16 @@
     --nav-color: white;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     margin: 0;
     padding: 0;
     width: 100%;
     font-family: 'Lora', serif, Georgia;
-    background-color: #FFFFFF;
+    background-color: white;
 }
 .logo-navbar{
     width: 20%;
