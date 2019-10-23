@@ -2,9 +2,9 @@ nav{
     position: -webkit-sticky; /* Safari */
     position: sticky;
     top: 0;
-    
     width: 70%;
     margin: 0 auto 0 auto;
+    z-index: 299;
 }
 
 .burger-activate{
@@ -16,10 +16,15 @@ nav ul{
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     padding-inline-start: 0;
+<<<<<<< HEAD
 
     margin-block-start: 0;
     margin-block-end: 0;
     overflow: hidden;
+=======
+    margin-block-start: .5em;
+    margin-block-end: .5em;
+>>>>>>> d11c89f8bb86fde25894f9187e9f565e955e2133
 }
 
 nav ul li:nth-last-child(n+2){
@@ -63,7 +68,6 @@ nav ul li a.active{
 
 .burger{
     cursor: pointer;
-    z-index: 1;
 }
 
 .burger div{
