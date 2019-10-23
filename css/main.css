@@ -1,0 +1,26 @@
+@import url("topNavigation.css");
+
+:root{
+    --nav-color: white;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-family: 'Lora', serif, Georgia;
+    background-color: #FFFFFF;
+}
+.logo-navbar{
+    width: 20%;
+}
+
+header{
+    position: relative;
+    margin-top: 0;
+    padding-top: 0;
+    width: 70%;
+    margin: 0 auto 0 auto;
+    filter: invert(100%);
+    z-index: 299;
+}
