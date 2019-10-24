@@ -1,5 +1,6 @@
 @import url("topNavigation.css");
 @import url("sideNavigation.css");
+@import url("footer.css");
 
 :root{
     --nav-color: white;
@@ -34,8 +35,4 @@ header{
 }
 .push{
     height: 100px;
-}
-.footer{
-    height: 100px;
-    background-color: black;
 }
