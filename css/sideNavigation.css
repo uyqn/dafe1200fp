@@ -1,0 +1,58 @@
+/*Side nav figures*/
+.sideNav{
+    display: grid;
+    position: fixed;
+    right: 0;
+    top: 50vh;
+    width: 15%;
+    place-items: center;
+}
+
+.sideCircle{
+    display: grid;
+    place-items: center;
+
+    text-decoration: none;
+    color: black;
+
+    height: calc(2*var(--side-nav-radius));
+    width: calc(2*var(--side-nav-radius));
+    padding: .1rem;
+    background-color: transparent;
+    border: 3px solid black;
+    border-radius: 50%;
+
+}
+
+.sideCircle:nth-child(n+2){
+    height: var(--side-nav-radius);
+    width: var(--side-nav-radius);
+}
+
+.sidePole{
+    height: 20px;
+    width: 3px;
+    background-color: black;
+}
+
+.sideCircle:hover{
+    font-size: 80%;
+    padding: .25rem;
+    transition: all 100ms ease-in-out;
+}
+/*Side nav figures*/
+/*----------------*/
+/*Side nav text   */
+.sideTop::before{
+    content: 'To the top';
+    position: absolute;
+    transform-origin: right;
+    transform: scale(0,1);
+    right: 60%;
+}
+.sideTop:hover::before{
+    top: 8px;
+    transform: scale(1,1);
+    transition: transform 100ms ease-in;
+}
+/*Side nav text   */

@@ -1,7 +1,11 @@
 @import url("topNavigation.css");
+@import url("sideNavigation.css");
 
 :root{
     --nav-color: white;
+
+    --side-nav-color: black;
+    --side-nav-radius: 10px;
 }
 
 html{
@@ -13,7 +17,7 @@ body{
     padding: 0;
     width: 100%;
     font-family: 'Lora', serif, Georgia;
-    background-color: white;
+    background-color: chocolate;
 }
 .logo-navbar{
     width: 20%;
