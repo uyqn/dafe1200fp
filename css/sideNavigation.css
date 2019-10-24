@@ -21,16 +21,19 @@
     background-color: transparent;
     border: 3px solid black;
     border-radius: 50%;
-
 }
 
 .sideCircle:nth-child(n+2){
+    display: grid;
+    place-items: center;
+    font-size: 10px;
+
     height: var(--side-nav-radius);
     width: var(--side-nav-radius);
 }
 
 .sidePole{
-    height: 20px;
+    height: var(--side-nav-poleHeight);
     width: 3px;
     background-color: black;
 }
@@ -43,15 +46,54 @@
 /*Side nav figures*/
 /*----------------*/
 /*Side nav text   */
-.sideTop::before{
-    content: 'To the top';
+.navSecTop::before{
+    content: 'To top';
     position: absolute;
     transform-origin: right;
     transform: scale(0,1);
     right: 60%;
 }
-.sideTop:hover::before{
-    top: 8px;
+.navSecTop:hover::before{
+    top: 0;
+    transform: scale(1,1);
+    transition: transform 100ms ease-in;
+}
+
+.navSec1::before{
+    content: 'Section 1';
+    position: absolute;
+    transform-origin: right;
+    transform: scale(0,1);
+    right: 60%;
+}
+.navSec1:hover::before{
+    top: 0;
+    transform: scale(1,1);
+    transition: transform 100ms ease-in;
+}
+
+.navSec2::before{
+    content: 'Section 2';
+    position: absolute;
+    transform-origin: right;
+    transform: scale(0,1);
+    right: 60%;
+}
+.navSec2:hover::before{
+    top: 0;
+    transform: scale(1,1);
+    transition: transform 100ms ease-in;
+}
+
+.navSec3::before{
+    content: 'Section 3';
+    position: absolute;
+    transform-origin: right;
+    transform: scale(0,1);
+    right: 60%;
+}
+.navSec3:hover::before{
+    top: 0;
     transform: scale(1,1);
     transition: transform 100ms ease-in;
 }
