@@ -2,9 +2,8 @@ nav{
     position: -webkit-sticky; /* Safari */
     position: sticky;
     top: 0;
-    width: 90%;
+    width: 70%;
     margin: 0 auto 0 auto;
-    z-index: 299;
 }
 
 .burger-activate{
@@ -131,7 +130,7 @@ nav ul li a.active{
     }
 
     nav{
-        width: 70%;
+        width: 90%;
     }
 
     nav ul{
