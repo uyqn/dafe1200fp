@@ -2,7 +2,7 @@ nav{
     position: -webkit-sticky; /* Safari */
     position: sticky;
     top: 0;
-    width: 70%;
+    width: 90%;
     margin: 0 auto 0 auto;
     z-index: 100000;
 }
@@ -54,6 +54,10 @@ nav ul li a{
 
 nav ul li:nth-last-child(n+2){
     color: black;
+    transition: all 150ms ease-in-out;
+}
+nav ul li:nth-last-child(n+2):hover{
+    background-color: rgba(255, 255, 255, 0.5);
     transition: all 150ms ease-in-out;
 }
 
@@ -135,7 +139,7 @@ nav ul li a.active{
     }
 
     nav{
-        width: 90%;
+        width: 70%;
     }
 
     nav ul{
@@ -162,6 +166,7 @@ nav ul li a.active{
 
     nav ul li:hover{
         background-color: rgba(255, 255, 255, 0.5);
+        transition: all 200ms ease-in-out;
     }
 
     /*fixing disappearance on bigger screens*/
