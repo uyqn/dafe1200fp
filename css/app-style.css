@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.points{
+    height: 30vh;
+    background-color:#a0cc78;
+}
+
+.store{
+    height: 30vh;
+    background-color:#da4302;
+}
+
+.social{
+    height: 30vh;
+    background-color:#589167;
+}
