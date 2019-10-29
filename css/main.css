@@ -1,23 +1,20 @@
 @import url("topNavigation.css");
 @import url("sideNavigation.css");
+@import url("footer.css");
 
 :root{
     --nav-color: white;
-
     --side-nav-color: black;
-    --side-nav-radius: 30px;
-    --side-nav-poleHeight: 50px;
+    --side-nav-radius: 10px;
+    --side-nav-poleHeight: 20px;
 }
 
-html{
-    scroll-behavior: smooth;
-}
-
-body{
+html, body{
     margin: 0;
     padding: 0;
     width: 100%;
     font-family: 'Lora', serif, Georgia;
+    scroll-behavior: smooth;
     background-color: chocolate;
 }
 .logo-navbar{
@@ -27,8 +24,26 @@ body{
 header{
     position: relative;
     padding-top: 0;
-    width: 70%;
+    width: 90%;
     margin: 0 auto 0 auto;
     filter: invert(100%);
     z-index: 299;
+}
+.content{
+    min-height: 100%;
+    margin-bottom: -50px;
+}
+.push{
+    height: 100px;
+}
+
+@media screen and (min-width: 800px){
+    header{
+        position: relative;
+        padding-top: 0;
+        width: 70%;
+        margin: 0 auto 0 auto;
+        filter: invert(100%);
+        z-index: 299;
+    }
 }
