@@ -1,4 +1,6 @@
-@import url("topNavigation.css");
+/*@import url("topNavigation.css");*/
+
+@import url("navigation-bar-style.css");
 @import url("sideNavigation.css");
 @import url("footer.css");
 
@@ -15,10 +17,11 @@ html, body{
     width: 100%;
     font-family: 'Lora', serif, Georgia;
     scroll-behavior: smooth;
-    background-color: chocolate;
+    background-color: #207561;
 }
 .logo-navbar{
     width: 20%;
+    border-radius: 50%;
 }
 
 header{
@@ -26,7 +29,6 @@ header{
     padding-top: 0;
     width: 90%;
     margin: 0 auto 0 auto;
-    filter: invert(100%);
     z-index: 299;
 }
 .content{
@@ -43,7 +45,6 @@ header{
         padding-top: 0;
         width: 70%;
         margin: 0 auto 0 auto;
-        filter: invert(100%);
         z-index: 299;
     }
 }
