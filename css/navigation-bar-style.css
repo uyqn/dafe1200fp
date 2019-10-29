@@ -19,6 +19,7 @@ nav{
     background-color: white;
     clip-path: inset(0 0 60% 0);
     transition: clip-path 250ms ease-in-out;
+    z-index: 100;
 }
 
 .burger div{
