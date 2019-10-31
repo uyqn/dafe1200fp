@@ -1,7 +1,20 @@
 .logo{
-    height: 5em;
+    height: 5rem;
     object-fit: contain;
     cursor: pointer;
+    margin: auto 0;
+    border-radius: 50%;
+}
+
+.nav-background-fill{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 268.8px;
+    background-color: white;
+    z-index: 50;
+    clip-path: inset(0 0 65% 0);
+    transition: clip-path 250ms ease-in-out;
 }
 
 .dropdown-on{
@@ -14,10 +27,10 @@
 
 nav{
     position: fixed;
+    top: 0;
     width: 100%;
     padding: .5em 0;
-    background-color: white;
-    clip-path: inset(0 0 60% 0);
+    clip-path: inset(0 0 65% 0);
     transition: clip-path 250ms ease-in-out;
     z-index: 100;
 }
@@ -88,6 +101,11 @@ nav ul li a.active{
     transition: clip-path 250ms ease-in-out;
 }
 
+.dropdown-on:checked ~ .nav-background-fill{
+    clip-path: inset(0 0 0 0);
+    transition: clip-path 250ms ease-in-out;
+}
+
 .dropdown-on:checked ~ nav ul li div.bar1{
     transform: translateY(7px) rotate(45deg);
     transition: transform 250ms ease-in-out;
@@ -104,18 +122,29 @@ nav ul li a.active{
 }
 
 @media screen and (min-width: 640px){
+    .logo{
+        height: 6rem;
+    }
+
     .dropdown{
         display: none;
+    }
+
+    .nav-background-fill{
+        height: 52.8px;
+        clip-path: inset(0,0,0,0);
     }
 
     nav{
         padding: 0;
         clip-path: inset(0,0,0,0);
+
     }
 
     nav ul{
         display: flex;
         flex-direction: row;
+        align-items: flex-start;
     }
 
     nav ul li{
@@ -124,9 +153,11 @@ nav ul li a.active{
     }
     nav ul li:nth-child(n+3){
         text-indent: 0;
-        margin: auto 1em;
     }
     .dropdown-on:not(:checked) ~ nav{
+        clip-path: inset(0 0 0 0);
+    }
+    .dropdown-on:not(:checked) ~ .nav-background-fill{
         clip-path: inset(0 0 0 0);
     }
 }
