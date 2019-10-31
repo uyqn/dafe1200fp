@@ -4,13 +4,22 @@
 }
 .content{
     flex: 3;
-    margin-left: 15%;
-    margin-right: 5%;
+    margin-left: 12%;
+    margin-right: 2%;
+    background-color: white;
+    padding: 20px;
 }
 .content h1{
     text-align: center;
     font-size: 5vw;
+    text-decoration: underline;
+    text-decoration-color: #228B22;
     
+}
+.content h2{
+    font-size: 3vw;
+    text-decoration: underline;
+    text-decoration-color: #228B22;
 }
 .content p{
     font-size: 25px;
@@ -19,13 +28,12 @@
     flex: 1;
     font-weight: 700; 
     font-size: 20px;
-    margin-left: 10px;
     margin-top: 7%; 
     position: sticky;
     position: -webkit-sticky;  /*for safari*/
     top: 0;
     height: 10vw;
-    padding-top: 80px;
+    padding-top: 85px;
     
 }
 .sidebar a{
