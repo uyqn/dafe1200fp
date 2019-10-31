@@ -1,44 +1,34 @@
-body {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 100%;
-}
-.forside-index{
-    position: absolute;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 0;
-}
-.forsideImg-index{
-    width: 100%;
-    height: calc(100% - 50px);
-}
-.forside-index-color{
-    position: absolute;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-image: linear-gradient(to bottom, rgba(0,102,255,1), rgba(0,102,255,0));
-    z-index: 1;
-}
-
 .background{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
     display: flex;
     flex-direction: row;
+    height: 100vh;
+    width: 100%;
 }
 
 .background-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
     height: 100vh;
     width: 50%;
+
     background-color: #a0cc78;
-    clip-path: polygon(0 0, 100% 20%, 100% 90%, 0 100%);
+    clip-path: polygon(0 0, 100% 10%, 100% 90%, 0 100%);
+}
+
+.background-right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    height: 100vh;
+    width: 50%;
+
+    background-color: #207561;
+    clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 90%);
 }
 
 .text-content{
@@ -46,20 +36,10 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+
+    margin: auto;
+    height: 50vh;
     width: 70%;
-    margin: 0 auto;
-}
-
-.background-right{
-    height: 100vh;
-    width: 50%;
-    background-color: #207561;
-    clip-path: polygon(0 20%, 100% 0, 100% 100%, 0 90%);
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
 }
 
 .image-content{
@@ -67,22 +47,13 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    width: 60%;
-    margin: auto auto;
+
+    margin: auto;
+    height: 50vh;
+    width: 70%;
 }
 
 .image-content img{
     width: 100%;
-    margin: auto auto;
 }
 
-
-@media screen and (max-width: 500px){
-    .forsideImg-index{
-        display: none;
-    }
-    .forside-index-color{
-        height: 20%;
-    }
-}

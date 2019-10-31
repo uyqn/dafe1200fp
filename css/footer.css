@@ -1,8 +1,109 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
 footer{
-    position: absolute;
-    height: 100px;
-    top: 100vh;
-    left: 0;
+    position: relative;
+    bottom: 0;
+}
+
+.footerContent{
+    background-color: gray;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+    box-sizing: border-box;
     width: 100%;
-    background-color: lightgray;
+    text-align: left;
+    font: bold 16px sans-serif Arial;
+    padding: 55px 50px;
+    margin-top: 0px;
+}
+
+.footer-left, .footer-center, .footer-right{
+    display: inline-block;
+    vertical-align: top;
+}
+
+.footer-left{
+    width: 40%;
+}
+
+.footerContent h3{
+    color:  #000000;
+    font: normal 36px 'Cookie', cursive;
+    margin: 0;
+}
+
+.footerContent h3 span{
+    color:  #207561;
+}
+
+.footer-links{
+    color:  #000000;
+    margin: 20px 0 15px;
+    padding: 0;
+}
+
+.footer-links a{
+    display: block;
+    line-height: 1.8;
+    text-decoration: none;
+    color:  inherit;
+}
+
+.footer-center{
+    width: 35%;
+}
+
+.footer-center i{
+    background-color:  #33383b;
+    color: #ffffff;
+    font-size: 25px;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 42px;
+    margin: 10px 15px;
+    vertical-align: middle;
+}
+
+.footer-center{
+    font-size: 17px;
+    line-height: 38px;
+}
+
+.footer-center p{
+    display: inline-block;
+    color: #ffffff;
+    vertical-align: middle;
+    margin:0;
+}
+
+.footer-right{
+    width: 20%;
+}
+
+.GetiT{
+    width: 100px;
+}
+
+@media (max-width: 880px) {
+
+    .footerContent{
+        font: bold 14px sans-serif;
+
+    }
+
+    .footer-left, .footer-center, .footer-right{
+        display: block;
+        width: 100%;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+
+    .footer-center i{
+        margin-left: 0;
+    }
+
 }
