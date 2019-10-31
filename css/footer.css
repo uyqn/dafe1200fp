@@ -3,7 +3,7 @@ body {
     padding: 0;
 }
 footer{
-    position: fixed;
+    position: relative;
     bottom: 0;
 }
 
@@ -15,7 +15,7 @@ footer{
     text-align: left;
     font: bold 16px sans-serif Arial;
     padding: 55px 50px;
-    margin-top: 50px;
+    margin-top: 0px;
 }
 
 .footer-left, .footer-center, .footer-right{
