@@ -31,7 +31,7 @@
     margin-top: 7%; 
     position: sticky;
     position: -webkit-sticky;  /*for safari*/
-    top: 0;
+    top: 8vh;
     height: 10vw;
     padding-top: 85px;
     
