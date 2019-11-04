@@ -3,17 +3,36 @@
     padding: 0;
 }
 
+/* First section*/
 .points{
-    height: 30vh;
+    height: 50vh;
+    background-color:#207561;
+}
+
+.points img{
+    float: right;
+}
+
+/*Second section*/
+.store{
+    display: flex;
+    flex-direction: row;
+    height: 50vh;
+}
+
+.tekstboks{
+    display:block;
+}
+
+
+/*Third section*/
+
+.social{
+    height: 50vh;
     background-color:#a0cc78;
 }
 
-.store{
-    height: 30vh;
-    background-color:#da4302;
-}
-
-.social{
-    height: 30vh;
-    background-color:#589167;
+.social img{
+    float: right
+    ;
 }
