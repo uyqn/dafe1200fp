@@ -10,6 +10,7 @@
     cursor: pointer;
     margin: auto 0;
     border-radius: 50%;
+    border: 1px solid black;
 }
 
 .nav-background-fill{
