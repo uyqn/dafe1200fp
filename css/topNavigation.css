@@ -5,6 +5,7 @@ nav{
     width: 90%;
     margin: 0 auto 0 auto;
     z-index: 100000;
+    letter-spacing: .05em;
 }
 
 .burger-activate{
@@ -13,7 +14,7 @@ nav{
 
 nav ul{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 60px 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     padding-inline-start: 0;
     margin-block-start: 0;
@@ -22,11 +23,11 @@ nav ul{
     margin: 0;
 }
 
-nav ul li:nth-last-child(n+2){
+nav ul li:nth-last-child(n+1){
     list-style: none;
     grid-column: 2/2;
     align-self: flex-start;
-    justify-self: flex-end;
+    justify-self: flex-start;
 
     opacity: 0;
     transform: translateX(200%);
@@ -92,6 +93,7 @@ nav ul li a.active{
     transform: scale(0,1);
     transform-origin: left;
     transition: transform 500ms ease-in-out;
+    display: none;
 }
 
 /*Replacing js classList.toggle function*/

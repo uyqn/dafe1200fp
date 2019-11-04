@@ -1,0 +1,73 @@
+.container{
+    display: flex;
+    flex-flow: row wrap;
+}
+.content{
+    flex: 3;
+    margin-left: 12%;
+    margin-right: 2%;
+    background-color: white;
+    padding: 20px;
+}
+.content h1{
+    text-align: center;
+    font-size: 50px;
+    text-decoration: underline;
+    text-decoration-color: #228B22;
+    
+}
+.content h2{
+    font-size: 32px;
+    text-decoration: underline;
+    text-decoration-color: #228B22;
+}
+.content p{
+    font-size: 22px;
+}
+.sidebar{
+    flex: 1;
+    margin-top: 5%; 
+    position: sticky;
+    position: -webkit-sticky;  /*for safari*/
+    top: 0;
+    height: 10vw;
+    padding-top: 65px;
+    
+}
+.sidebar a, .sidebarMob a{
+    font-weight: 700; 
+    font-size: 22px;
+    padding: 0;
+    text-decoration: none;
+    color: black;
+}
+.sidebar a:hover, .sidebarMob a:hover{
+    text-decoration: underline;
+    text-decoration-color: #228B22;
+}
+.sidebarMob{
+    font-size: 22px;
+    justify-content: space-between;
+    display: none;
+}
+#probImg{
+    width: 100%;
+    height: 35vw;
+}
+a:focus, h1:focus, h2:focus, p:focus{
+    outline-color: black;
+}
+
+@media only screen and (max-width: 800px) {
+    .content{
+        margin-left: 5%;
+    }
+}
+@media only screen and (max-width: 600px){
+        .sidebar{
+        display: none;
+    }
+    .sidebarMob{
+        display: flex;
+    }
+}
