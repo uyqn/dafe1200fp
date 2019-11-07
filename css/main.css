@@ -1,5 +1,3 @@
-/*@import url("topNavigation.css");*/
-
 @import url("navigation-bar-style.css");
 @import url("sideNavigation.css");
 @import url("footer.css");
@@ -32,6 +30,7 @@ header{
     min-height: 100%;
     margin-bottom: -50px;
 }
+
 .push{
     height: 100px;
 }
