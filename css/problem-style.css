@@ -64,10 +64,16 @@ a:focus, h1:focus, h2:focus, p:focus{
     }
 }
 @media only screen and (max-width: 600px){
-        .sidebar{
+    .sidebar{
         display: none;
     }
     .sidebarMob{
         display: flex;
+    }
+}
+
+@media screen and (min-width: 600px){
+    #header1, #header2, #header3{
+        scroll-margin-top: calc(1.2*var(--nav-bar-height));
     }
 }

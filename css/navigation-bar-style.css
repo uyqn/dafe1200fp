@@ -1,8 +1,10 @@
 :root{
     --nav-bg-color: white;
     --nav-font-color: #444444;
-    --nav-hover-color: #207561;
+    --nav-hover-color: #da4302;
     --nav-font-size: 1.2rem;
+    --nav-bar-height: calc(2*var(--nav-font-size));
+    --nav-logo-height: calc(4*var(--nav-font-size));
     --animation-duration: 400ms;
 }
 
@@ -14,21 +16,32 @@
     width: 30px;
     height: 2px;
     background-color: var(--nav-font-color);
+    transition: background-color var(--animation-duration) ease-in-out;
+}
+
+.burger div:nth-child(1){
+    transform: translateY(0) rotate(0deg);
+    transition: transform var(--animation-duration) ease-in-out;
 }
 
 .burger div:nth-child(2){
     margin: 5px 0;
+    opacity: 1;
+    transition: opacity var(--animation-duration) ease-in-out;
+}
+
+.burger div:nth-child(3){
+    transform: translateY(0) rotate(0deg);
+    transition: transform var(--animation-duration) ease-in-out;
 }
 
 .logo{
-    height: calc(4*var(--nav-font-size));
+    height: var(--nav-logo-height);
     padding: 8px;
 }
 
 .burger{
     padding: .5rem;
-    opacity: 1;
-    transition: opacity var(--animation-duration) ease-in-out;
 }
 
 nav{
@@ -116,7 +129,15 @@ nav ul li a.active:hover{
     border-bottom: 1px solid var(--nav-hover-color);
 }
 
+.burger:hover div{
+    background-color: var(--nav-hover-color);
+}
 
+.push{
+    display: none;
+}
+
+/*
 nav:hover{
     clip-path: circle(150% at 100% 0);
     transition: clip-path var(--animation-duration) ease-in-out;
@@ -126,6 +147,23 @@ nav:hover .burger{
     opacity: 0;
     transition: opacity var(--animation-duration) ease-in-out;
 }
+*/
+
+.dropdown-on:checked ~ nav{
+    clip-path: circle(150% at 100% 0);
+}
+
+.dropdown-on:checked ~ nav ul li div div:nth-child(1){
+    transform: translateY(7px) rotate(45deg);
+}
+
+.dropdown-on:checked ~ nav ul li div div:nth-child(2){
+    opacity: 0;
+}
+
+.dropdown-on:checked ~ nav ul li div div:nth-child(3){
+    transform: translateY(-7px) rotate(-45deg);
+}
 
 @media screen and (min-width: 600px){
     .burger{
@@ -133,7 +171,7 @@ nav:hover .burger{
     }
 
     nav{
-        height: calc(2*var(--nav-font-size));
+        height: var(--nav-bar-height);
         clip-path: circle(150% at 100% 0);
         transition: clip-path var(--animation-duration) ease-in-out;
     }

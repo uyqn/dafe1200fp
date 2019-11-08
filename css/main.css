@@ -2,6 +2,13 @@
 @import url("sideNavigation.css");
 @import url("footer.css");
 
+@font-face {
+    font-family: "Computer Modern";
+    src: url("../font-family/cmunss.otf");
+}
+
+
+
 :root{
     --nav-color: white;
     --side-nav-color: black;
@@ -13,7 +20,7 @@ html, body{
     margin: 0;
     padding: 0;
     width: 100%;
-    font-family: 'Lora', serif, Georgia;
+    font-family: "Computer Modern", sans-serif;
     scroll-behavior: smooth;
     background-color: white;
 }
