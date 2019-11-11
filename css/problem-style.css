@@ -29,7 +29,6 @@
     top: 0;
     height: 10vh;
     padding-top: 80px;
-
 }
 .sidebar a, .sidebarMob a{
     font-weight: 700; 
@@ -43,11 +42,13 @@
 }
 .sidebarMob{
     font-size: 22px;
+    flex-flow: row wrap;
     justify-content: space-between;
     display: none;
 }
 .probPicture{
-    width: 100%;
+    min-width: 100%;
+    height: 45vw;
 }
 #probImg{
     width: 100%;
