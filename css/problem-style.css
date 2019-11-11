@@ -51,9 +51,12 @@
     justify-content: space-between;
     display: none;
 }
+.probPicture{
+    width: 100%;
+}
 #probImg{
     width: 100%;
-    height: 40em;
+    height: 45vw;
 }
 .content a:focus,.sidebar a:focus, h1:focus, h2:focus, p:focus{
     outline-color: black;
@@ -65,10 +68,16 @@
     }
 }
 @media only screen and (max-width: 600px){
-        .sidebar{
+    .sidebar{
         display: none;
     }
     .sidebarMob{
         display: flex;
+    }
+}
+
+@media screen and (min-width: 600px){
+    #header1, #header2, #header3{
+        scroll-margin-top: calc(1.2*var(--nav-bar-height));
     }
 }
