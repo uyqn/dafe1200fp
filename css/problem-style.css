@@ -1,3 +1,4 @@
+
 .container{
     display: flex;
     flex-flow: row wrap;
@@ -52,7 +53,7 @@
 }
 #probImg{
     width: 100%;
-    height: 90vh;
+    height: 40em;
 }
 .content a:focus,.sidebar a:focus, h1:focus, h2:focus, p:focus{
     outline-color: black;
