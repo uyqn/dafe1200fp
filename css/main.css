@@ -1,8 +1,14 @@
-/*@import url("topNavigation.css");*/
-
 @import url("navigation-bar-style.css");
 @import url("sideNavigation.css");
 @import url("footer.css");
+@import url("reference-style.css");
+
+@font-face {
+    font-family: "Computer Modern";
+    src: url("../font-family/cmunss.otf");
+}
+
+
 
 :root{
     --nav-color: white;
@@ -15,7 +21,7 @@ html, body{
     margin: 0;
     padding: 0;
     width: 100%;
-    font-family: 'Lora', serif, Georgia;
+    font-family: "Computer Modern", sans-serif;
     scroll-behavior: smooth;
     background-color: white;
 }
@@ -31,9 +37,6 @@ header{
 .content{
     min-height: 100%;
     margin-bottom: -50px;
-}
-.push{
-    height: 100px;
 }
 
 @media screen and (min-width: 800px){
