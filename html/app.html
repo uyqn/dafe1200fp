@@ -4,12 +4,13 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <link rel="stylesheet" type="text/css" href="../css/main.css">
-        <link rel="stylesheet" type="text/css" href="../css/problem-style.css">
+        <link rel="stylesheet" type="text/css" href="../css/slideshow-style.css">
         <title>
             Our App
         </title>
     </head>
     <body>
+
     <input type="checkbox" id="dropdown-on" class="dropdown-on">
     <div class="nav-background-fill"></div>
     <nav>
@@ -30,35 +31,38 @@
             <li><a class="active" href="app.html">Our App</a></li>
         </ul>
     </nav>
-   
-    <div>
-        
-    </div>
+    
+        <input type="radio" name="slide" id="slide1" checked>
+        <input type="radio" name="slide" id="slide2">
+        <input type="radio" name="slide" id="slide3">
+        <input type="radio" name="slide" id="slide4">
 
-    <footer class="footerContent">
-        <div class="footer-left">
-            <h3>Klima<span>Pluss</span></h3>
+        <div class="container">
             <div>
-                <p class="footer-links">
-                    <a href="../index.html">Home</a>
-                    <a>Problem</a>
-                    <a>Solution</a>
-                    <a>App</a>
-                </p>
+                <h1>Slide1</h1>
             </div>
-        </div>
+            
+            <div>
+                <h1>Slide2</h1>
+            </div>
+            
+            <div>
+                <h1>Slide3</h1>
+            </div>
 
-        <div class="footer-center">
-            <p class="footer-links">
-                <a>Our team</a>
-                <a>Sources</a>
-            </p>
-        </div>
+            <div>
+                <h1>Slide4</h1>
+            </div>
+            
+            <label class="prev prev4" for="slide4"><a>&#x3008;</a></label>
+            <label class="prev prev3" for="slide3"><a>&#x3008;</a></label>
+            <label class="prev prev2" for="slide2"><a>&#x3008;</a></label>
+            <label class="prev prev1" for="slide1"><a>&#x3008;</a></label>
 
-        <div class="footer-right">
-            <img src="../img/googlePlay.png" class="GetiT">
+            <label class="next next2" for="slide2"><a>&#x3009;</a></label>
+            <label class="next next3" for="slide3"><a>&#x3009;</a></label>
+            <label class="next next4" for="slide4"><a>&#x3009;</a></label>
+            <label class="next next1" for="slide1"><a>&#x3009;</a></label>
         </div>
-    </footer>
     </body>
-
 </html>
