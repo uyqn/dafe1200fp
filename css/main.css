@@ -32,9 +32,11 @@ header{
     min-height: 100%;
     margin-bottom: -50px;
 }
+
 .push{
     height: 100px;
 }
+
 
 @media screen and (min-width: 800px){
     header{
