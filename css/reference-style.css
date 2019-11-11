@@ -2,8 +2,6 @@
     margin-block-start: 0;
     margin-block-end: 0;
     padding-inline-start: 0;
-
-    width: 100%;
 }
 
 .cite{
@@ -16,10 +14,11 @@
     font-size: 20px;
     margin-bottom: 1.5em;
 
-    text-indent: -1.7em;
-    margin-left: 1.7em;
+    margin-left: 2em;
+    text-indent: -2em;
 }
 
 .references li a{
     color: blue;
+    word-break: break-all;
 }
