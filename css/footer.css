@@ -2,7 +2,6 @@ body {
     margin: 0;
     padding: 0;
     width: 100%;
-
 }
 footer{
     position: relative;
@@ -16,6 +15,8 @@ footer{
     left: 12%;
     bottom: 0;
     margin-top: 50px;
+    padding-top: 30px;
+    padding-bottom: 10px;
     box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
     box-sizing: border-box;
     text-align: left;
@@ -25,6 +26,7 @@ footer{
 .footer-left{grid-area: footer-left}
 .footer-center{grid-area: footer-center}
 .footer-right{grid-area: footer-right}
+.footer-copyRight{grid-area: footer-copyRight}
 
 .googlePlay, .appStore{
     width: 150px;
@@ -35,7 +37,12 @@ footer{
     grid-template-columns: 1fr 1fr 1fr;
     vertical-align: top;
     grid-template-areas:
-            "footer-left footer-center footer-right";
+            "footer-left footer-center footer-right"
+            "footer-copyRight footer-copyRight footer-copyRight";
+}
+.footer-left, .footer-center, .footer-right{
+    vertical-align: top;
+
 }
 
 .footer-left ul, .footer-center ul, .footer-right ul{
@@ -55,12 +62,18 @@ footer{
     color:  inherit;
 }
 
-.footer-center p{
-    display: inline-block;
-    color: #ffffff;
-    vertical-align: middle;
-    margin:0;
+.footer-container .topLink-Footer{
+    color: white;
+
 }
+.footer-copyRight p {
+    border-bottom: solid 2px black;
+    border-top: solid 2px black;
+    text-align: center;
+    padding: 10px;
+
+}
+
 
 @media (max-width: 880px) {
 
@@ -70,13 +83,15 @@ footer{
     }
     .footer-left, .footer-center, .footer-right{
         width: 100%;
-        margin-bottom: 40px;
+        margin-bottom: 10px;
         text-align: center;
     }
     .footer-container ul{
         padding-inline-start: 0;
+    }
 
-
+    .googlePlay, .appStore{
+        margin: 10px;
     }
 
     .footer-container{
@@ -86,7 +101,8 @@ footer{
         grid-template-areas:
                 "footer-left"
                 "footer-center"
-                "footer-right";
+                "footer-right"
+                "footer-copyRight";
     }
 
 
