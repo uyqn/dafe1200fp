@@ -7,7 +7,7 @@ footer{
     position: relative;
     bottom: 0;
     width: 100%;
-    background-color: gray;
+    background-color: black;
 }
 .footer-container{
     position: relative;
@@ -21,7 +21,7 @@ footer{
     box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
     box-sizing: border-box;
     text-align: left;
-    font: bold 16px sans-serif Arial;
+    font: 16px sans-serif Arial;
 }
 
 .footer-left{grid-area: footer-left}
@@ -31,6 +31,7 @@ footer{
 
 .googlePlay, .appStore{
     width: 150px;
+    cursor: pointer;
 }
 
 .footer-container{
@@ -50,7 +51,7 @@ footer{
     list-style: none;
 }
 .footer-links{
-    color:  #000000;
+    color:  #FFFFFF;
     margin: 20px 0 15px;
     padding: 0;
 }
@@ -60,12 +61,16 @@ footer{
     text-decoration: none;
     color:  inherit;
 }
+.footer-links a:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
 .footer-container .topLink-Footer{
     color: white;
 }
 .footer-copyRight p {
-    border-bottom: solid 2px black;
-    border-top: solid 2px black;
+    border-bottom: solid 2px #FFFFFF;
+    border-top: solid 2px #FFFFFF;
     text-align: center;
     padding: 10px;
 }
