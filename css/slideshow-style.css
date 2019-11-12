@@ -1,0 +1,124 @@
+input[type="radio"]{
+    display: none;
+}
+
+.container{
+    position: relative;
+    width: 70%;
+    height: 100vh;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.container div{
+    display: grid;
+    place-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0,1);
+    transform-origin: left;
+
+    width: 100%;
+    height: 100%;
+
+    transition: transform 400ms ease-in-out;
+}
+
+.container div:nth-child(1){
+    background-color: red;
+}
+
+.container div:nth-child(2){
+    background-color: green;
+}
+
+.container div:nth-child(3){
+    background-color: magenta;
+}
+
+.container div:nth-child(4){
+    background-color: yellow;
+}
+
+.container .next{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    z-index: 10;
+    display: none;
+    font-size: 22px;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+.container .prev{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    z-index: 20;
+    display: none;
+    font-size: 22px;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+.next:hover{
+    color: var(--nav-hover-color);
+}
+
+.prev:hover{
+    color: var(--nav-hover-color);
+}
+
+/*Slide1*/
+#slide1:checked ~ .container div:nth-child(1){
+    transform: translate(-50%, -50%) scale(1,1);
+}
+#slide1:checked ~ .container .next2{
+    display: block;
+}
+#slide1:checked ~ .container .prev4{
+    display: block;
+}
+/*Slide1*/
+
+/*Slide2*/
+#slide2:checked ~ .container div:nth-child(2){
+    transform: translate(-50%, -50%) scale(1,1);
+}
+#slide2:checked ~ .container .next3{
+    display: block;
+}
+#slide2:checked ~ .container .prev1{
+    display: block;
+}
+/*Slide2*/
+
+/*Slide3*/
+#slide3:checked ~ .container div:nth-child(3){
+    transform: translate(-50%, -50%) scale(1,1);
+}
+#slide3:checked ~ .container .next4{
+    display: block;
+}
+#slide3:checked ~ .container .prev2{
+    display: block;
+}
+/*Slide3*/
+
+/*Slide4*/
+#slide4:checked ~ .container div:nth-child(4){
+    transform: translate(-50%, -50%) scale(1,1);
+}
+#slide4:checked ~ .container .next1{
+    display: block;
+}
+#slide4:checked ~ .container .prev3{
+    display: block;
+}
+/*Slide4*/
