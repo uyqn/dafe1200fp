@@ -16,6 +16,7 @@ footer{
     bottom: 0;
     margin-top: 50px;
     padding-top: 30px;
+    padding-left: 20px;
     padding-bottom: 10px;
     box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
     box-sizing: border-box;
@@ -34,7 +35,7 @@ footer{
 
 .footer-container{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 2fr 2fr 1fr;
     vertical-align: top;
     grid-template-areas:
             "footer-left footer-center footer-right"
@@ -42,43 +43,37 @@ footer{
 }
 .footer-left, .footer-center, .footer-right{
     vertical-align: top;
-
 }
-
 .footer-left ul, .footer-center ul, .footer-right ul{
+    padding-inline-start: 0;
+    padding-left: 0;
     list-style: none;
 }
-
 .footer-links{
     color:  #000000;
     margin: 20px 0 15px;
     padding: 0;
 }
-
 .footer-links a{
     display: block;
     line-height: 1.8;
     text-decoration: none;
     color:  inherit;
 }
-
 .footer-container .topLink-Footer{
     color: white;
-
 }
 .footer-copyRight p {
     border-bottom: solid 2px black;
     border-top: solid 2px black;
     text-align: center;
     padding: 10px;
-
 }
-
-
 @media (max-width: 880px) {
 
     .footer-container{
         font: bold 14px sans-serif;
+        padding-left: 0;
 
     }
     .footer-left, .footer-center, .footer-right{
@@ -93,7 +88,6 @@ footer{
     .googlePlay, .appStore{
         margin: 10px;
     }
-
     .footer-container{
         left: 0;
         width: 100%;
@@ -104,6 +98,4 @@ footer{
                 "footer-right"
                 "footer-copyRight";
     }
-
-
 }
