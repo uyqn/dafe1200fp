@@ -4,7 +4,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <link rel="stylesheet" type="text/css" href="../css/main.css">
-        <link rel="stylesheet" type="text/css" href="../css/slideshow-style.css">
+        <link rel="stylesheet" type="text/css" href="../css/app-style.css">
         <title>
             Our App
         </title>
@@ -31,39 +31,79 @@
             <li><a class="active" href="app.html">Our App</a></li>
         </ul>
     </nav>
+    <div class="push-app"></div>
 
-        <input type="radio" name="slide" id="slide1" checked>
-        <input type="radio" name="slide" id="slide2">
-        <input type="radio" name="slide" id="slide3">
-        <input type="radio" name="slide" id="slide4">
+    <input type="radio" name="slide-show" id="slide1" checked>
+    <input type="radio" name="slide-show" id="slide2">
+    <input type="radio" name="slide-show" id="slide3">
+    <input type="radio" name="slide-show" id="slide4">
+    <input type="radio" name="slide-show" id="slide5">
 
-        <div class="container">
-            <div>
-                <h1>Slide1</h1>
-            </div>
-            
-            <div>
-                <h1>Slide2</h1>
-            </div>
-            
-            <div>
-                <h1>Slide3</h1>
-            </div>
-
-            <div>
-                <h1>Slide4</h1>
-            </div>
-            
-            <label class="prev prev4" for="slide4"><a>&#x3008;</a></label>
-            <label class="prev prev3" for="slide3"><a>&#x3008;</a></label>
-            <label class="prev prev2" for="slide2"><a>&#x3008;</a></label>
-            <label class="prev prev1" for="slide1"><a>&#x3008;</a></label>
-
-            <label class="next next2" for="slide2"><a>&#x3009;</a></label>
-            <label class="next next3" for="slide3"><a>&#x3009;</a></label>
-            <label class="next next4" for="slide4"><a>&#x3009;</a></label>
-            <label class="next next1" for="slide1"><a>&#x3009;</a></label>
+    <div class="slide slide1">
+        <div class="slide-img">
+            <img src="../img/app.png">
         </div>
+        <div class="slide-text">
+            <h2>Slide 1</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus neque veritatis nam asperiores, quae voluptatibus quod deleniti doloremque ducimus tempore?</p>
+        </div>
+    </div>
+
+    <div class="slide slide2">
+        <div class="slide-img">
+            <img src="../img/app.png">
+        </div>
+        <div class="slide-text">
+            <h2>Slide 2</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus neque veritatis nam asperiores, quae voluptatibus quod deleniti doloremque ducimus tempore?</p>
+        </div>
+    </div>
+
+    <div class="slide slide3">
+        <div class="slide-img">
+            <img src="../img/app.png">
+        </div>
+        <div class="slide-text">
+            <h2>Slide 3</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus neque veritatis nam asperiores, quae voluptatibus quod deleniti doloremque ducimus tempore?</p>
+        </div>
+    </div>
+
+    <div class="slide slide4">
+        <div class="slide-img">
+            <img src="../img/app.png">
+        </div>
+        <div class="slide-text">
+            <h2>Slide 4</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus neque veritatis nam asperiores, quae voluptatibus quod deleniti doloremque ducimus tempore?</p>
+        </div>
+    </div>
+
+    <div class="slide slide5">
+        <div class="slide-img">
+            <img src="../img/app.png">
+        </div>
+        <div class="slide-text">
+            <h2>Slide 5</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus neque veritatis nam asperiores, quae voluptatibus quod deleniti doloremque ducimus tempore?</p>
+        </div>
+    </div>
+
+    <div class="next-slide">
+        <label for="slide1" class="next1">></label>
+        <label for="slide2" class="next2">></label>
+        <label for="slide3" class="next3">></label>
+        <label for="slide4" class="next4">></label>
+        <label for="slide5" class="next5">></label>
+    </div>
+
+    <div class="prev-slide">
+        <label for="slide1" class="prev1"><</label>
+        <label for="slide2" class="prev2"><</label>
+        <label for="slide3" class="prev3"><</label>
+        <label for="slide4" class="prev4"><</label>
+        <label for="slide5" class="prev5"><</label>
+    </div>
 
     <footer>
 

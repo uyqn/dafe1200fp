@@ -1,0 +1,150 @@
+/*Slides*/
+.push-app{
+    width: 100%;
+    height: 80vh;
+}
+
+input[type="radio"]{
+    display: none;
+}
+
+.slide{
+    position: absolute;
+    top: 80px;
+    left: 10%;
+    width: 80%;
+
+    display: grid;
+    grid-template-columns: 1fr;
+
+    transform: scale(0,1);
+    transform-origin: left;
+    transition: transform 250ms ease-in-out;
+}
+
+.slide-img{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    justify-self: end;
+    align-self: center;
+}
+
+.slide-img img{
+    height: 50vh;
+    justify-self: center;
+    align-self: center;
+}
+
+.slide-text{
+    width: 100%;
+
+    align-self: center;
+    justify-self: center;
+}
+
+.slide-text h2{
+    text-align: center;
+}
+
+.slide-text p{
+    margin-left: 1rem;
+}
+
+@media screen and (min-width: 600px){
+    .slide{
+        width: 70%;
+        left: 15%;
+    
+        margin: 0 auto;
+    
+        display: grid;
+        grid-template-columns: auto 1fr;
+    }
+
+    .slide-text{
+        align-self: center;
+    }
+}
+/*Slides*/
+
+/*Arrows*/
+.next-slide label{
+    position: absolute;
+    top: 35%;
+    right: 5%;
+
+    display: none;
+}
+
+.prev-slide label{
+    position: absolute;
+    top: 35%;
+    left: 5%;
+    display: none;
+}
+
+/*Arrows*/
+
+/*Show*/
+/*slide1*/
+#slide1:checked ~ .slide1{
+    transform: scale(1,1);
+    transform-origin: right;
+}
+#slide1:checked ~ .next-slide .next2{
+    display: block;
+}
+#slide1:checked ~ .prev-slide .prev5{
+    display: block;
+}
+/*slide1*/
+/*slide2*/
+#slide2:checked ~ .slide2{
+    transform: scale(1,1);
+    transform-origin: right;
+}
+#slide2:checked ~ .next-slide .next3{
+    display: block;
+}
+#slide2:checked ~ .prev-slide .prev1{
+    display: block;
+}
+/*slide2*/
+/*slide3*/
+#slide3:checked ~ .slide3{
+    transform: scale(1,1);
+    transform-origin: right;
+}
+#slide3:checked ~ .next-slide .next4{
+    display: block;
+}
+#slide3:checked ~ .prev-slide .prev2{
+    display: block;
+}
+/*slide3*/
+/*slide4*/
+#slide4:checked ~ .slide4{
+    transform: scale(1,1);
+    transform-origin: right;
+}
+#slide4:checked ~ .next-slide .next5{
+    display: block;
+}
+#slide4:checked ~ .prev-slide .prev3{
+    display: block;
+}
+/*slide4*/
+/*slide5*/
+#slide5:checked ~ .slide5{
+    transform: scale(1,1);
+    transform-origin: right;
+}
+#slide5:checked ~ .next-slide .next1{
+    display: block;
+}
+#slide5:checked ~ .prev-slide .prev4{
+    display: block;
+}
+/*slide5*/
+/*Show*/

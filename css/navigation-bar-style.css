@@ -2,7 +2,7 @@
     --nav-bg-color: white;
     --nav-font-color: #444444;
     --nav-hover-color: #da4302;
-    --nav-font-size: 22px;
+    --nav-font-size: 1.2rem;
     --nav-bar-height: calc(2*var(--nav-font-size));
     --nav-logo-height: 0rem;
     --animation-duration: 400ms;
@@ -36,6 +36,15 @@ nav{
 
 .logo{
     height: 3rem;
+}
+
+.title{
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.burger{
+    margin-right: .5rem;
 }
 
 .burger div{
@@ -97,6 +106,9 @@ nav ul{
     margin-block-start: 0;
     margin-block-end: 0;
     padding-inline-start: 1rem;
+    padding: 0 .5rem;
+    margin: 0;
+    offset: 0;
 
     list-style: none;
 
@@ -108,8 +120,14 @@ nav ul{
     transition: transform var(--animation-duration) ease-in-out;
 }
 
+nav ul li{
+    margin: .1rem 0;
+}
+
 nav ul li a{
     text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
     color: var(--nav-font-color);
 }
 
