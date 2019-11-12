@@ -15,14 +15,10 @@
 .content h1{
     text-align: center;
     font-size: 50px;
-    text-decoration: underline;
-    text-decoration-color: #228B22;
     
 }
 .content h2{
     font-size: 32px;
-    text-decoration: underline;
-    text-decoration-color: #228B22;
 }
 .content p{
     font-size: 22px;
@@ -34,8 +30,7 @@
     position: -webkit-sticky;  /*for safari*/
     top: 0;
     height: 10vh;
-    padding-top: 65px;
-
+    padding-top: 80px;
 }
 .sidebar a, .sidebarMob a{
     font-weight: 700; 
@@ -44,17 +39,18 @@
     text-decoration: none;
     color: black;
 }
-.sidebar a:hover, .sidebarMob a:hover{
-    text-decoration: underline;
-    text-decoration-color: #228B22;
+.sidebar a:hover, .sidebarMob a:hover{    
+    color: #da4302;
 }
 .sidebarMob{
     font-size: 22px;
+    flex-flow: row wrap;
     justify-content: space-between;
     display: none;
 }
 .probPicture{
-    width: 100%;
+    min-width: 100%;
+    height: 45vw;
 }
 #probImg{
     width: 100%;
@@ -69,7 +65,7 @@
         margin-left: 5%;
     }
 }
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 800px){
     .sidebar{
         display: none;
     }
@@ -79,7 +75,7 @@
 }
 
 @media screen and (min-width: 600px){
-    #header1, #header2, #header3{
+    #header1, #header2, #header3, header4#{
         scroll-margin-top: calc(1.2*var(--nav-bar-height));
     }
 }
