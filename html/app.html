@@ -4,17 +4,17 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <link rel="stylesheet" type="text/css" href="../css/main.css">
-        <link rel="stylesheet" type="text/css" href="../css/problem-style.css">
+        <link rel="stylesheet" type="text/css" href="../css/slideshow-style.css">
         <title>
             Our App
         </title>
     </head>
     <body>
-    <input type="checkbox" id="dropdown-on" class="dropdown-on">
-    <div class="nav-background-fill"></div>
+    <input type="checkbox" id="dropdown-on" class="dropdown-on">    
+    <div class="nav-fill"></div>
     <nav>
         <ul>
-            <li><a href="../index.html"><img src="../img/logo.png" class="logo"></a></li>
+            <li><a href="../index.html"><img class="logo">Logo</a></li>
             <li>
                 <label for="dropdown-on" class="dropdown">
                     <div class="burger">
@@ -24,16 +24,45 @@
                     </div>
                 </label>
             </li>
-            <li><a  href="../index.html">Home</a></li>
+            <li><a href="../index.html">Home</a></li>
             <li><a href="problem.html">Problem</a></li>
             <li><a href="solution.html">Solution</a></li>
             <li><a class="active" href="app.html">Our App</a></li>
         </ul>
     </nav>
-   
-    <div>
-        
-    </div>
+
+        <input type="radio" name="slide" id="slide1" checked>
+        <input type="radio" name="slide" id="slide2">
+        <input type="radio" name="slide" id="slide3">
+        <input type="radio" name="slide" id="slide4">
+
+        <div class="container">
+            <div>
+                <h1>Slide1</h1>
+            </div>
+            
+            <div>
+                <h1>Slide2</h1>
+            </div>
+            
+            <div>
+                <h1>Slide3</h1>
+            </div>
+
+            <div>
+                <h1>Slide4</h1>
+            </div>
+            
+            <label class="prev prev4" for="slide4"><a>&#x3008;</a></label>
+            <label class="prev prev3" for="slide3"><a>&#x3008;</a></label>
+            <label class="prev prev2" for="slide2"><a>&#x3008;</a></label>
+            <label class="prev prev1" for="slide1"><a>&#x3008;</a></label>
+
+            <label class="next next2" for="slide2"><a>&#x3009;</a></label>
+            <label class="next next3" for="slide3"><a>&#x3009;</a></label>
+            <label class="next next4" for="slide4"><a>&#x3009;</a></label>
+            <label class="next next1" for="slide1"><a>&#x3009;</a></label>
+        </div>
 
     <footer>
 
@@ -73,9 +102,5 @@
             <div class="footer-copyRight">
                 <p class="topLink-Footer">&copy; 2019 Climate plus</p>
             </div>
-
-        </div>
-    </footer>
     </body>
-
 </html>

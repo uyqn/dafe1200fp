@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+.main-content{ 
+    height: 100%;
+}
+
+.mid-content{
+    display: flex;
+    flex-direction: row;
+    margin-top: -7px;
+    height: 400px;
+    width: 100%;
+    background-color: #a0cc78;
+}
+
+.tekst{
+    flex: 1;
+    padding: 1px 50px;
+    align-content: center;
+    align-items: center;
+    font-size: 4vh;
+    color: white;
+}
+
+.tekst p{
+    margin-bottom: 25px;
+}
+
+
+.image{
+    flex: 1;
+}
+
+.image img{
+    position: absolute;
+    top: 60px;
+    right: 100px;
+
+}
+
