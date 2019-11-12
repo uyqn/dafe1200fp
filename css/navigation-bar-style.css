@@ -2,7 +2,7 @@
     --nav-bg-color: white;
     --nav-font-color: #444444;
     --nav-hover-color: #da4302;
-    --nav-font-size: 1.2rem;
+    --nav-font-size: 22px;
     --nav-bar-height: calc(2*var(--nav-font-size));
     --nav-logo-height: 0rem;
     --animation-duration: 400ms;
@@ -12,15 +12,40 @@
     display: none;
 }
 
+.nav-fill{
+    position: fixed;
+    width: 100%;
+    height: 53.6px;
+    z-index: 1;
+    background-color: var(--nav-bg-color);
+    transition: height var(--animation-duration) ease-in-out;
+
+    box-shadow: 0px 5px 5px -5px rgba(0,0,0,.5);
+}
+
+nav{
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+}
+
+.title{
+    font-size: 22px;
+    user-select: none;
+}
+
+.logo{
+    height: 3rem;
+}
+
 .burger div{
     width: 30px;
     height: 2px;
     background-color: var(--nav-font-color);
-    transition: background-color var(--animation-duration) ease-in-out;
 }
 
 .burger div:nth-child(1){
-    transform: translateY(0) rotate(0deg);
+    transform: translateY(0) rotate(0);
     transition: transform var(--animation-duration) ease-in-out;
 }
 
@@ -31,119 +56,61 @@
 }
 
 .burger div:nth-child(3){
-    transform: translateY(0) rotate(0deg);
+    transform: translateY(0) rotate(0);
     transition: transform var(--animation-duration) ease-in-out;
 }
 
-.logo{
-    height: var(--nav-logo-height);
-}
-
-.burger{
-    padding: .5rem;
-}
-
-
-.nav-fill{
-    position: fixed;
-    width: 100%;
-    height: 32px;
+nav header{
     background-color: var(--nav-bg-color);
-    z-index: 1;
-    box-shadow: 0 5px 5px -5px rgba(0,0,0,0.5);
-
-    transition: height 200ms ease-in-out;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 70px 1fr 70px;
+    grid-template-areas: 
+    "logo title burger";
 }
 
-nav{
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1;
+nav header a{
+    grid-area: logo;
+    justify-self: start;
+    align-self: center;
+}
+
+nav header .title{
+    grid-area: title;
+    justify-self: center;
+    align-self: center;
+    color: var(--nav-font-color);
+}
+
+nav header label{
+    grid-area: burger;
+    justify-self: end;
+    align-self: center;
+
+    margin-right: 5%;
+    cursor: pointer;
 }
 
 nav ul{
-    padding-inline-start: 0;
+    display: flex;
+    flex-direction: column;
     margin-block-start: 0;
     margin-block-end: 0;
+    padding-inline-start: 1rem;
 
-    margin: 0;
-    padding: 0;
-    offset: 0;
-
-    display: grid;
-    grid-template-columns: auto 1fr auto;
-    grid-template-areas:
-    "logo home burger"
-    ". problem ."
-    ". solution ."
-    ". app ."
-    ;
-}
-
-nav ul li{
     list-style: none;
-}
 
-nav ul li:first-child{
-    padding: 0 1rem;
-}
+    font-size: var(--nav-font-size);
 
-nav ul li:nth-child(n+4){
-    margin-top: calc(.6*var(--nav-font-size));
+    background-color: var(--nav-bg-color);
+    transform-origin: top;
+    transform: scale(1,0);
+    transition: transform var(--animation-duration) ease-in-out;
 }
 
 nav ul li a{
-    color: var(--nav-font-color);
     text-decoration: none;
-    font-size: var(--nav-font-size);
-    word-spacing: .1rem;
-    line-height: 1.5rem;
-}
-
-nav ul li:nth-child(1){
-    grid-area: logo;
-    align-self: center;
-    justify-self: center;
-}
-nav ul li:nth-child(2){
-    grid-area: burger;
-}
-nav ul li:nth-child(3){
-    grid-area: home;
-    align-self: center;
-    justify-self: start;
-
-    transform-origin: top;
-    transform: scale(1,0);
-    transition: transform 50ms ease-in-out;
-}
-nav ul li:nth-child(4){
-    grid-area: problem;
-    align-self: center;
-    justify-self: start;
-
-    transform-origin: top;
-    transform: scale(1,0);
-    transition: transform 50ms ease-in-out 50ms;
-}
-nav ul li:nth-child(5){
-    grid-area: solution;
-    align-self: center;
-    justify-self: start;
-
-    transform-origin: top;
-    transform: scale(1,0);
-    transition: transform 50ms ease-in-out 100ms;
-}
-nav ul li:nth-child(6){
-    grid-area: app;
-    align-self: center;
-    justify-self: start;
-
-    transform-origin: top;
-    transform: scale(1,0);
-    transition: transform 50ms ease-in-out 150ms;
+    color: var(--nav-font-color);
 }
 
 nav ul li a:hover{
@@ -160,31 +127,28 @@ nav ul li a.active:hover{
     border-bottom: 1px solid var(--nav-hover-color);
 }
 
-.burger:hover div{
+nav header label:hover .burger div{
     background-color: var(--nav-hover-color);
 }
 
-.push{
-    display: none;
-}
-
-.dropdown-on:checked ~ .nav-fill{
-    height: 138.54px;
-}
-
-.dropdown-on:checked ~ nav ul li:nth-child(n+3){
+/*burger onclick js substitution*/
+.dropdown-on:checked ~ nav ul{
     transform: scale(1,1);
 }
 
-.dropdown-on:checked ~ nav ul li div div:nth-child(1){
+.dropdown-on:checked ~ .nav-fill{
+    height: 175.2px;
+}
+
+.dropdown-on:checked ~ nav header label .burger div:nth-child(1){
     transform: translateY(7px) rotate(45deg);
 }
 
-.dropdown-on:checked ~ nav ul li div div:nth-child(2){
+.dropdown-on:checked ~ nav header label .burger div:nth-child(2){
     opacity: 0;
 }
 
-.dropdown-on:checked ~ nav ul li div div:nth-child(3){
+.dropdown-on:checked ~ nav header label .burger div:nth-child(3){
     transform: translateY(-7px) rotate(-45deg);
 }
 
@@ -193,53 +157,43 @@ nav ul li a.active:hover{
         display: none;
     }
 
+    nav{
+        display: grid;
+        grid-template-columns: 70px 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "logo links";
+    }
+
     .nav-fill{
-        height: 35.51px;
+        height: 53.6px;
+    }
+
+    .title{
+        display: none;
     }
 
     nav ul{
-        display: grid;
-        grid-template-columns: repeat(5, max-content);
-        grid-column-gap: 1rem;
-        grid-template-areas: 
-        "logo home problem solution app burger";
+        display: none;
     }
 
-    nav ul li:nth-child(1){
-        align-self: start;
-        justify-self: center;
-
-        background-color: var(--nav-bg-color);
-        border-radius: 50%;
+    nav ul{
+        grid-area: links;
+        justify-self: start;
+        align-self: center;
+        display: flex;
+        flex-direction: row;
     }
 
-    nav ul li:nth-child(3){
-        margin-top: calc(.6*var(--nav-font-size));
-        align-self: start;
-        justify-self: center;
+    nav ul li:nth-child(n+2){
+        margin-left: 1rem;
     }
-    nav ul li:nth-child(4){
-        align-self: start;
-        justify-self: center;
-    }
-    nav ul li:nth-child(5){
-        align-self: start;
-        justify-self: center;
-    }
-    nav ul li:nth-child(6){
-        align-self: start;
-        justify-self: center;
+
+    .dropdown-on:not(:checked) ~ nav ul{
+        transform: scale(1,1);
     }
 
     .dropdown-on:checked ~ .nav-fill{
-        height: 45px;
-    }
-
-    .dropdown-on:not(:checked) ~ .nav-fill{
-        height: 45px;
-    }
-
-    .dropdown-on:not(:checked) ~ nav ul li:nth-child(n+3){
-        transform: scale(1,1);
+        height: 53.6px;
     }
 }
