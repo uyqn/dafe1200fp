@@ -4,7 +4,7 @@
     --nav-hover-color: #da4302;
     --nav-font-size: 1.2rem;
     --nav-bar-height: calc(2*var(--nav-font-size));
-    --nav-logo-height: calc(4*var(--nav-font-size));
+    --nav-logo-height: 0rem;
     --animation-duration: 400ms;
 }
 
@@ -37,23 +37,27 @@
 
 .logo{
     height: var(--nav-logo-height);
-    padding: 8px;
 }
 
 .burger{
     padding: .5rem;
 }
 
+.nav-fill{
+    position: fixed;
+    width: 100%;
+    height: 32px;
+    background-color: var(--nav-bg-color);
+    z-index: 1;
+
+    transition: height 200ms ease-in-out;
+}
+
 nav{
     position: fixed;
     top: 0;
     width: 100%;
-    background-color: var(--nav-bg-color);
-    padding-bottom: .5rem;
-    z-index: 1;
-
-    clip-path: circle(70px at 100% -10%);
-    transition: clip-path var(--animation-duration) ease-in-out;
+    z-index: 1;   
 }
 
 nav ul{
@@ -61,13 +65,17 @@ nav ul{
     margin-block-start: 0;
     margin-block-end: 0;
 
+    margin: 0;
+    padding: 0;
+    offset: 0;
+
     display: grid;
     grid-template-columns: auto 1fr auto;
     grid-template-areas:
     "logo home burger"
-    "logo problem ."
-    "logo solution ."
-    "logo app ."
+    ". problem ."
+    ". solution ."
+    ". app ."
     ;
 }
 
@@ -75,7 +83,11 @@ nav ul li{
     list-style: none;
 }
 
-nav ul li:nth-child(n+3){
+nav ul li:first-child{
+    padding: 0 1rem;
+}
+
+nav ul li:nth-child(n+4){
     margin-top: calc(.6*var(--nav-font-size));
 }
 
@@ -98,21 +110,37 @@ nav ul li:nth-child(3){
     grid-area: home;
     align-self: center;
     justify-self: start;
+
+    transform-origin: top;
+    transform: scale(1,0);
+    transition: transform 50ms ease-in-out;
 }
 nav ul li:nth-child(4){
     grid-area: problem;
     align-self: center;
     justify-self: start;
+
+    transform-origin: top;
+    transform: scale(1,0);
+    transition: transform 50ms ease-in-out 50ms;
 }
 nav ul li:nth-child(5){
     grid-area: solution;
     align-self: center;
     justify-self: start;
+
+    transform-origin: top;
+    transform: scale(1,0);
+    transition: transform 50ms ease-in-out 100ms;
 }
 nav ul li:nth-child(6){
     grid-area: app;
     align-self: center;
     justify-self: start;
+
+    transform-origin: top;
+    transform: scale(1,0);
+    transition: transform 50ms ease-in-out 150ms;
 }
 
 nav ul li a:hover{
@@ -137,20 +165,12 @@ nav ul li a.active:hover{
     display: none;
 }
 
-/*
-nav:hover{
-    clip-path: circle(150% at 100% 0);
-    transition: clip-path var(--animation-duration) ease-in-out;
+.dropdown-on:checked ~ .nav-fill{
+    height: 138.54px;
 }
 
-nav:hover .burger{
-    opacity: 0;
-    transition: opacity var(--animation-duration) ease-in-out;
-}
-*/
-
-.dropdown-on:checked ~ nav{
-    clip-path: circle(150% at 100% 0);
+.dropdown-on:checked ~ nav ul li:nth-child(n+3){
+    transform: scale(1,1);
 }
 
 .dropdown-on:checked ~ nav ul li div div:nth-child(1){
@@ -170,10 +190,8 @@ nav:hover .burger{
         display: none;
     }
 
-    nav{
-        height: var(--nav-bar-height);
-        clip-path: circle(150% at 100% 0);
-        transition: clip-path var(--animation-duration) ease-in-out;
+    .nav-fill{
+        height: 35.51px;
     }
 
     nav ul{
@@ -189,11 +207,11 @@ nav:hover .burger{
         justify-self: center;
 
         background-color: var(--nav-bg-color);
-        clip-path: circle(49% at 50% 50%);
         border-radius: 50%;
     }
 
     nav ul li:nth-child(3){
+        margin-top: calc(.6*var(--nav-font-size));
         align-self: start;
         justify-self: center;
     }
@@ -208,5 +226,17 @@ nav:hover .burger{
     nav ul li:nth-child(6){
         align-self: start;
         justify-self: center;
+    }
+
+    .dropdown-on:checked ~ .nav-fill{
+        height: 45px;
+    }
+
+    .dropdown-on:not(:checked) ~ .nav-fill{
+        height: 45px;
+    }
+
+    .dropdown-on:not(:checked) ~ nav ul li:nth-child(n+3){
+        transform: scale(1,1);
     }
 }
