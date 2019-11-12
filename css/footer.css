@@ -74,7 +74,7 @@ footer{
     text-align: center;
     padding: 10px;
 }
-@media (max-width: 880px) {
+@media only screen and (max-width: 880px) {
 
     .footer-container{
         font: bold 14px sans-serif;
