@@ -70,7 +70,6 @@
     scroll-margin-top: 53.6px;
 }
 
-<<<<<<< HEAD
 .button:hover{
     cursor:pointer;
 }
@@ -98,8 +97,6 @@ input[type="checkbox"]{
 }
 
 
-=======
->>>>>>> bd6bfbd7d4cba994d08d2073675099ee3f9ce546
 @media only screen and (max-width: 800px) {
     .content{
         margin-left: 5%;
@@ -113,18 +110,9 @@ input[type="checkbox"]{
         display: flex;
     }
 }
-<<<<<<< HEAD
 @media only screen and (max-width: 600px){
         .content p{
         font-size: 16px;
     }
 }
 
-@media screen and (min-width: 600px){
-    #header1, #header2, #header3, header4#{
-        scroll-margin-top: calc(1.2*var(--nav-bar-height));
-    }
-}
-
-=======
->>>>>>> bd6bfbd7d4cba994d08d2073675099ee3f9ce546
