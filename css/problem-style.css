@@ -60,6 +60,10 @@
     outline-color: black;
 }
 
+#header1, #header2, #header3, #header4{
+    scroll-margin-top: 53.6px;
+}
+
 @media only screen and (max-width: 800px) {
     .content{
         margin-left: 5%;
@@ -71,11 +75,5 @@
     }
     .sidebarMob{
         display: flex;
-    }
-}
-
-@media screen and (min-width: 600px){
-    #header1, #header2, #header3, header4#{
-        scroll-margin-top: calc(1.2*var(--nav-bar-height));
     }
 }

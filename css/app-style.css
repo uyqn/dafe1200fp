@@ -95,7 +95,7 @@ input[type="radio"]{
 #slide1:checked ~ .next-slide .next2{
     display: block;
 }
-#slide1:checked ~ .prev-slide .prev5{
+#slide1:checked ~ .prev-slide .prev3{
     display: block;
 }
 /*slide1*/
@@ -116,35 +116,11 @@ input[type="radio"]{
     transform: scale(1,1);
     transform-origin: right;
 }
-#slide3:checked ~ .next-slide .next4{
+#slide3:checked ~ .next-slide .next1{
     display: block;
 }
 #slide3:checked ~ .prev-slide .prev2{
     display: block;
 }
 /*slide3*/
-/*slide4*/
-#slide4:checked ~ .slide4{
-    transform: scale(1,1);
-    transform-origin: right;
-}
-#slide4:checked ~ .next-slide .next5{
-    display: block;
-}
-#slide4:checked ~ .prev-slide .prev3{
-    display: block;
-}
-/*slide4*/
-/*slide5*/
-#slide5:checked ~ .slide5{
-    transform: scale(1,1);
-    transform-origin: right;
-}
-#slide5:checked ~ .next-slide .next1{
-    display: block;
-}
-#slide5:checked ~ .prev-slide .prev4{
-    display: block;
-}
-/*slide5*/
 /*Show*/
