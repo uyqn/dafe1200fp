@@ -66,13 +66,11 @@
     outline-color: black;
 }
 
-.button{
-    background-color: aliceblue;
-    box-shadow: 1px 1px 2px 0px rgba(0,0,0,0.75);
-    padding: 5px;
-    border-radius: 2px;
+#header1, #header2, #header3, #header4{
+    scroll-margin-top: 53.6px;
 }
 
+<<<<<<< HEAD
 .button:hover{
     cursor:pointer;
 }
@@ -100,6 +98,8 @@ input[type="checkbox"]{
 }
 
 
+=======
+>>>>>>> bd6bfbd7d4cba994d08d2073675099ee3f9ce546
 @media only screen and (max-width: 800px) {
     .content{
         margin-left: 5%;
@@ -113,6 +113,7 @@ input[type="checkbox"]{
         display: flex;
     }
 }
+<<<<<<< HEAD
 @media only screen and (max-width: 600px){
         .content p{
         font-size: 16px;
@@ -125,3 +126,5 @@ input[type="checkbox"]{
     }
 }
 
+=======
+>>>>>>> bd6bfbd7d4cba994d08d2073675099ee3f9ce546
