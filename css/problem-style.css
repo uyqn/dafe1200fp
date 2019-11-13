@@ -29,10 +29,10 @@
     position: sticky;
     position: -webkit-sticky;  /*for safari*/
     top: 55px;
-    height: fit-content;
+    height: min-content;
     margin-top: 16%;
-    border-left: solid 1px;
     padding-left: 5px;
+    border-left: 1px solid crimson;
 }
 
 .sidebar a, .sidebarMob a{
