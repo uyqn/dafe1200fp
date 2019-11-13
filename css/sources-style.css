@@ -1,0 +1,11 @@
+.container{
+    flex: 3;
+    margin-left: 12%;
+    margin-top: 30px;
+    margin-right: 10%;
+    background-color: white;
+    padding: 20px;
+}
+h2{
+    font-size: 30px;
+}

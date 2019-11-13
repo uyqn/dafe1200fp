@@ -60,6 +60,31 @@
     outline-color: black;
 }
 
+.button{
+    background-color: aliceblue;
+    box-shadow: 1px 1px 2px 0px rgba(0,0,0,0.75);
+    padding: 5px;
+    border-radius: 2px;
+}
+
+input[type="checkbox"]{
+    display: none;
+}
+
+.readmore1{
+    background-color: aliceblue;
+    height: 0;
+    transform-origin: top;
+    transform: scale(1,0);
+}
+
+.read-more1:checked ~ .readmore1{
+    height: auto;
+    transform: scale(1,1);
+        transition: all 400ms ease-in-out;
+}
+
+
 @media only screen and (max-width: 800px) {
     .content{
         margin-left: 5%;
@@ -79,3 +104,4 @@
         scroll-margin-top: calc(1.2*var(--nav-bar-height));
     }
 }
+
