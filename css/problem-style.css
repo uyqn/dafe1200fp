@@ -22,16 +22,19 @@
 }
 .content p{
     font-size: 22px;
+    letter-spacing: 0.75px;
 }
 .sidebar{
     flex: 1;
-    margin-top: 5%; 
     position: sticky;
     position: -webkit-sticky;  /*for safari*/
-    top: 0;
-    height: 10vh;
-    padding-top: 80px;
+    top: 55px;
+    height: fit-content;
+    margin-top: 16%;
+    border-left: solid 1px;
+    padding-left: 5px;
 }
+
 .sidebar a, .sidebarMob a{
     font-weight: 700; 
     font-size: 22px;
@@ -45,8 +48,11 @@
 .sidebarMob{
     font-size: 22px;
     flex-flow: row wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     display: none;
+}
+.sidebarMob a{
+    margin: 5px;
 }
 .probPicture{
     min-width: 100%;
@@ -64,6 +70,36 @@
     scroll-margin-top: 53.6px;
 }
 
+<<<<<<< HEAD
+.button:hover{
+    cursor:pointer;
+}
+
+input[type="checkbox"]{
+    display: none;
+}
+
+.readmore1, .readmore2{
+    background-color: aliceblue;
+    height: 0;
+    transform-origin: top;
+    transform: scale(1,0);
+}
+
+.read-more1:checked ~ .readmore1{
+    height: auto;
+    transform: scale(1,1);
+        transition: all 400ms ease-in-out;
+}
+.read-more2:checked ~ .readmore2{
+    height: auto;
+    transform: scale(1,1);
+        transition: all 400ms ease-in-out;
+}
+
+
+=======
+>>>>>>> bd6bfbd7d4cba994d08d2073675099ee3f9ce546
 @media only screen and (max-width: 800px) {
     .content{
         margin-left: 5%;
@@ -77,3 +113,18 @@
         display: flex;
     }
 }
+<<<<<<< HEAD
+@media only screen and (max-width: 600px){
+        .content p{
+        font-size: 16px;
+    }
+}
+
+@media screen and (min-width: 600px){
+    #header1, #header2, #header3, header4#{
+        scroll-margin-top: calc(1.2*var(--nav-bar-height));
+    }
+}
+
+=======
+>>>>>>> bd6bfbd7d4cba994d08d2073675099ee3f9ce546
