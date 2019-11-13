@@ -1,5 +1,5 @@
 .main-content{ 
-    height: 100%;
+    height: 100vh;
 }
 
 .span{
@@ -12,7 +12,7 @@
     display: flex;
     flex-direction: row;
     margin-top: -7px;
-    height: 400px;
+    height: 100vh;
     width: 100%;
     background-color: #a0cc78;
 }
@@ -36,7 +36,7 @@
 
 .image img{
     position: absolute;
-    top: 60px;
+    top: 20%;
     right: 100px;
 
 }
