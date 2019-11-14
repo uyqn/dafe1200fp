@@ -8,19 +8,15 @@
     --animation-duration: 400ms;
 }
 
-.dropdown-on{
-    display: none;
-}
-
 .nav-fill{
     position: fixed;
     width: 100%;
     height: 53.6px;
+    background-color: white;
     z-index: 1;
-    background-color: var(--nav-bg-color);
-    transition: height var(--animation-duration) ease-in-out;
 
-    box-shadow: 0px 5px 5px -5px rgba(0,0,0,.5);
+    transition: height 400ms ease-in-out;
+    box-shadow: 0px 5px 5px -5px rgba(0,0,0,0.5);
 }
 
 nav{
@@ -29,189 +25,160 @@ nav{
     z-index: 2;
 }
 
-.title{
-    font-size: 22px;
-    user-select: none;
+/*Header section*/
+nav header{
+    margin: 0;
+    padding: 0;
+    offset: 0;
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
 }
 
-.logo{
+input[type="checkbox"]{
+    display: none;
+}
+
+.logo img{
     height: 3rem;
 }
 
+nav header label{
+    cursor: pointer;
+}
+
 .title{
+    margin: 0 auto;
+    font-size: 1.2rem;
+    color: #444444;
     text-transform: uppercase;
     letter-spacing: 1px;
 }
 
 .burger{
-    margin-right: .5rem;
+    padding: .5rem;
+    padding-left: 30.65px;
 }
 
 .burger div{
     width: 30px;
     height: 2px;
-    background-color: var(--nav-font-color);
+    background-color: #444444;
 }
 
 .burger div:nth-child(1){
-    transform: translateY(0) rotate(0);
-    transition: transform var(--animation-duration) ease-in-out;
+    transform: translateY(0px) rotate(0);
+    transition: transform 400ms ease-in-out;
 }
 
 .burger div:nth-child(2){
-    margin: 5px 0;
+    margin: 5px 0px;
     opacity: 1;
-    transition: opacity var(--animation-duration) ease-in-out;
+    transition: opacity 400ms ease-in-out;
 }
 
 .burger div:nth-child(3){
-    transform: translateY(0) rotate(0);
-    transition: transform var(--animation-duration) ease-in-out;
+    transform: translateY(0px) rotate(0);
+    transition: transform 400ms ease-in-out;
 }
 
-nav header{
-    background-color: var(--nav-bg-color);
-    width: 100%;
-    display: grid;
-    grid-template-columns: 70px 1fr 70px;
-    grid-template-areas: 
-    "logo title burger";
+nav header label:hover .burger div{
+    background-color: #da4302;
 }
+/*Header section*/
 
-nav header a{
-    grid-area: logo;
-    justify-self: start;
-    align-self: center;
-}
-
-nav header .title{
-    grid-area: title;
-    justify-self: center;
-    align-self: center;
-    color: var(--nav-font-color);
-}
-
-nav header label{
-    grid-area: burger;
-    justify-self: end;
-    align-self: center;
-
-    margin-right: 5%;
-    cursor: pointer;
-}
-
+/*List of links section*/
 nav ul{
     display: flex;
     flex-direction: column;
-    margin-block-start: 0;
-    margin-block-end: 0;
-    padding-inline-start: 1rem;
-    padding: 0 .5rem;
-    margin: 0;
+
     offset: 0;
-
-    list-style: none;
-
-    font-size: var(--nav-font-size);
-
-    background-color: var(--nav-bg-color);
-    transform-origin: top;
+    margin: 0;
+    padding: 0;
     transform: scale(1,0);
-    transition: transform var(--animation-duration) ease-in-out;
+    transform-origin: top;
+    transition: transform 400ms ease-in-out;
 }
 
 nav ul li{
-    margin: .1rem 0;
+    padding-left: .5rem;
+    list-style: none;
+    position: relative;
 }
 
 nav ul li a{
     text-decoration: none;
     text-transform: uppercase;
+    color: #444444;
+    font-size: 1.2rem;
     letter-spacing: 1px;
-    color: var(--nav-font-color);
-}
-
-nav ul li a:hover{
-    color: var(--nav-hover-color);
 }
 
 nav ul li a.active{
-    border-top: 1px solid var(--nav-font-color);
-    border-bottom: 1px solid var(--nav-font-color);
+    text-decoration: underline overline;
 }
 
-nav ul li a.active:hover{
-    border-top: 1px solid var(--nav-hover-color);
-    border-bottom: 1px solid var(--nav-hover-color);
+nav ul li a:hover{
+    color: #da4302;
 }
+/*List of links section*/
 
-nav header label:hover .burger div{
-    background-color: var(--nav-hover-color);
-}
-
-/*burger onclick js substitution*/
-.dropdown-on:checked ~ nav ul{
+/*Onclick substitution*/
+#dropdown:checked ~ nav ul{
     transform: scale(1,1);
 }
 
-.dropdown-on:checked ~ .nav-fill{
-    height: 175.2px;
+#dropdown:checked ~ .nav-fill{
+    height: 160px;
 }
 
-.dropdown-on:checked ~ nav header label .burger div:nth-child(1){
+#dropdown:checked ~ nav header label .burger div:nth-child(1){
     transform: translateY(7px) rotate(45deg);
 }
 
-.dropdown-on:checked ~ nav header label .burger div:nth-child(2){
+#dropdown:checked ~ nav header label .burger div:nth-child(2){
     opacity: 0;
 }
 
-.dropdown-on:checked ~ nav header label .burger div:nth-child(3){
+#dropdown:checked ~ nav header label .burger div:nth-child(3){
     transform: translateY(-7px) rotate(-45deg);
 }
+/*Onclick substitution*/
 
 @media screen and (min-width: 600px){
+    .nav-fill{
+        height: 53.6px;
+    }
+    
+    nav header{
+        width: auto;
+    }
+    
+    .title{
+        display: none;
+        margin: 0;
+    }
     .burger{
         display: none;
     }
 
     nav{
-        display: grid;
-        grid-template-columns: 70px 1fr;
-        grid-template-rows: auto;
-        grid-template-areas: 
-        "logo links";
-    }
-
-    .nav-fill{
-        height: 53.6px;
-    }
-
-    .title{
-        display: none;
-    }
-
-    nav ul{
-        display: none;
-    }
-
-    nav ul{
-        grid-area: links;
-        justify-self: start;
-        align-self: center;
         display: flex;
+    }
+
+    nav ul{
         flex-direction: row;
+        align-items: center;
     }
 
-    nav ul li:nth-child(n+2){
-        margin-left: 1rem;
-    }
-
-    .dropdown-on:not(:checked) ~ nav ul{
+    #dropdown:not(:checked) ~ nav ul{
         transform: scale(1,1);
     }
 
-    .dropdown-on:checked ~ .nav-fill{
+    #dropdown:checked ~ .nav-fill{
         height: 53.6px;
     }
 }

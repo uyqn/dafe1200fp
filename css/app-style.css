@@ -32,9 +32,10 @@ input[type="radio"]{
     left: 10%;
     width: 80%;
 
-    display: grid;
-    grid-template-columns: 1fr;
-
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     opacity: 0;
     transition: opacity 500ms ease-in-out;
 }
@@ -42,15 +43,13 @@ input[type="radio"]{
 .slide-img{
     width: 100%;
     height: 100%;
-    display: grid;
-    justify-self: end;
-    align-self: center;
+
+    display: flex;
+    justify-content: center;
 }
 
 .slide-img img{
     height: 50vh;
-    justify-self: center;
-    align-self: center;
 }
 
 .slide-text{
@@ -80,8 +79,8 @@ input[type="radio"]{
 
         margin: 0 auto;
 
-        display: grid;
-        grid-template-columns: auto 1fr;
+        display: flex;
+        flex-direction: row;
     }
 
     .slide-text{
@@ -140,8 +139,8 @@ input[type="radio"]{
 }
 
 .prev-slide label:hover, .next-slide label:hover{
-    border: 1px solid var(--nav-hover-color);
-    color: var(--nav-hover-color);
+    border: 1px solid #da4302;
+    color: #da4302;
     transform: scale(1.5);
 }
 
