@@ -7,7 +7,7 @@ footer{
     position: relative;
     bottom: 0;
     width: 100%;
-    background-color: black;
+    background-color: #222;
 }
 .footer-container{
     position: relative;
@@ -59,14 +59,15 @@ footer{
     text-decoration: underline;
     cursor: pointer;
 }
-.footer-container .topLink-Footer{
-    color: white;
+.topLink-Footer{
+    color: lightgray;
 }
 .footer-copyRight p {
     border-bottom: solid 2px #FFFFFF;
     border-top: solid 2px #FFFFFF;
     text-align: center;
     padding: 10px;
+    color: #FFFFFF;
 }
 @media only screen and (max-width: 880px) {
     .footer-container{
