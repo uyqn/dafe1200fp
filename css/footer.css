@@ -14,7 +14,7 @@ footer{
     width: 76%;
     left: 12%;
     bottom: 0;
-    margin-top: 0px;
+    margin-top: 0;
     padding-top: 30px;
     padding-left: 20px;
     padding-bottom: 10px;
@@ -24,26 +24,21 @@ footer{
     font: 16px sans-serif Arial;
 }
 
-.footer-left{grid-area: footer-left}
-.footer-center{grid-area: footer-center}
-.footer-right{grid-area: footer-right}
-.footer-copyRight{grid-area: footer-copyRight}
-
 .googlePlay, .appStore{
     width: 150px;
+    padding: 10px 10px;
     cursor: pointer;
 }
 
-.footer-container{
-    display: grid;
-    grid-template-columns: 2fr 2fr 1fr;
-    vertical-align: top;
-    grid-template-areas:
-            "footer-left footer-center footer-right"
-            "footer-copyRight footer-copyRight footer-copyRight";
-}
 .footer-left, .footer-center, .footer-right{
+    display: inline-block;
     vertical-align: top;
+}
+.footer-right,.footer-left{
+    width: 25%;
+}
+.footer-center{
+    width: 45%;
 }
 .footer-left ul, .footer-center ul, .footer-right ul{
     padding-inline-start: 0;
@@ -75,32 +70,24 @@ footer{
     padding: 10px;
 }
 @media only screen and (max-width: 880px) {
-
     .footer-container{
         font: bold 14px sans-serif;
         padding-left: 0;
-
     }
     .footer-left, .footer-center, .footer-right{
         width: 100%;
-        margin-bottom: 10px;
         text-align: center;
+    }
+    .footer-center{
+        padding-bottom: 20px;
+        padding-top: 20px;
     }
     .footer-container ul{
         padding-inline-start: 0;
     }
 
-    .googlePlay, .appStore{
-        margin: 10px;
-    }
-    .footer-container{
-        left: 0;
-        width: 100%;
-        grid-template-columns: 1fr;
-        grid-template-areas:
-                "footer-left"
-                "footer-center"
-                "footer-right"
-                "footer-copyRight";
+    .footer-left, .footer-center, .footer-right{
+        display: block;
+        vertical-align: top;
     }
 }
