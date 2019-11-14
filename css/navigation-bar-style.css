@@ -139,7 +139,7 @@ nav ul li a.active:hover{
 }
 
 #dropdown:checked ~ .nav-fill{
-    height: 180px;
+    height: 175.2px;
 }
 
 #dropdown:checked ~ nav header label .burger div:nth-child(1){
