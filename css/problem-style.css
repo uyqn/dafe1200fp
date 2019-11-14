@@ -4,6 +4,7 @@
     flex-flow: row wrap;
     width: 100%;
     margin-bottom: 20px;
+    
 }
 .content{
     flex: 3;
@@ -32,8 +33,9 @@
     top: 55px;
     height: 9%;
     margin-top: 16%;
-    border-left: solid 1px;
     padding-left: 5px;
+    border-left: 0.75px solid black;
+    order: 2;
 }
 
 .sidebar a, .sidebarMob a{

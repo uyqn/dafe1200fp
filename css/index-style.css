@@ -1,3 +1,55 @@
+@-webkit-keyframes animation-app2{
+    0%{
+        opacity: 0;
+    }
+    25%, 50%{
+        opacity: 1;
+    }
+
+    75%, 100%{
+        opacity: 0;
+    }
+}
+
+@keyframes animation-app2{
+    0%{
+        opacity: 0;
+    }
+    25%, 50%{
+        opacity: 1;
+    }
+
+    75%, 100%{
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes animation-app3{
+    0%, 25%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+
+    75%, 100%{
+        opacity: 0;
+    }
+}
+
+@keyframes animation-app3{
+    0%, 25%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+
+    75%, 100%{
+        opacity: 0;
+    }
+}
+
 .main-content{ 
     height: 100vh;
 }
@@ -12,7 +64,7 @@
     display: flex;
     flex-direction: row;
     margin-top: -7px;
-    height: 100vh;
+    height: 80vh;
     width: 100%;
     background-color: #a0cc78;
 }
@@ -38,5 +90,24 @@
     position: absolute;
     top: 20%;
     right: 100px;
+}
 
+img[src="./img/app2.png"]{
+    opacity: 0;
+
+    animation-name: animation-app2;
+    animation-duration: 6s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+}
+
+img[src="./img/app3.png"]{
+    opacity: 0;
+
+    animation-name: animation-app3;
+    animation-duration: 6s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: normal
 }
