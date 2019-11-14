@@ -94,7 +94,6 @@ nav header label:hover .burger div{
 nav ul{
     display: flex;
     flex-direction: column;
-
     offset: 0;
     margin: 0;
     padding: 0;
