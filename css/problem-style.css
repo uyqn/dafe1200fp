@@ -26,13 +26,21 @@
     font-size: 22px;
     letter-spacing: 0.75px;
 }
+
+.links a{  
+    margin-right: 15%;
+    color: black;
+}
+.links a:hover{
+    color: #da4302;
+}
 .sidebar{
     flex: 1;
     position: sticky;
     position: -webkit-sticky;  /*for safari*/
     top: 55px;
     height: 9%;
-    margin-top: 16%;
+    margin-top: 14%;
     padding-left: 5px;
     border-left: 0.75px solid black;
     order: 2;
