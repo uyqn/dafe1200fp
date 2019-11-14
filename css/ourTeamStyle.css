@@ -5,22 +5,46 @@ body{
 }
 .ourTeam{
     position: relative;
-    left: 10%;
+    top: 12%;
+    left: 15%;
     width: 80%;
+    margin-bottom: 10%;
 }
-.team-right{
-    vertical-align: middle;
-}
+
 .team-left,.team-center,.team-right{
-    width: 33%;
+    width: 30%;
     vertical-align: top;
     display: inline-block;
 }
+.team-center{
+    width: 35%;
+}
 .ourTeam img{
-    width: 200px;
+    width: 100%;
+}
+.studie{
+    color: gray;
+    font-size: 17px;
 }
 .member{
-
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    width: 300px;
+    max-width: 300px;
+    text-align: center;
+}
+.btnContact{
+    width: 100%;
+    background-color: #222;
+    color: #FFFFFF;
+    height: 30px;
+    cursor: pointer;
+}
+.btnContact a{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+.btnContact a:visited{
+    text-decoration: none;
 }
 
 
