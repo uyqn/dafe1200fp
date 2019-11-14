@@ -104,6 +104,7 @@ nav ul{
 }
 
 nav ul li{
+    margin: .1rem 0;
     padding-left: .5rem;
     list-style: none;
     position: relative;
@@ -118,11 +119,17 @@ nav ul li a{
 }
 
 nav ul li a.active{
-    text-decoration: underline overline;
+    border-top: 1px solid #444444;
+    border-bottom: 1px solid #444444;
 }
 
 nav ul li a:hover{
     color: #da4302;
+}
+
+nav ul li a.active:hover{
+    border-top: 1px solid #da4302;
+    border-bottom: 1px solid #da4302;
 }
 /*List of links section*/
 
@@ -132,7 +139,7 @@ nav ul li a:hover{
 }
 
 #dropdown:checked ~ .nav-fill{
-    height: 160px;
+    height: 180px;
 }
 
 #dropdown:checked ~ nav header label .burger div:nth-child(1){
