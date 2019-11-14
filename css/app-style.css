@@ -113,6 +113,8 @@ input[type="radio"]{
 
     transform: scale(1.2);
     transition: transform 200ms ease-in-out;
+
+    cursor: pointer;
 }
 
 .prev-slide label{
@@ -133,6 +135,8 @@ input[type="radio"]{
 
     transform: scale(1.2);
     transition: transform 150ms ease-in-out;
+
+    cursor: pointer;
 }
 
 .prev-slide label:hover, .next-slide label:hover{
