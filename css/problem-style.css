@@ -80,9 +80,14 @@
 .content a:focus,.sidebar a:focus, h1:focus, h2:focus, p:focus{
     outline-color: black;
 }
-
-#header1, #header2, #header3, #header4{
-    scroll-margin-top: 53.6px;
+.backtoTop{
+    height: 50px;
+    width: 50px;
+    position: relative;
+    bottom: 60px;
+    background-color: #da4302;
+    left: 80%;
+    border-radius: 2px;
 }
 
 .button{
@@ -93,6 +98,13 @@
     color: #da4302;
 }
 
+#header1, #header2, #header3, #header4{
+    position: relative;
+    bottom: 50px;
+    content: " ";
+}
+
+
 .button:hover{
     cursor:pointer;
 }
@@ -101,12 +113,12 @@ input[type="checkbox"]{
     display: none;
 }
 
-.readmore1, .readmore2{
+/*.readmore1, .readmore2{
     background-color: aliceblue;
     height: 0;
     transform-origin: top;
     transform: scale(1,0);
-}
+}*/
 
 .read-more1:checked ~ .readmore1{
     height: auto;
@@ -137,5 +149,10 @@ input[type="checkbox"]{
         .content p{
         font-size: 16px;
     }
+    .backToTop{
+        left: 85%;
+        bottom: 50px;
+        text-align: center;
+    }
+    
 }
-
