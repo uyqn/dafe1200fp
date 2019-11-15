@@ -8,15 +8,17 @@
         <title>
             Our App
         </title>
+        <link rel="icon" type="image/png" href="../img/logo.png">
+
     </head>
     <body>
-    <input type="checkbox" id="dropdown-on" class="dropdown-on">
+    <input type="checkbox" id="dropdown">
     <div class="nav-fill"></div>
     <nav>
         <header>
-            <a href="../index.html"><img class="logo" src="../img/OsloMet_logo for trykk.png"></a>
+            <a href="../index.html" class="logo"><img src="../img/OsloMet_logo for trykk.png"></a>
             <div class="title">Our App</div>
-            <label for="dropdown-on" class="dropdown">
+            <label for="dropdown">
                 <div class="burger">
                     <div></div>
                     <div></div>
@@ -70,16 +72,18 @@
     </div>
 
     <div class="next-slide">
-        <label for="slide1" class="next1">></label>
-        <label for="slide2" class="next2">></label>
-        <label for="slide3" class="next3">></label>
+        <label for="slide1" class="next1"><div>></div></label>
+        <label for="slide2" class="next2"><div>></div></label>
+        <label for="slide3" class="next3"><div>></div></label>
     </div>
 
-    <div class="prev-slide">
-        <label for="slide1" class="prev1"><</label>
-        <label for="slide2" class="prev2"><</label>
-        <label for="slide3" class="prev3"><</label>
+    <div tabindex="0" class="prev-slide">
+        <label tabindex="0" for="slide1" class="prev1"><div><</div></label>
+        <label tabindex="0" for="slide2" class="prev2"><div><</div></label>
+        <label tabindex="0" for="slide3" class="prev3"><div><</div></label>
     </div>
+
+    <div class="pushApp"></div>
 
     <footer>
 
@@ -89,7 +93,7 @@
                 <ul>
 
                     <li class="topLink-Footer">KlimaPluss</li>
-                    <li class="footer-links"><a>Our team</a></li>
+                    <li class="footer-links"><a href="../html/team.html">Our team</a></li>
                     <li class="footer-links"><a href="../html/sources.html">Sources</a></li>
 
                 </ul>

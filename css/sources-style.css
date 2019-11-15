@@ -1,11 +1,13 @@
 .container{
-    flex: 3;
-    margin-left: 12%;
-    margin-top: 30px;
-    margin-right: 10%;
-    background-color: white;
-    padding: 20px;
+    width: 70%;
+    margin: 0 auto;
+    padding: 100px 0;
 }
+
 h2{
     font-size: 30px;
+}
+
+span{
+    font-style: italic;
 }

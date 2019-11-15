@@ -1,3 +1,21 @@
+@keyframes pilpilnext{
+    from{
+        transform: translateX(-6px);
+    }
+    to{
+        transform: translateX(3px);
+    }
+}
+
+@keyframes pilpilprev {
+    from{
+        transform: translateX(-3px);
+    }
+    to{
+        transform: translateX(6px);
+    }
+}
+
 /*Slides*/
 .push-app{
     width: 100%;
@@ -14,26 +32,24 @@ input[type="radio"]{
     left: 10%;
     width: 80%;
 
-    display: grid;
-    grid-template-columns: 1fr;
-
-    transform: scale(0,1);
-    transform-origin: left;
-    transition: transform 250ms ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 500ms ease-in-out;
 }
 
 .slide-img{
     width: 100%;
     height: 100%;
-    display: grid;
-    justify-self: end;
-    align-self: center;
+
+    display: flex;
+    justify-content: center;
 }
 
 .slide-img img{
     height: 50vh;
-    justify-self: center;
-    align-self: center;
 }
 
 .slide-text{
@@ -51,19 +67,28 @@ input[type="radio"]{
     margin-left: 1rem;
 }
 
-@media screen and (min-width: 600px){
+.pushApp{
+    width: 100%;
+    height: 100px;
+}
+
+@media screen and (min-width: 800px){
     .slide{
         width: 50%;
         left: 25%;
 
         margin: 0 auto;
 
-        display: grid;
-        grid-template-columns: auto 1fr;
+        display: flex;
+        flex-direction: row;
     }
 
     .slide-text{
         align-self: center;
+    }
+
+    .slide-img img{
+        height: 72vh;
     }
 }
 /*Slides*/
@@ -87,6 +112,8 @@ input[type="radio"]{
 
     transform: scale(1.2);
     transition: transform 200ms ease-in-out;
+
+    cursor: pointer;
 }
 
 .prev-slide label{
@@ -107,20 +134,43 @@ input[type="radio"]{
 
     transform: scale(1.2);
     transition: transform 150ms ease-in-out;
+
+    cursor: pointer;
 }
 
 .prev-slide label:hover, .next-slide label:hover{
-    border: 1px solid var(--nav-hover-color);
-    color: var(--nav-hover-color);
+    border: 1px solid #da4302;
+    color: #da4302;
     transform: scale(1.5);
 }
 
-@media screen and (min-width: 600px){
+.next-slide label:hover div{
+    animation-name: pilpilnext;
+    animation-duration: 600ms;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    
+}
+
+.prev-slide label:hover div{
+    animation-name: pilpilprev;
+    animation-duration: 600ms;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.next-slide label div{
+    transform: translateX(0px);
+}
+
+@media screen and (min-width: 800px){
     .next-slide label{
+        top: 40%;
         right: 10%;
     }
 
     .prev-slide label{
+        top: 40%;
         left: 10%;
     }
 }
@@ -130,8 +180,7 @@ input[type="radio"]{
 /*Show*/
 /*slide1*/
 #slide1:checked ~ .slide1{
-    transform: scale(1,1);
-    transform-origin: right;
+    opacity: 1;
 }
 #slide1:checked ~ .next-slide .next2{
     display: block;
@@ -142,8 +191,7 @@ input[type="radio"]{
 /*slide1*/
 /*slide2*/
 #slide2:checked ~ .slide2{
-    transform: scale(1,1);
-    transform-origin: right;
+   opacity: 1;
 }
 #slide2:checked ~ .next-slide .next3{
     display: block;
@@ -154,8 +202,7 @@ input[type="radio"]{
 /*slide2*/
 /*slide3*/
 #slide3:checked ~ .slide3{
-    transform: scale(1,1);
-    transform-origin: right;
+    opacity: 1;
 }
 #slide3:checked ~ .next-slide .next1{
     display: block;

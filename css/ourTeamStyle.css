@@ -4,46 +4,100 @@ body{
     width: 100%;
 }
 .ourTeam{
+    display: flex;
+    flex-wrap: wrap;
     position: relative;
-    left: 10%;
-    width: 80%;
+    top: 12%;
+    left: 7%;
+    width: 90%;
+    margin-bottom: 10%;
 }
-.team-right{
-    vertical-align: middle;
-}
-.team-left,.team-center,.team-right{
-    width: 33%;
-    vertical-align: top;
-    display: inline-block;
-}
+
 .ourTeam img{
-    width: 200px;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    object-position: center;
 }
-.member{
-
+.study{
+    color: gray;
+    font-size: 17px;
 }
-
-
-@media only screen and (max-width: 880px) {
-    .ourTeam ul{
-        grid-template-columns: 1fr 1fr;
-        width: 100%;
-        grid-template-areas:
-                "member1 member2"
-                "member3 member4"
-                " member5 member6";
+.member1,.member2,.member3,.member4,.member5,.member6{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+    width: 15%;
+    max-width: 15%;
+    text-align: center;
+    margin: 3% 0.5%;
+}
+.ourTeam h1{
+    font-size: 18px;
+}
+.btnContact{
+    position: relative;
+    width: 100%;
+    background-color: #222;
+    color: #FFFFFF;
+    height: 40px;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+}
+.btnContact:hover{
+    background-color: gray;
+}
+.school{
+    padding-bottom: 20px;
+}
+.ourTeam p{
+    margin: 0;
+}
+.btnContact a{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+.btnContact a:visited{
+    text-decoration: none;
+}
+@media only screen and (max-width: 1425px) {
+    .ourTeam{
+        left: 8%;
+    }
+    .member1,.member2,.member3,.member4,.member5,.member6{
+        width: 25%;
+        margin: 2.5% 3%;
+        max-width: 25%;
+    }
+    .ourTeam h1{
+        font-size: 22px;
     }
 }
-@media only screen and (max-width: 500px) {
-    .ourTeam ul{
-        grid-template-columns: 1fr;
-        width: 100%;
-        grid-template-areas:
-                "member1"
-                "member2"
-                "member3"
-                "member4"
-                " member5"
-                "member6";
+@media only screen and (max-width: 900px) {
+    .ourTeam{
+        top: 10%;
+        left: 5%;
+    }
+    .member1,.member2,.member3,.member4,.member5,.member6{
+        margin: 5% 5%;
+        width: 40%;
+        max-width: 40%;
+    }
+}
+@media only screen and (max-width: 550px) {
+    .ourTeam{
+        left: 6%;
+        top: 12%;
+        margin-bottom: 30%;
+    }
+    .member1,.member2,.member3,.member4,.member5,.member6{
+        margin: 3% 3%;
+        width: 43%;
+        max-width: 43%;
+    }
+    .ourTeam h1{
+        font-size: 16px;
+    }
+    .btnContact p{
+        font-size: 16px;
     }
 }
