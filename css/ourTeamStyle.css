@@ -24,7 +24,7 @@ body{
     font-size: 17px;
 }
 .member1,.member2,.member3,.member4,.member5,.member6{
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+    box-shadow: 0 4px 8px 0 rgba(0, 0,0,0.7);
     width: 15%;
     max-width: 15%;
     text-align: center;
