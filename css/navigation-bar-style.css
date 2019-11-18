@@ -36,6 +36,8 @@ input[type="checkbox"]{
 .logo{
     display: flex;
     align-items: center;
+
+    padding: 0 .5rem;
 }
 
 .logo img{
@@ -56,7 +58,7 @@ nav header label{
 }
 
 .burger{
-    padding: .5rem 0 0 38.65px;
+    padding: .5rem 17px;
 }
 
 .burger div{
