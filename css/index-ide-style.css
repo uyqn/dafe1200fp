@@ -78,10 +78,10 @@
     font-size: 4vh;
     color: white;
 
-    text-shadow: -1px 1px 0 #207561, 
-                          1px 1px 0 #207561, 
-                         1px -1px 0 #207561, 
-                        -1px -1px 0 #207561; 
+    text-shadow: -1px 1px 0 #222, 
+                          1px 1px 0 #222, 
+                         1px -1px 0 #222, 
+                        -1px -1px 0 #222; 
 }
 
 .tekst p{
@@ -132,7 +132,7 @@
     }
 
     .img{
-        height: 90vw;
+        height: 110vw;
     }
 
     .img{
@@ -184,6 +184,7 @@
     .store{
         height: 15vw;
     }
+
 }
 
 
