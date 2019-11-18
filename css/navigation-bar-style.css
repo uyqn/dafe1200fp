@@ -12,7 +12,7 @@
 nav{
     position: fixed;
     width: 100%;
-    z-index: 2;
+    z-index: 1;
 }
 
 /*Header section*/
@@ -130,12 +130,17 @@ nav ul li a.active:hover{
 /*List of links section*/
 
 /*Onclick substitution*/
+#dropdown:checked ~ nav{
+    z-index: 10;
+}
+
 #dropdown:checked ~ nav ul{
     transform: scale(1,1);
 }
 
 #dropdown:checked ~ .nav-fill{
     height: 230px;
+    z-index: 10;
 }
 
 #dropdown:checked ~ nav header label .burger div:nth-child(1){
