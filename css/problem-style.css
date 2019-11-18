@@ -1,5 +1,5 @@
 
-.container-sources{
+.container{
     display: flex;
     flex-flow: row wrap;
     width: 100%;
@@ -59,7 +59,7 @@
 .sidebarMob{
     font-size: 22px;
     flex-flow: row wrap;
-    justify-content: space-around;
+    justify-content: space-between;
     display: none;
 }
 .sidebarMob a{
@@ -84,15 +84,13 @@
     height: 50px;
     width: 50px;
     position: relative;
-    bottom: 50px;
-    left: 108%;
-    background-color: gray;
-    padding: 5px 5px;
-    border-radius: 10%;
+    left: 50%;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    border-style: solid;   
 }
 .backToTop:hover{
     background-color: #da4302;
-
 }
 
 .button{
@@ -108,6 +106,7 @@
     bottom: 50px;
     content: " ";
 }
+
 
 .button:hover{
     cursor:pointer;
@@ -135,6 +134,7 @@ input[type="checkbox"]{
         transition: all 400ms ease-in-out;
 }
 
+
 @media only screen and (max-width: 800px) {
     .content{
         margin-left: 5%;
@@ -144,18 +144,29 @@ input[type="checkbox"]{
     .sidebar{
         display: none;
     }
-    .sidebarMob{
+    .sidebarMob, .sidebarMob a{
         display: flex;
+    }
+    .content{
+        margin-left: 5%;
+        margin-right: 5%;
     }
 }
 @media only screen and (max-width: 600px){
         .content p{
         font-size: 16px;
     }
+    .sidebarMob a{
+        width: 100%;
+    }
+    
     .backToTop{
-        left: 85%;
-        bottom: 50px;
+        left: 42.5%;
         text-align: center;
     }
+    .probPicture, #probImg{
+        height: 80vw;
+    }
+    
     
 }
