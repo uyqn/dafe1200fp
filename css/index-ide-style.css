@@ -6,7 +6,7 @@
         opacity: 1;
     }
 
-    75%, 100%{
+    51%, 100%{
         opacity: 0;
     }
 }
@@ -19,7 +19,7 @@
         opacity: 1;
     }
 
-    75%, 100%{
+    51%, 100%{
         opacity: 0;
     }
 }
@@ -191,7 +191,7 @@ img[src="./img/app2.png"]{
     opacity: 0;
 
     animation-name: animation-app2;
-    animation-duration: 6s;
+    animation-duration: 8s;
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
     animation-direction: normal;
@@ -201,7 +201,7 @@ img[src="./img/app3.png"]{
     opacity: 0;
 
     animation-name: animation-app3;
-    animation-duration: 6s;
+    animation-duration: 8s;
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
     animation-direction: normal
