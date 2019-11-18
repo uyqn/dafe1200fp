@@ -36,6 +36,8 @@ input[type="checkbox"]{
 .logo{
     display: flex;
     align-items: center;
+
+    padding: 0 .5rem;
 }
 
 .logo img{
@@ -56,7 +58,7 @@ nav header label{
 }
 
 .burger{
-    padding: .5rem 0 0 38.65px;
+    padding: .5rem 17px;
 }
 
 .burger div{
@@ -99,7 +101,7 @@ nav ul{
 }
 
 nav ul li{
-    margin: 0 1rem;
+    margin: .5rem 1rem;
     list-style: none;
     position: relative;
 }
@@ -133,7 +135,7 @@ nav ul li a.active:hover{
 }
 
 #dropdown:checked ~ .nav-fill{
-    height: 175.2px;
+    height: 230px;
 }
 
 #dropdown:checked ~ nav header label .burger div:nth-child(1){
