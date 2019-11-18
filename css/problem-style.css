@@ -80,7 +80,7 @@
 .content a:focus,.sidebar a:focus, h1:focus, h2:focus, p:focus{
     outline-color: black;
 }
-.backtoTop{
+.backToTop{
     height: 50px;
     width: 50px;
     position: relative;

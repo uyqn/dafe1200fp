@@ -43,7 +43,6 @@ input[type="checkbox"]{
     margin: auto 0;
 }
 
-
 nav header label{
     cursor: pointer;
 }
@@ -154,7 +153,6 @@ nav ul li a.active:hover{
     .nav-fill{
         height: 53.6px;
     }
-    
     nav header{
         width: auto;
     }
