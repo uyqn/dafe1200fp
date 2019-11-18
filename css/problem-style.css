@@ -90,12 +90,12 @@
     border-style: solid;   
 }
 .toText{
-    height: 50px;
-    width: 50px;
+    height: 4vw;
+    width: 4vw;
     position: relative;
-    left: 48.5%;
+    margin-top: -15%;
+    margin-left: 48%;
     border-radius: 5px;
-    bottom: 380px;
     border-style: solid;
     border-color: black;
     transform: rotate(180deg);
@@ -118,12 +118,12 @@
     content: " ";
 }
 #mainHeader{
-    font-size: 50px;
+    font-size: 3vw;
     position: relative;
-    bottom: 320px;
+    margin-top: -25%;
     text-align: center;
     width: 26%;
-    left: 37.5%;
+    margin-left: 37.5%;
     border-radius: 5px;
 }
 
