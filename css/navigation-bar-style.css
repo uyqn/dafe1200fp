@@ -166,6 +166,7 @@ nav ul li a.active{
     nav ul{
         flex-direction: row;
         align-items: center;
+        margin-left: auto;
     }
 
     #dropdown:not(:checked) ~ nav ul{
