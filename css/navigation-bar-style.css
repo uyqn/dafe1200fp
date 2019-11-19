@@ -82,10 +82,6 @@ nav header label{
     transform: translateY(0px) rotate(0);
     transition: transform 400ms ease-in-out;
 }
-
-nav header label:hover .burger div{
-    background-color: #da4302;
-}
 /*Header section*/
 
 /*List of links section*/
@@ -117,15 +113,6 @@ nav ul li a{
 nav ul li a.active{
     border-top: 1px solid #444444;
     border-bottom: 1px solid #444444;
-}
-
-nav ul li a:hover{
-    color: #da4302;
-}
-
-nav ul li a.active:hover{
-    border-top: 1px solid #da4302;
-    border-bottom: 1px solid #da4302;
 }
 /*List of links section*/
 
@@ -179,6 +166,7 @@ nav ul li a.active:hover{
     nav ul{
         flex-direction: row;
         align-items: center;
+        margin-left: auto;
     }
 
     #dropdown:not(:checked) ~ nav ul{
@@ -187,5 +175,20 @@ nav ul li a.active:hover{
 
     #dropdown:checked ~ .nav-fill{
         height: 53.6px;
+    }
+}
+
+@media screen and (min-width: 450px){
+    nav ul li a:hover{
+        color: #da4302;
+    }
+    
+    nav ul li a.active:hover{
+        border-top: 1px solid #da4302;
+        border-bottom: 1px solid #da4302;
+    }
+
+    nav header label:hover .burger div{
+        background-color: #da4302;
     }
 }
