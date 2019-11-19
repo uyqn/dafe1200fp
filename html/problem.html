@@ -33,29 +33,28 @@
                 <li><a href="solution.html">Solution</a></li>
                 <li><a href="app.html">Our App</a></li>
             </ul>
-
+            <ul class="download-here">
+                <li><img class="nav-googlePlay" src="../img/googlePlay.png" alt ="Link to Google Play"></li>
+                <li><img class="nav-appStore" src="../img/appStore.png" alt = "Link to Appstore"></li>
+            </ul>
         </nav>
 
         <div class="container">
             <div class="probPicture">
-                <img id="probImg" src="../img/probImg.jpg" alt="Bilde av noe natur?" tabindex=0>
+                
+                <img id="probImg" src="../img/factory%20(3).jpg" alt="Bilde av noe natur?" tabindex=0>
                 <!--https://en.wikipedia.org/wiki/File:Endangered_arctic_-_starving_polar_bear.jpg -->
-
-                <div id="mainHeader"><h1 tabindex=0>Problem</h1></div>
-                   <a href="#header1"><img class="toText" src="../img/upArrow.png" alt="uparrow, picture by TukTukDesign.
-                    Picture retrieved from pixabay"></a>
-
+                <h1 class="mainHeader">Problem</h1>
             </div>
+            
             <div class="sidebar">
                 <p><a href="#header1">Intro</a></p>
                 <p><a href="#header2">What is global warming?</a></p>
                 <p><a href="#header3">Consequences</a></p>
                 <p><a href="#header4">Conclusion</a></p>
             </div>
-
-            <div class="content">
-
-
+            
+            <div class="content">     
 
                 <div class="sidebarMob">
                     <a href="#header1">Intro</a>
@@ -63,17 +62,18 @@
                     <a href="#header3">Consequences</a>
                     <a href="#header4">Conclusion</a>
                 </div>
-
+                
                  <div id="header1"></div>
-
                 <!-- <input type="checkbox" id="read-more1" class="read-more1"> -->
 
                 <div class="text" tabindex=0>
+                    
+                    
                     <h2>Intro</h2>
                     <p>
                         Human-made emission of greenhouse gases poses a significant issue to both natural and human
                         systems. Emissions has caused the average temperature to rise by about 0.8C since 1980, and
-                        each of the last three decades has been warmer than the previous.(Kilde) According to UN
+                        each of the last three decades has been warmer than the previous. According to UN
                         scientists, climate-changes will be impossible to control if we don’t drastically lower the
                         emissions of greenhouse-gases by 2100. The Intergovernmental Panel on Climate Change
                         <a class="site" href="https://www.ipcc.ch/site/assets/uploads/2018/02/AR5_SYR_FINAL_SPM.pdf"
@@ -83,7 +83,7 @@
                         <a class="site" href="https://www.ipcc.ch/site/assets/uploads/2018/02/AR5_SYR_FINAL_SPM.pdf"
                            target="_blank" tabindex=-1> (IPCC, 2014)</a>.
                         According to the World Bank, in 2014 the
-                        world’s CO2 emissions (metric tons per capita) is measured at 4.981 while Norway is at
+                        world’s CO<sub>2</sub> emissions (metric tons per capita) is measured at 4.981 while Norway is at
                         9.271 per capita
                         <a class="cite" href="https://data.worldbank.org/indicator/EN.ATM.CO2E.PC?end=2014&locations=NO-1W&most_recent_value_desc=false&start=1960&view=chart"
                            target="_blank" tabindex=-1>(Bank, n.d.).</a>
@@ -115,15 +115,15 @@
                         through industrial processes, transportation and energy consumption
                         <a class="cite" href="https://www.epa.gov/ghgemissions/overview-greenhouse-gases"
                            target="_blank" tabindex=-1>(EPA, Overview of Greenhouse Gases, n.d.)</a>.
-                        Additionally, other processes such as deforestation reduce the natural means to reduce CO
-                        <sub>2</sub> in the air.
+                        Additionally, other processes such as deforestation reduce the natural means to reduce CO<sub>2</sub> in the air.
                     </p>
 
-                <!-- <label for="read-more1" class="button" tabindex=0 id="readlbl">
-                    Read more
-                </label> !-->
+                    <input type="checkbox" id="read-more1">
+                    <label for="read-more1" tabindex="0">
+                        Read More
+                    </label>
 
-                    <div class="readmore1">
+                    <div class="readmore1" tabindex="0">
                         <p>
                             Methane is a biproduct of agriculture and decomposition of organic materials. Hence,
                             waste management play a significant part in the climate change. Moreover, CH<sub>4</sub>
@@ -166,26 +166,33 @@
                         <a class="cite" href="https://nca2014.globalchange.gov/highlights/report-findings/extreme-weather"
                            target="_blank" tabindex=-1>(Assessment, 2014)</a>.
                     </p>
+                    
+                    <input type="checkbox" id="read-more2">
+                    <label for="read-more2" tabindex="0">
+                        Read More
+                    </label>
 
-                    <p>
-                        Moreover, ocean water acts as a carbon sink meaning it absorbs the available CO<sub>2</sub> in the air
-                        <a class="cite" href="https://ocean-climate.org/?p=3896&lang=en" target="_blank" tabindex=-1>
-                            (Platform, 2016)</a>.
-                        Dissolved CO<sub>2</sub> creates carbonic acid means increase in pH. Thus, harming marine life
-                        for instance species with calcium shells <a class="cite" tabindex=-1>(Ford, 2009)</a>.
-                    </p>
+                    <div class="readmore2" tabindex="0">
+                        <p>
+                            Moreover, ocean water acts as a carbon sink meaning it absorbs the available CO<sub>2</sub> in the air
+                            <a class="cite" href="https://ocean-climate.org/?p=3896&lang=en" target="_blank" tabindex=-1>
+                                (Platform, 2016)</a>.
+                            Dissolved CO<sub>2</sub> creates carbonic acid means increase in pH. Thus, harming marine life
+                            for instance species with calcium shells <a class="cite" tabindex=-1>(Ford, 2009)</a>.
+                        </p>
 
-                    <p>
-                        Global warming is not the only concerns when discussing climate issue. Pollution in general and
-                        typically acid deposition is a great concern as well. Nitrogen oxide can easily combine with
-                        oxygen to create an acidic aqueous solution <a class="cite" tabindex=-1>
-                        (Ford, 2009)</a>. Acid rain greatly impacts crop yields as per
-                        <a class="cite" href="https://www.ipcc.ch/site/assets/uploads/2018/02/AR5_SYR_FINAL_SPM.pdf"
-                           target="_blank" tabindex=-1>(IPCC, 2014)</a>. The damage is not limited to crop yield,
-                        however. Acid rain poses a great risk on both marine species, vegetation and human health
-                        <a class="cite" href="https://www.epa.gov/acidrain/effects-acid-rain" target="_blank"
-                           tabindex=-1>(EPA, Effects of Acid Rain, n.d.)</a>.
-                    </p>
+                        <p>
+                            Global warming is not the only concerns when discussing climate issue. Pollution in general and
+                            typically acid deposition is a great concern as well. Nitrogen oxide can easily combine with
+                            oxygen to create an acidic aqueous solution <a class="cite" tabindex=-1>
+                            (Ford, 2009)</a>. Acid rain greatly impacts crop yields as per
+                            <a class="cite" href="https://www.ipcc.ch/site/assets/uploads/2018/02/AR5_SYR_FINAL_SPM.pdf"
+                            target="_blank" tabindex=-1>(IPCC, 2014)</a>. The damage is not limited to crop yield,
+                            however. Acid rain poses a great risk on both marine species, vegetation and human health
+                            <a class="cite" href="https://www.epa.gov/acidrain/effects-acid-rain" target="_blank"
+                            tabindex=-1>(EPA, Effects of Acid Rain, n.d.)</a>.
+                        </p>
+                    </div>
                 </div>
                 <div id="header4"></div>
                 <div class="text" tabindex=0>
@@ -199,16 +206,17 @@
                             issue. The goal of our solution is to work toward the Paris Agreement and at least meet the
                             2009 Copenhagen goal as a milestone within 5 years.
                         </p>
-                    <div class="links">
-                        <p>
-                            <a href="solution.html">Our solution</a>
-                            <a href="sources.html">List of our sources</a>
-                            
-                        </p>
-                        <a href="#"><img class="backToTop" src="../img/upArrow.png" alt="uparrow, picture by TukTukDesign.
-                    Picture retrieved from pixabay"></a>
                     </div>
-                </div>
+                    <div class="links">
+                        
+                        <p><a href="solution.html">Our solution</a></p>
+                        <p> <a href="sources.html">List of our sources</a></p>
+                            
+                       
+                        <!-- <a href="#"><img class="backToTop" src="../img/upArrow.png" alt="uparrow, picture by TukTukDesign.
+                    Picture retrieved from pixabay"></a>-->
+                    </div>
+                
             </div>
         </div>
         <footer>
@@ -237,7 +245,10 @@
                     <p>&copy; 2019 Climate plus</p>
                 </div>
             </div>
-
+            <div class="styleBox3">
+            </div>
+            <div class="styleBox4">
+            </div>
         </footer>
     </body>
     <!--<script>

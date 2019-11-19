@@ -1,0 +1,114 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: "Bulo";
+    src: url("font-family/Bulo/Bulo\ Hair\ Dark.otf");
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    font-family: "Bulo";
+    font-size: 1.7em;
+}
+
+.tekst{
+    width: 50vw;
+    margin-bottom: 30px;
+}
+
+.tekst img{
+    height: 50px;
+}
+
+.tekst p, .tekst a{
+    color: #4b4b4b;
+    font-weight: bold;
+}
+
+.tekst h1{
+    color: #357376;
+}
+
+.finnes{
+    display:none;
+}
+
+.section1{
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    flex-wrap: wrap;
+
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.section2{
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    flex-wrap: wrap;
+
+    justify-content: space-around;
+    align-items: center; 
+    
+    background-color: #e5dfdf;
+}
+
+.section2 img{
+    margin-top: 20px;
+}
+
+
+.section3{
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    flex-wrap: wrap;
+
+    justify-content: space-around;
+    align-items: center;
+}
+
+@media only screen and (max-width:813px){
+    .section1{
+        flex-direction: column;
+        height: 95vh;
+        text-align: center;
+    }
+    .section2{
+        flex-direction: column;
+        height: auto;
+        text-align: center;
+    }
+    .section3{
+        flex-direction: column;
+        height: auto;
+        text-align: center;
+    }
+
+    .tekst{
+        width: 80vw;
+    }
+
+    .fabrikk img, .folk img, .jordklode img{
+        height:25vw;
+    }
+
+    .jordklode{
+        display: none;
+    }
+
+    .finnes{
+        display: unset;
+    }
+
+    
+}

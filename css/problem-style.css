@@ -5,31 +5,31 @@
     margin-bottom: 20px;
 }
 .content{
-    flex: 3;
-    margin-left: 12%;
-    margin-right: 2%;
+    flex: 4;
+    margin-right: 8%;
     background-color: white;
     padding: 20px;
     width: 100%;
 }
 .content h1{
     text-align: center;
+    position: relative;
+    right: 12%;
     font-size: 50px;
-    color: #6ba8a9;
+    color: #357376;
     
 }
 .content h2{
     font-size: 32px;
-    color: #6ba8a9;
+    color: #357376;
 }
 .content p{
     font-size: 22px;
     letter-spacing: 0.75px;
-    color: #4B4B4B;
+    filter: contrast(150%);
 }
 
 .links a{  
-    margin-right: 15%;
     color: black;
 }
 .links a:hover{
@@ -39,12 +39,13 @@
     flex: 1;
     position: sticky;
     position: -webkit-sticky;  /*for safari*/
-    top: 55px;
-    height: 9%;
+    top: 190px;
+    height: 8%;
     margin-top: 8%;
-    padding-left: 5px;
-    border-left: 0.75px solid black;
-    order: 2;
+    margin-left: 8%;
+    margin-right: 2%;
+    border-right: 0.75px solid black;
+    
 }
 
 .sidebar a, .sidebarMob a{
@@ -52,10 +53,10 @@
     font-size: 22px;
     padding: 0;
     text-decoration: none;
-    color: black;
+    color: #357376;
 }
-.sidebar a:hover, .sidebarMob a:hover{    
-    color: #da4302;
+.sidebar a:hover, .sidebarMob a:hover{   
+    color: #6ba8a9;
 }
 .sidebarMob{
     font-size: 22px;
@@ -67,16 +68,23 @@
     margin: 5px;
 }
 .probPicture{
+    padding-top: 54px;
     width: 100%;
-    height: 47vw;
+    height: 44vw;
 }
 #probImg{
     width: 100%;
-    height: 47vw;
-    object-fit: cover;
+    height: auto;
     object-position: center;
+    filter: brightness(0.5)
 
-
+}
+.mainHeader{
+    position: relative;
+    margin-top: -30%;
+    margin-left: 32%;
+    font-size: 10vw;
+    color: white;
 }
 .content a:focus,.sidebar a:focus, h1:focus, h2:focus, p:focus{
     outline-color: black;
@@ -90,21 +98,9 @@
     margin-bottom: 20px;
     border-style: solid;   
 }
-.toText{
-    height: 4vw;
-    width: 4vw;
-    position: relative;
-    margin-top: -15%;
-    margin-left: 48%;
-    border-radius: 5px;
-    border-style: solid;
-    border-color: black;
-    transform: rotate(180deg);
-}
 .backToTop:hover{
     background-color: #da4302;
 }
-
 .button{
     font-size: 22px;
     font-weight: 700;
@@ -118,15 +114,6 @@
     bottom: 50px;
     content: " ";
 }
-#mainHeader{
-    font-size: 3vw;
-    position: relative;
-    margin-top: -25%;
-    text-align: center;
-    width: 26%;
-    margin-left: 37.5%;
-    border-radius: 5px;
-}
 
 .button:hover{
     cursor:pointer;
@@ -136,30 +123,50 @@ input[type="checkbox"]{
     display: none;
 }
 
-/*.readmore1, .readmore2{
-    background-color: aliceblue;
+.readmore1, .readmore2{
     height: 0;
-    transform-origin: top;
     transform: scale(1,0);
-}*/
+    transform-origin: top;
+}
 
-.read-more1:checked ~ .readmore1{
+input[id="read-more1"]:checked ~ .readmore1{
     height: auto;
     transform: scale(1,1);
-        transition: all 400ms ease-in-out;
+    transition: all 250ms ease-in-out;
 }
-.read-more2:checked ~ .readmore2{
+
+input[id="read-more2"]:checked ~ .readmore2{
     height: auto;
     transform: scale(1,1);
-        transition: all 400ms ease-in-out;
+    transition: all 250ms ease-in-out;
+}
+
+label[for="read-more1"]:focus ~ .readmore1{
+    height: auto;
+    transform: scale(1,1);
+    transition: all 250ms ease-in-out;
+}
+label[for="read-more2"]:focus ~ .readmore2{
+    height: auto;
+    transform: scale(1,1);
+    transition: all 250ms ease-in-out;
+}
+
+.readmore1:focus{
+    height: auto;
+    transform: scale(1,1);
+}
+
+.readmore2:focus{
+    height: auto;
+    transform: scale(1,1);
+}
+
+label[for="read-more1"], label[for="read-more2"]{
+    /* Legg til styling here Anders */
 }
 
 
-@media only screen and (max-width: 800px) {
-    .content{
-        margin-left: 5%;
-    }
-}
 @media only screen and (max-width: 800px){
     .sidebar{
         display: none;
@@ -171,8 +178,8 @@ input[type="checkbox"]{
         margin-left: 5%;
         margin-right: 5%;
     }
-    .backToTop{
-        left: 46%;
+    .content h1{
+        left: 0%;
     }
 }
 @media only screen and (max-width: 600px){
@@ -184,12 +191,8 @@ input[type="checkbox"]{
     }
     
     .backToTop{
-        left: 42.5%;
+        margin-left: -4%;
         text-align: center;
     }
-    .probPicture, #probImg{
-        height: 80vw;
-    }
-    
     
 }

@@ -1,0 +1,26 @@
+.styleBox{
+    position: absolute;
+    /*ottom: -79px;*/
+    bottom: 68px;
+    left: 0;
+    /*clip-path: polygon(100% 0, 0 0, 0 100%);*/
+    clip-path: polygon(0 0, 0% 100%, 100% 100%);
+    background-color: #357376;
+    height: 80px;
+    width: 100%;
+}
+.styleBox2{
+    position: absolute;
+    /*bottom: -49px;*/
+    bottom: 68px;
+    left: 0;
+    /*clip-path: polygon(100% 0, 0 0, 100% 100%);*/
+    clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+    background-color: #6ba8a9;
+    height: 50px;
+    width: 100%;
+}
+#probImg{
+    height: 44vw;
+    object-fit: cover;
+}
