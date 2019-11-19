@@ -15,21 +15,21 @@
 .content h1{
     text-align: center;
     font-size: 50px;
-    color: #6ba8a9;
+    color: #357376;
     
 }
 .content h2{
     font-size: 32px;
-    color: #6ba8a9;
+    color: #357376;
 }
 .content p{
     font-size: 22px;
     letter-spacing: 0.75px;
-    color: #4B4B4B;
+    color: #357376;
+    filter: contrast(150%);
 }
 
 .links a{  
-    margin-right: 15%;
     color: black;
 }
 .links a:hover{
@@ -68,7 +68,7 @@
 .probPicture{
     padding-top: 54px;
     width: 100%;
-    height: 600px;
+    height: 550px;
     overflow: hidden;
 }
 #probImg{
@@ -93,22 +93,6 @@
 .backToTop:hover{
     background-color: #da4302;
 }
-.toText{
-    height: 4vw;
-    width: 4vw;
-    position: relative;
-    margin-top: -15%;
-    margin-left: 48%;
-    border-radius: 5px;
-    transform: rotate(180deg);
-    background-color: white;
-    opacity: 0.8;
-}
-.toText:hover{
-    cursor: pointer;
-    
-} 
-
 .button{
     font-size: 22px;
     font-weight: 700;
@@ -219,10 +203,5 @@ label[for="read-more1"], label[for="read-more2"]{
     .probPicture, #probImg{
         height: 80vw;
     }
-    .toText{
-        height: 6vw;
-        width: 6vw;
-    }
-
     
 }
