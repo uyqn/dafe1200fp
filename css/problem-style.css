@@ -14,13 +14,15 @@
 }
 .content h1{
     text-align: center;
+    position: relative;
+    right: 12%;
     font-size: 50px;
-    color: #6ba8a9;
+    color: #357376;
     
 }
 .content h2{
     font-size: 32px;
-    color: #6ba8a9;
+    color: #357376;
 }
 .content p{
     font-size: 22px;
@@ -107,15 +109,6 @@
     bottom: 50px;
     content: " ";
 }
-#mainHeader{
-    font-size: 3vw;
-    position: relative;
-    margin-top: -25%;
-    text-align: center;
-    width: 26%;
-    margin-left: 37.5%;
-    border-radius: 5px;
-}
 
 .button:hover{
     cursor:pointer;
@@ -125,22 +118,47 @@ input[type="checkbox"]{
     display: none;
 }
 
-/*.readmore1, .readmore2{
-    background-color: aliceblue;
+.readmore1, .readmore2{
     height: 0;
-    transform-origin: top;
     transform: scale(1,0);
-}*/
-
-.read-more1:checked ~ .readmore1{
-    height: auto;
-    transform: scale(1,1);
-        transition: all 400ms ease-in-out;
+    transform-origin: top;
 }
-.read-more2:checked ~ .readmore2{
+
+input[id="read-more1"]:checked ~ .readmore1{
     height: auto;
     transform: scale(1,1);
-        transition: all 400ms ease-in-out;
+    transition: all 250ms ease-in-out;
+}
+
+input[id="read-more2"]:checked ~ .readmore2{
+    height: auto;
+    transform: scale(1,1);
+    transition: all 250ms ease-in-out;
+}
+
+label[for="read-more1"]:focus ~ .readmore1{
+    height: auto;
+    transform: scale(1,1);
+    transition: all 250ms ease-in-out;
+}
+label[for="read-more2"]:focus ~ .readmore2{
+    height: auto;
+    transform: scale(1,1);
+    transition: all 250ms ease-in-out;
+}
+
+.readmore1:focus{
+    height: auto;
+    transform: scale(1,1);
+}
+
+.readmore2:focus{
+    height: auto;
+    transform: scale(1,1);
+}
+
+label[for="read-more1"], label[for="read-more2"]{
+    /* Legg til styling here Anders */
 }
 
 
