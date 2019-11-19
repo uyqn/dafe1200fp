@@ -103,6 +103,8 @@ nav ul li{
 }
 
 nav ul li a{
+    font-family: "Computer Modern";
+    font-weight: normal;
     text-decoration: none;
     text-transform: uppercase;
     color: #444444;

@@ -8,6 +8,11 @@
     src: url("../font-family/cmunss.otf");
 }
 
+@font-face{
+    font-family: "bulo";
+    src: url("../font-family/Bulo/Bulo\ Hair\ Dark.otf")
+}
+
 :root{
     --nav-color: white;
     --side-nav-color: black;
@@ -20,7 +25,8 @@ html, body{
     padding: 0;
     width: 100%;
     height: 100%;
-    font-family: "Computer Modern", sans-serif;
+    font-family: "bulo", "Computer Modern", sans-serif;
+    font-weight: bold;
     scroll-behavior: smooth;
     background-color: white;
 }
