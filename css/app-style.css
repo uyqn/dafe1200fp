@@ -17,9 +17,28 @@
 }
 
 /*Slides*/
+.styleBox{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    clip-path: polygon(0 0, 0% 100%, 100% 100%);
+    background-color: #357376;
+    height: 150px;
+    width: 100%;
+}
+.styleBox2{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+    background-color: #6ba8a9;
+    height: 100px;
+    width: 100%;
+}
+
 .push-app{
     width: 100%;
-    height: 80vh;
+    height: 100vh;
 }
 
 input[type="radio"]{
@@ -68,11 +87,6 @@ input[type="radio"]{
     margin-left: 1rem;
 }
 
-.pushApp{
-    width: 100%;
-    height: 100px;
-}
-
 @media screen and (min-width: 800px){
     .slide{
         width: 50%;
@@ -90,6 +104,13 @@ input[type="radio"]{
 
     .slide-img img{
         height: 72vh;
+    }
+
+    .styleBox{
+        height: 300px
+    }
+    .styleBox2{
+        height: 200px
     }
 }
 /*Slides*/
@@ -214,23 +235,4 @@ input[type="radio"]{
         animation-iteration-count: infinite;
         animation-direction: alternate;
     }
-}
-
-.styleBox{
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    clip-path: polygon(0 0, 0% 100%, 100% 100%);
-    background-color: #357376;
-    height: 300px;
-    width: 100%;
-}
-.styleBox2{
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    clip-path: polygon(100% 0, 0% 100%, 100% 100%);
-    background-color: #6ba8a9;
-    height: 200px;
-    width: 100%;
 }
