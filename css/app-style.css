@@ -46,9 +46,7 @@
 input[type="radio"]{
     display: none;
 }
-.contentApp{
-    margin-bottom: 160px;
-}
+
 
 .slide{
     position: absolute;
@@ -95,13 +93,11 @@ input[type="radio"]{
     margin-left: 1rem;
 }
 
-<<<<<<< HEAD
 
-=======
 .pushApp{
     height: 5vh;
 }
->>>>>>> master
+
 
 @media screen and (min-width: 800px){
     .slide{
@@ -270,7 +266,6 @@ input[type="radio"]{
         animation-iteration-count: infinite;
         animation-direction: alternate;
     }
-<<<<<<< HEAD
 }
 
 .styleBox{
@@ -305,6 +300,4 @@ input[type="radio"]{
     position: absolute;
     left: 0;
     bottom: 0;
-=======
->>>>>>> master
 }
