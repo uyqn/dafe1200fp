@@ -29,6 +29,10 @@ nav header{
     align-items: center;
 }
 
+input[type="checkbox"]{
+    display: none;
+}
+
 .logo{
     display: flex;
     align-items: center;
