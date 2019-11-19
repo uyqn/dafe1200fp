@@ -138,27 +138,6 @@ input[type="radio"]{
     cursor: pointer;
 }
 
-.prev-slide label:hover, .next-slide label:hover{
-    border: 1px solid #da4302;
-    color: #da4302;
-    transform: scale(1.5);
-}
-
-.next-slide label:hover div{
-    animation-name: pilpilnext;
-    animation-duration: 600ms;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-    
-}
-
-.prev-slide label:hover div{
-    animation-name: pilpilprev;
-    animation-duration: 600ms;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-}
-
 .next-slide label div{
     transform: translateX(0px);
 }
@@ -212,3 +191,26 @@ input[type="radio"]{
 }
 /*slide3*/
 /*Show*/
+
+@media screen and (min-width: 450px){
+    .prev-slide label:hover, .next-slide label:hover{
+        border: 1px solid #da4302;
+        color: #da4302;
+        transform: scale(1.5);
+    }
+    
+    .next-slide label:hover div{
+        animation-name: pilpilnext;
+        animation-duration: 600ms;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        
+    }
+    
+    .prev-slide label:hover div{
+        animation-name: pilpilprev;
+        animation-duration: 600ms;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+    }
+}
