@@ -6,9 +6,8 @@
     
 }
 .content{
-    flex: 3;
-    margin-left: 12%;
-    margin-right: 2%;
+    flex: 4;
+    margin-right: 4%;
     background-color: white;
     padding: 20px;
     width: 100%;
@@ -40,12 +39,11 @@
     flex: 1;
     position: sticky;
     position: -webkit-sticky;  /*for safari*/
-    top: 55px;
-    height: 9%;
+    top: 190px;
+    height: 8%;
     margin-top: 8%;
-    padding-left: 5px;
-    border-left: 0.75px solid black;
-    order: 2;
+    padding-left: 20px;
+    border-right: 0.75px solid black;
 }
 
 .sidebar a, .sidebarMob a{
@@ -68,15 +66,16 @@
     margin: 5px;
 }
 .probPicture{
+    padding-top: 54px;
     width: 100%;
-    height: 47vw;
+    height: 600px;
+    overflow: hidden;
 }
 #probImg{
     width: 100%;
-    height: 47vw;
-    object-fit: cover;
+    height: auto;
     object-position: center;
-
+    filter: contrast(150%);
 
 }
 .content a:focus,.sidebar a:focus, h1:focus, h2:focus, p:focus{
@@ -91,6 +90,9 @@
     margin-bottom: 20px;
     border-style: solid;   
 }
+.backToTop:hover{
+    background-color: #da4302;
+}
 .toText{
     height: 4vw;
     width: 4vw;
@@ -98,13 +100,14 @@
     margin-top: -15%;
     margin-left: 48%;
     border-radius: 5px;
-    border-style: solid;
-    border-color: black;
     transform: rotate(180deg);
+    background-color: white;
+    opacity: 0.8;
 }
-.backToTop:hover{
-    background-color: #da4302;
-}
+.toText:hover{
+    cursor: pointer;
+    
+} 
 
 .button{
     font-size: 22px;
@@ -185,12 +188,16 @@ input[type="checkbox"]{
     }
     
     .backToTop{
-        left: 42.5%;
+        margin-left: -4%;
         text-align: center;
     }
     .probPicture, #probImg{
         height: 80vw;
     }
-    
+    .toText{
+        height: 6vw;
+        width: 6vw;
+    }
+
     
 }
