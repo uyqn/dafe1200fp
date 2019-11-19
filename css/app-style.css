@@ -25,6 +25,7 @@
     background-color: #357376;
     height: 150px;
     width: 100%;
+    transition: height 250ms ease-in-out;
 }
 .styleBox2{
     position: absolute;
@@ -34,6 +35,7 @@
     background-color: #6ba8a9;
     height: 100px;
     width: 100%;
+    transition: height 250ms ease-in-out;
 }
 
 .push-app{
