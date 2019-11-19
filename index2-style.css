@@ -1,0 +1,66 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: "Bulo";
+    src: url("font-family/Bulo/Bulo\ Hair\ Dark.otf");
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    font-family: "Bulo";
+    font-size: 2em;
+}
+
+.tekst{
+    width: 50vw;
+}
+
+.tekst p{
+    color: black;
+    font-weight: bold;
+}
+
+.tekst h1{
+    color: #357376;
+}
+
+
+.section1{
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    flex-wrap: wrap;
+
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.section2{
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    flex-wrap: wrap;
+
+    justify-content: space-around;
+    align-items: center; 
+    
+    background-color: #e5dfdf;
+}
+
+
+.section3{
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    flex-wrap: wrap;
+
+    justify-content: space-around;
+    align-items: center;
+}
