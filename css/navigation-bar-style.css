@@ -3,7 +3,7 @@
     width: 100%;
     height: 53.6px;
     background-color: white;
-    z-index: 1;
+    z-index: 3;
 
     transition: height 400ms ease-in-out;
     box-shadow: 0px 5px 5px -5px rgba(0,0,0,0.5);
@@ -12,7 +12,7 @@
 nav{
     position: fixed;
     width: 100%;
-    z-index: 1;
+    z-index: 3;
 }
 
 /*Header section*/
@@ -114,6 +114,21 @@ nav ul li a.active{
     border-top: 1px solid #444444;
     border-bottom: 1px solid #444444;
 }
+
+.download-here{
+    margin: 0;
+    padding: 0;
+    display:none;
+}
+
+.download-here li{
+    padding: 0;
+}
+
+.download-here li img{
+    padding: 0;
+    height: 2.5rem;
+}
 /*List of links section*/
 
 /*Onclick substitution*/
@@ -143,7 +158,11 @@ nav ul li a.active{
 }
 /*Onclick substitution*/
 
-@media screen and (min-width: 600px){
+@media screen and (min-width: 900px){
+    .download-here{
+        display: block;
+    }
+
     .nav-fill{
         height: 53.6px;
     }
@@ -161,12 +180,24 @@ nav ul li a.active{
 
     nav{
         display: flex;
+        align-items: flex-start;
     }
 
     nav ul{
         flex-direction: row;
         align-items: center;
-        margin-left: auto;
+        margin: .4rem .5rem 0 auto;
+    }
+
+    .download-here{
+        margin: 0;
+        padding: 0;
+        display:flex;
+        align-items: flex-start;
+    }
+
+    .download-here li img{
+        height: 2.5rem;
     }
 
     #dropdown:not(:checked) ~ nav ul{
