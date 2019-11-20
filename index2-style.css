@@ -76,10 +76,22 @@ body{
     align-items: center; 
     
     background-color: #e5dfdf;
+    
+
+    transform: skewY(3deg);
+    -webkit-transform: skewY(3deg);
 }
 
 .section2 img{
     margin-top: 20px;
+
+    transform: skewY(-3deg);
+    -webkit-transform: skewY(-3deg);
+}
+
+.section2 .tekst{
+    transform: skewY(-3deg);
+    -webkit-transform: skewY(-3deg);
 }
 
 
