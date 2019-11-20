@@ -1,7 +1,7 @@
 @import url("navigation-bar-style.css");
 @import url("sideNavigation.css");
 @import url("footer.css");
-@import url("reference-style.css");
+@import url("sources-style.css");
 
 @font-face {
     /*font-family: 'Titillium', sans-serif;*/
@@ -15,7 +15,7 @@
 
 @font-face{
     font-family: "bulo";
-    src: url("../font-family/Bulo/Bulo\ Hair\ Dark.otf")
+    src: url("../font-family/Bulo/Bulo Hair Dark.otf");
 }
 
 :root{
