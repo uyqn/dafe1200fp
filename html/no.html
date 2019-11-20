@@ -6,81 +6,78 @@
         <title>Klima+</title>
         <meta name='viewport' content='width=device-width, initial-scale=1'>
         <link rel='stylesheet' type='text/css' media='screen' href='../index2-style.css'>
-        <link rel="stylesheet" type="text/css" href="../css/navigation-bar-style.css">
-        <link rel="stylesheet" type="text/css" href="../css/main.css">
+    <link rel="stylesheet" type="text/css" href="../css/navigation-bar-style.css">
+    <link rel="stylesheet" type="text/css" href="../css/main.css">
+    <link rel="stylesheet" type="text/css" href="../css/app-style.css">
     </head>
     <body>
         <input type="checkbox" id="dropdown">
-        <div class="nav-fill"></div>
-        <nav>
-            <header>
-                <a href="../html/no.html" class="logo"><img alt="Our logo" src="../img/logoForTittel.png"></a>
-                <div class="title">Hjem</div>
-                <label for="dropdown">
-                    <div class="burger">
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                    </div>
-                </label>
-            </header>
+        <nav tabindex="0">
+            <a href="index.html" class="logo"><img alt="Our logo" src="../img/logo.png"></a>
 
-            <ul>
-                <li><a class="active" href="#">Hjem</a></li>
-                <li><a href="../html/no/problem.html">Problem</a></li>
-                <li><a href="../html/no/løsning.html">Løsning</a></li>
-                <li><a href="../html/no/app.html">Vår App</a></li>
+            <div tabindex="0" class="title">Hjem</div>
+
+            <label for="dropdown">
+                <div class="burger">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </label>
+        
+            <ul class="nav-links">
+                <li><a class="active" href="#index">Hjem</a></li>
+                <li><a href="./no/problem.html">Problem</a></li>
+                <li><a href="./no/løsning.html">Løsning</a></li>
+                <li><a href="./no/app.html">Vår App</a></li>
             </ul>
-            <ul class="download-here">
-                <li><a href="../html/no.html">Norsk</a></li>
+            <ul class="language">
+                <li><a class="active" href="#index">Norsk</a></li>
                 <li><a href="../index.html">English</a></li>
             </ul>
         </nav>
 
-        <div class = "main">
+        <div class = "main" id="index">
 
             <div class = "section1">
                 <div class ="tekst">
-                    <h1>Save the world</h1>
+                    <h1>Redd verden</h1>
                     <img class = "finnes" src = "../img/earth-green.png">
-                    <p>Get together with your friends and start
-                        saving the world today.</p>
+                    <p>Samle vennene dine og begynn å redde verden i dag.</p>
 
                     <img class="nav-googlePlay" src="../img/googlePlay.png" alt ="Link to Google Play">
                     <img class="nav-appStore" src="../img/appStore.png" alt = "Link to Appstore">
                 </div>
                 <div class = "jordklode">
-                    <img src = "../img/earth-green.png">
+                    <img src = "../img/world.png" height="500" width="500">
                 </div>
             </div>
 
             <div class = "section2">
                 <div class = "fabrikk">
-                    <img src="../img/fabrikk.png">
+                    <img src="../img/fabrikk.png" height="500" width="500">
                 </div>
                 <div class = tekst>
                     <h1>Problem</h1>
-                    <p>The single biggest problem mankind faces today
-                        is the enviromental crisis. High emission-rates and waste of resources
-                        are just some of the many causes for it, that we as a society are behind.</p>
+                    <p>Det aller største problemet menneskeheten står overfor i dag er miljøkrisen. Høye utslippstall
+                        og sløsingen av ressurser er bare noen av de mange årsakene til vi som samfunn står bak.</p>
 
-                    <a href="../html/no/problem.html">Read more</a>
+                    <a href="../html/no/problem.html">Les mer</a>
                 </div>
             </div>
 
             <div class = "section3">
                 <div class = "tekst">
-                    <h1>Solution</h1>
-                    <p>Although we cannot fix the entire enviromental crisis with one app, small
-                        steps in the right direction can make a big difference. We want to make it easier
-                        for people to make conscious choices in their everyday life, together with their friends.
-                        Little by little, we'll make those steps towards a better world a little shorter.
-                    </p>
+                    <h1>Løsning</h1>
+                    <p>Selv om vi ikke kan fikse hele miljøkrisen med én enkelt app, kan små skritt i riktig retning
+                        gjøre en stor forskjell. Vi ønsker å gjøre det lettere for mennesker å ta bevisste valg i
+                        hverdagen, sammen med vennene sine. Litt etter litt, vil gjøre skrittene mot en bedre verden,
+                        litt kortere.</p>
 
-                    <a href = "../html/no/løsning.html">Read more</a>
+                    <a href = "../html/no/løsning.html">Les mer</a>
                 </div>
                 <div class = "folk">
-                    <img src="../img/folk.png">
+                    <img src="../img/folk.png" height="500" width="500">
                 </div>
             </div>
         </div>

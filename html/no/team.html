@@ -7,38 +7,38 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <link rel="stylesheet" type="text/css" href="../../css/ourTeamStyle.css">
         <link rel="stylesheet" type="text/css" href="../../css/main.css">
-        <title>Our Team</title>
+        <title>Vårt team</title>
         <link rel="icon" type="image/png" href="../../img/logo.png">
 
     </head>
     <body>
-        <input id="dropdown" type="checkbox">
-        <div class="nav-fill"></div>
-        <nav>
-            <header>
-                <a href="../../html/no.html" class="logo"><img alt="Our logo" src="../../img/logoForTittel.png"></a>
-                <div class="title">Our Team</div>
-                <label for="dropdown">
-                    <div class="burger">
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                    </div>
-                </label>
-            </header>
-            <ul>
-                <li><a href="../../html/no.html">Hjem</a></li>
-                <li><a href="../../html/no/problem.html">Problem</a></li>
-                <li><a  href="../../html/no/løsning.html">Løsning</a></li>
-                <li><a  href="../../html/no/app.html">Vår App</a></li>
+        <input type="checkbox" id="dropdown">
+        <nav tabindex="0">
+            <a href="index.html" class="logo"><img alt="Our logo" src="../../img/logo.png"></a>
+
+            <div tabindex="0" class="title">Vårt team</div>
+
+            <label for="dropdown">
+                <div class="burger">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </label>
+        
+            <ul class="nav-links">
+                <li><a href="../no.html">Hjem</a></li>
+                <li><a href="#problem">Problem</a></li>
+                <li><a href="løsning.html">Løsning</a></li>
+                <li><a href="app.html">Vår App</a></li>
             </ul>
-            <ul class="download-here">
-                <li><a href="../../html/no/team.html">Norsk</a></li>
+            <ul class="language">
+                <li><a class="active" href="#team">Norsk</a></li>
                 <li><a href="../team.html">English</a></li>
             </ul>
         </nav>
 
-        <section class="ourTeam">
+        <section class="ourTeam" id="team">
 
             <div class="member1">
                 <img alt="Picture of Mohamed K. Harate" src="../../img/mohamedImg.jpg" >

@@ -117,13 +117,15 @@
     width: 120px;
     padding-bottom: 10px;
     color: white;
-    font-family: "Bulo";
+    cursor: pointer;
+    font-family:  "Bulo";
     font-weight: bolder;
     font-size: 20px;
     box-shadow: 3px 3px 5px 0 grey;
 }
 .buttonStyle:hover{
     background-color: #1d4d4f;
+
     transition: 0.4s;
 }
 .backToTop:hover{
@@ -132,6 +134,8 @@
 .button{
     font-size: 22px;
     font-weight: 700;
+
+
 }
 .button:hover{
     color: #da4302;
