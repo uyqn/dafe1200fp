@@ -66,6 +66,10 @@ body{
 
 }
 
+.jordklode img{
+    width: 30vw;
+}
+
 .section2{
     display: flex;
     flex-direction: row;
@@ -94,6 +98,10 @@ body{
     -webkit-transform: skewY(-3deg);
 }
 
+.fabrikk img{
+    width: 30vw;
+}
+
 
 .section3{
     display: flex;
@@ -103,6 +111,10 @@ body{
 
     justify-content: space-around;
     align-items: center;
+}
+
+.folk img{
+    width: 30vw;
 }
 
 @media only screen and (max-width:813px){
@@ -124,18 +136,24 @@ body{
 
     .tekst{
         width: 80vw;
+        font-size: 4.5vw;
+
     }
 
     .fabrikk img, .folk img, .jordklode img{
-        height:25vw;
+        height:50vw;
     }
 
-    .jordklode{
+    .jordklode, .folk, .fabrikk{
         display: none;
     }
 
     .finnes{
         display: unset;
+    }
+
+    .finnes img{
+        width: 20vw;
     }
 
     
