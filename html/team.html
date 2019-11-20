@@ -12,33 +12,33 @@
 
     </head>
     <body>
-        <input id="dropdown" type="checkbox">
-        <div class="nav-fill"></div>
-        <nav>
-            <header>
-                <a href="../index.html" class="logo"><img alt="Our logo" src="../img/logo.png"></a>
-                <div class="title">Our Team</div>
-                <label for="dropdown">
-                    <div class="burger">
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                    </div>
-                </label>
-            </header>
-            <ul>
-                <li><a href="../index.html" title="Go to Home">Home</a></li>
-                <li><a href="problem.html" title="Go to Problem">Problem</a></li>
-                <li><a href="solution.html" title="Go to Solution">Solution</a></li>
-                <li><a href="app.html" title="Go to Our App">Our App</a></li>
+        <input type="checkbox" id="dropdown">
+        <nav tabindex="0">
+            <a href="../index.html" class="logo"><img alt="Our logo" src="../img/logo.png"></a>
+
+            <div tabindex="0" class="title">Our Team</div>
+
+            <label for="dropdown">
+                <div class="burger">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </label>
+        
+            <ul class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="problem.html">Problem</a></li>
+                <li><a href="solution.html">Solution</a></li>
+                <li><a href="app.html">Our App</a></li>
             </ul>
-            <ul class="download-here">
-                <li><a href="../html/no/team.html">Norsk</a></li>
-                <li><a href="../html/team.html">English</a></li>
+            <ul class="language">
+                <li><a href="./no/team.html">Norsk</a></li>
+                <li><a class="active" href="#team">English</a></li>
             </ul>
         </nav>
     
-        <section class="ourTeam">
+        <section class="ourTeam" id="team">
 
                 <div class="member1">
                     <img alt="Picture of Mohamed K. Harate" src="../img/mohamedImg.jpg" >

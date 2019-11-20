@@ -11,33 +11,32 @@
     </head>
     <body>
         <input type="checkbox" id="dropdown">
-        <div class="nav-fill"></div>
-        <nav>
-            <header>
-                <a href="../index.html" class="logo"><img alt="Our logo" src="../img/logo.png"></a>
-                <div class="title">Hjem</div>
-                <label for="dropdown">
-                    <div class="burger">
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                    </div>
-                </label>
-            </header>
+        <nav tabindex="0">
+            <a href="index.html" class="logo"><img alt="Our logo" src="../img/logo.png"></a>
 
-            <ul>
-                <li><a class="active" href="#">Hjem</a></li>
-                <li><a href="../html/no/problem.html">Problem</a></li>
-                <li><a href="../html/no/løsning.html">Løsning</a></li>
-                <li><a href="../html/no/app.html">Vår App</a></li>
+            <div tabindex="0" class="title">Hjem</div>
+
+            <label for="dropdown">
+                <div class="burger">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </label>
+        
+            <ul class="nav-links">
+                <li><a class="active" href="#index">Hjem</a></li>
+                <li><a href="./no/problem.html">Problem</a></li>
+                <li><a href="./no/løsning.html">Løsning</a></li>
+                <li><a href="./no/app.html">Vår App</a></li>
             </ul>
-            <ul class="download-here">
-                <li><a href="../html/no.html">Norsk</a></li>
+            <ul class="language">
+                <li><a class="active" href="#index">Norsk</a></li>
                 <li><a href="../index.html">English</a></li>
             </ul>
         </nav>
 
-        <div class = "main">
+        <div class = "main" id="index">
 
             <div class = "section1">
                 <div class ="tekst">

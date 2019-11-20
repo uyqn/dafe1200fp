@@ -93,15 +93,6 @@ input[type="radio"]{
     margin-left: 1rem;
 }
 
-<<<<<<< HEAD
-=======
-
-.pushApp{
-    height: 5vh;
-}
-
-
->>>>>>> 48a629735423dd1ecc42923475faafcb2b4dbc2c
 @media screen and (min-width: 800px){
     .slide{
         width: 50%;
@@ -292,14 +283,14 @@ input[type="radio"]{
 
 .trekant{
     width: 100%;
-    height: 10vw;
+    height: 15vw;
     position: absolute;
     left: 0;
     bottom: 0;
 }
 .trekant1{
     width: 100%;
-    height: 10vw;
+    height: 15vw;
     position: absolute;
     left: 0;
     bottom: 0;
