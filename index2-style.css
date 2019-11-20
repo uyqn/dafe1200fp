@@ -14,14 +14,19 @@ body{
     flex-wrap: wrap;
 
     font-family: "Bulo";
-    font-size: 2em;
+    font-size: 1.7em;
 }
 
 .tekst{
     width: 50vw;
+    margin-bottom: 30px;
 }
 
-.tekst p{
+.tekst img{
+    height: 50px;
+}
+
+.tekst p, .tekst a{
     color: #4b4b4b;
     font-weight: bold;
 }
@@ -30,6 +35,9 @@ body{
     color: #357376;
 }
 
+.finnes{
+    display:none;
+}
 
 .section1{
     display: flex;
@@ -54,6 +62,10 @@ body{
     background-color: #e5dfdf;
 }
 
+.section2 img{
+    margin-top: 20px;
+}
+
 
 .section3{
     display: flex;
@@ -63,4 +75,40 @@ body{
 
     justify-content: space-around;
     align-items: center;
+}
+
+@media only screen and (max-width:813px){
+    .section1{
+        flex-direction: column;
+        height: 95vh;
+        text-align: center;
+    }
+    .section2{
+        flex-direction: column;
+        height: auto;
+        text-align: center;
+    }
+    .section3{
+        flex-direction: column;
+        height: auto;
+        text-align: center;
+    }
+
+    .tekst{
+        width: 80vw;
+    }
+
+    .fabrikk img, .folk img, .jordklode img{
+        height:25vw;
+    }
+
+    .jordklode{
+        display: none;
+    }
+
+    .finnes{
+        display: unset;
+    }
+
+    
 }
