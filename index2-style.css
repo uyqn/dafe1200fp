@@ -24,7 +24,7 @@ body{
 .buttonStyle{
     border: none;
     border-radius: 5px;
-    background: linear-gradient(#1d4d4f, #357376);
+    background-color: #357376;
     height: 60px;
     width: 120px;
     padding-bottom: 10px;
@@ -33,6 +33,10 @@ body{
     font-weight: bolder;
     font-size: 20px;
     box-shadow: 3px 3px 5px 0 grey;
+}
+.buttonStyle:hover{
+    background-color: #1d4d4f;
+    transition: 0.4s;
 }
 .tekst img{
     height: 50px;
