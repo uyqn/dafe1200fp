@@ -73,14 +73,14 @@ footer{
     color: #FFFFFF;
 }
 
-.trekant4{
+.sideTriangleRight{
     position: absolute;
     bottom: 0;
     left: 0;
     height: 100%;
     width: 5vh;
 }
-.trekant3{
+.sideTriangleLeft{
     position: absolute;
     bottom: 0;
     right: 0;
