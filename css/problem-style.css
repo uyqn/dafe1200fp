@@ -49,8 +49,7 @@
 }
 
 .sidebar a, .sidebarMob a{
-    font-weight: 700; 
-    font-size: 22px;
+    font-size: 24px;
     padding: 0;
     text-decoration: none;
     color: #357376;
@@ -72,31 +71,60 @@
     width: 100%;
     height: 44vw;
 }
+.probPicture a:visited, .probPicture a{
+    text-decoration: none;
+    color: black;
+}
 #probImg{
     width: 100%;
-    height: auto;
+    height: 100%;
     object-position: center;
-    filter: brightness(0.5)
+    object-fit: cover;
+    filter: brightness(0.5);
 
 }
 .mainHeader{
+    font-family: Tahoma, Geneva, sans-serif;
     position: relative;
-    margin-top: -30%;
-    margin-left: 32%;
+    margin-top: -32%;
+    margin-left: 29%;
     font-size: 10vw;
     color: white;
 }
 .content a:focus,.sidebar a:focus, h1:focus, h2:focus, p:focus{
     outline-color: black;
 }
-.backToTop{
-    height: 50px;
-    width: 50px;
+.toText{
+    font-size: 2.6vw;
+    height: 4.4vw;
+    width: 4.4vw;
+    text-align: center;
     position: relative;
-    left: 50%;
+    margin-left: 48%;
     border-radius: 5px;
-    margin-bottom: 20px;
-    border-style: solid;   
+    background-color: white;
+    transform: rotate(90deg);
+    color: black;
+    font-weight: bold;
+    opacity: 0.6;
+    box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.75);
+}
+.buttonStyle{
+    border: none;
+    border-radius: 5px;
+    background-color: #357376;
+    height: 60px;
+    width: 120px;
+    padding-bottom: 10px;
+    color: white;
+    font-family: "Bulo";
+    font-weight: bolder;
+    font-size: 20px;
+    box-shadow: 3px 3px 5px 0 grey;
+}
+.buttonStyle:hover{
+    background-color: #1d4d4f;
+    transition: 0.4s;
 }
 .backToTop:hover{
     background-color: #da4302;
@@ -194,5 +222,10 @@ label[for="read-more1"], label[for="read-more2"]{
         margin-left: -4%;
         text-align: center;
     }
-    
+    .toText{
+        height: 7vw;
+        width: 7vw;
+        font-size: 4vw;
+        margin-left: 47%;
+    }
 }
