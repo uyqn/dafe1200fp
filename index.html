@@ -13,33 +13,32 @@
     </head>
     <body>
         <input type="checkbox" id="dropdown">
-        <div class="nav-fill"></div>
-        <nav>
-            <header>
-                <a href="index.html" class="logo"><img alt="Our logo" src="img/logoForTittel.png"></a>
-                <div class="title">Home</div>
-                <label for="dropdown">
-                    <div class="burger">
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                    </div>
-                </label>
-            </header>
+        <nav tabindex="0">
+            <a href="index.html" class="logo"><img alt="Our logo" src="img/logo.png"></a>
 
-            <ul>
-                <li><a class="active" href="#">Home</a></li>
+            <div tabindex="0" class="title">Home</div>
+
+            <label for="dropdown">
+                <div class="burger">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </label>
+        
+            <ul class="nav-links">
+                <li><a class="active" href="#index">Home</a></li>
                 <li><a href="html/problem.html">Problem</a></li>
                 <li><a href="html/solution.html">Solution</a></li>
                 <li><a href="html/app.html">Our App</a></li>
             </ul>
-            <ul class="download-here">
+            <ul class="language">
                 <li><a href="./html/no.html">Norsk</a></li>
-                <li><a href="index.html">English</a></li>
+                <li><a class="active" href="#index">English</a></li>
             </ul>
         </nav>
 
-        <div class = "main">
+        <div class = "main" id="index">
 
             <div class = "section1">
                 <div class ="tekst">

@@ -11,32 +11,32 @@
     </head>
     <body>
         <input type="checkbox" id="dropdown">
-        <div class="nav-fill"></div>
-        <nav>
-            <header>
-                <a href="../index.html" class="logo"><img alt="Our logo" src="../img/logoForTittel.png"></a>
-                <div class="title">Refrences</div>
-                <label for="dropdown">
-                    <div class="burger">
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                    </div>
-                </label>
-            </header>
-            <ul>
+        <nav tabindex="0">
+            <a href="../index.html" class="logo"><img alt="Our logo" src="../img/logo.png"></a>
+
+            <div tabindex="0" class="title">References</div>
+
+            <label for="dropdown">
+                <div class="burger">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </label>
+        
+            <ul class="nav-links">
                 <li><a href="../index.html">Home</a></li>
                 <li><a href="problem.html">Problem</a></li>
                 <li><a href="solution.html">Solution</a></li>
                 <li><a href="app.html">Our App</a></li>
             </ul>
-        <ul class="download-here">
-            <li><a href="no/kilder.html">Norsk</a></li>
-            <li><a href="../html/sources.html">English</a></li>
-        </ul>
+            <ul class="language">
+                <li><a href="./no/kilder.html">Norsk</a></li>
+                <li><a class="active" href="#ref">English</a></li>
+            </ul>
         </nav>
    
-        <div class="container-sources">
+        <div class="container-sources" id="ref">
 
             <h2 id="references" tabindex=0>References</h2>
             <ul class="references">
@@ -105,7 +105,7 @@
                     <ul>
                         <li class="topLink-Footer">Climate+</li>
                         <li class="footer-links"><a href="team.html">Our team</a></li>
-                        <li class="footer-links"><a href="../html/sources.html">Sources</a></li>
+                        <li class="footer-links"><a href="#ref">Sources</a></li>
                     </ul>
                 </div>
 

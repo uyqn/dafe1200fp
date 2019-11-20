@@ -31,7 +31,7 @@ html, body{
     width: 100%;
     height: 100%;
     font-family: "bulo", "Computer Modern", sans-serif;
-    font-weight: bold;
+    font-weight: bolder;
     scroll-behavior: smooth;
     background-color: white;
 }
