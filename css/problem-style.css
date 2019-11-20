@@ -50,8 +50,7 @@
 }
 
 .sidebar a, .sidebarMob a{
-    font-weight: 700; 
-    font-size: 22px;
+    font-size: 24px;
     padding: 0;
     text-decoration: none;
     color: #357376;
@@ -77,7 +76,7 @@
     width: 100%;
     height: auto;
     object-position: center;
-    filter: brightness(0.5)
+    filter: brightness(0.5);
 
 }
 .mainHeader{
