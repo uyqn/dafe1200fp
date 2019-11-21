@@ -33,12 +33,13 @@ body{
     font-weight: bolder;
     font-size: 20px;
     box-shadow: 3px 3px 5px 0 grey;
+    cursor: pointer;
 }
 .buttonStyle:hover{
     background-color: #1d4d4f;
     transition: 0.4s;
 }
-.tekst img{
+.nav-googlePlay, .nav-appStore{
     height: 50px;
 }
 
@@ -140,21 +141,13 @@ body{
 
     }
 
-    .fabrikk img, .folk img, .jordklode img{
-        height:50vw;
-    }
-
     .jordklode, .folk, .fabrikk{
         display: none;
     }
 
     .finnes{
         display: unset;
+        height: 25vw;
     }
-
-    .finnes img{
-        width: 20vw;
-    }
-
     
 }
