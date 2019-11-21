@@ -7,39 +7,40 @@
         <link rel="stylesheet" type="text/css" href="../css/main.css">
         <link rel="stylesheet" type="text/css" href="../css/app-style.css">
         <title>
-            Vår App
+            Our App
         </title>
         <link rel="icon" type="image/png" href="../img/logoTittel.png">
     </head>
     <body>
-        <form name="navigationbar">
-            <input type="checkbox" id="dropdown">
-            <nav tabindex="0">
-                <a href="index.html" class="logo logoD"><img alt="Our logo" src="../img/logo.png"></a>
-                <a href="index.html" class="logo logoM"><img alt="Our logo" src="../img/logo2.png"></a>
+        
+        <input type="checkbox" id="dropdown">
+        <nav tabindex="0">
+            <a href="index.html" class="logo logoD"><img alt="Our logo" src="../img/logo.png"></a>
+            <a href="index.html" class="logo logoM"><img alt="Our logo" src="../img/logo2.png"></a>
 
-                <div tabindex="0" class="title">Our App</div>
+            <div tabindex="0" class="title">Our App</div>
 
-                <label for="dropdown">
-                    <div class="burger">
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                    </div>
-                </label>
-            
-                <ul class="nav-links">
-                    <li><a href="../index.html">Home</a></li>
-                    <li><a href="problem.html">Problem</a></li>
-                    <li><a href="solution.html">Solution</a></li>
-                    <li><a class="active" href="#app">Our App</a></li>
-                </ul>
-                <ul class="language">
-                    <li><a href="./no/app.html">Norsk</a></li>
-                    <li><a class="active" href="#app">English</a></li>
-                </ul>
-            </nav>
-        </form>
+            <label for="dropdown">
+                menu
+                <div class="burger">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </label>
+        
+            <ul class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="problem.html">Problem</a></li>
+                <li><a href="solution.html">Solution</a></li>
+                <li><a class="active" href="#app">Our App</a></li>
+            </ul>
+            <ul class="language">
+                <li><a href="./no/app.html">Norsk</a></li>
+                <li><a class="active" href="#app">English</a></li>
+            </ul>
+        </nav>
+        
         
         <div class="push-app" id="app"></div>
         <form>
@@ -76,17 +77,19 @@
                 </div>
             </div>
 
-            <div class="next-slide">
+            <form class="next-slide">
                 <label for="slide1" class="next1"><div>></div></label>
                 <label for="slide2" class="next2"><div>></div></label>
                 <label for="slide3" class="next3"><div>></div></label>
-            </div>
+                <input type="submit" value="next slide">
+            </form>
 
-            <div tabindex="0" class="prev-slide">
+            <form tabindex="0" class="prev-slide">
                 <label tabindex="0" for="slide1" class="prev1"><div><</div></label>
                 <label tabindex="0" for="slide2" class="prev2"><div><</div></label>
                 <label tabindex="0" for="slide3" class="prev3"><div><</div></label>
-            </div>
+                <input type="submit" value="previous slide">
+            </form>
         </form>
 
 
