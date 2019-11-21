@@ -74,13 +74,21 @@
     text-decoration: none;
     color: black;
 }
-#probImg{
+#probImg, #mobProbImg{
     width: 100%;
     height: 100%;
     object-position: center;
     object-fit: cover;
     filter: brightness(0.5);
 
+}
+#mobProbImg{
+    display: none;
+}
+#iframe{
+    width: 40vw;
+    height: 25vw;
+    align-self: center;
 }
 .mainHeader{
     font-family: Tahoma, Geneva, sans-serif;
@@ -102,7 +110,7 @@
     margin-left: 48%;
     border-radius: 50%;
     background-color: white;
-    transform: rotate(90deg);
+    transform: rotate(180deg);
     color: black;
     font-weight: bold;
     opacity: 0.6;
@@ -114,11 +122,9 @@
     background-color: #357376;
     height: 60px;
     width: 120px;
-    padding-bottom: 10px;
     color: white;
     cursor: pointer;
-    font-family:  "Bulo";
-    font-weight: bolder;
+    font-family:  sans-serif;
     font-size: 20px;
     box-shadow: 3px 3px 5px 0 grey;
 }
@@ -127,34 +133,10 @@
 
     transition: 0.4s;
 }
-.backToTop:hover{
-    background-color: #da4302;
-}
-.button{
-    font-size: 22px;
-    font-weight: 700;
-
-
-}
-.button:hover{
-    color: #da4302;
-}
-
 #header1, #header2, #header3, #header4{
     position: relative;
     bottom: 50px;
     content: " ";
-}
-
-.button:hover{
-    cursor:pointer;
-}
-
-
-input[id="read-more1"]:checked ~ .readmore1{
-    height: auto;
-    transform: scale(1,1);
-    transition: all 250ms ease-in-out;
 }
 
 
@@ -179,16 +161,29 @@ input[id="read-more1"]:checked ~ .readmore1{
     }
     .sidebarMob a{
         width: 100%;
-    }
-    
-    .backToTop{
-        margin-left: -4%;
-        text-align: center;
+    } 
+    .mainHeader{
+        font-size: 14vw;
+        margin-left: 20%;
+        margin-top: -55%;
     }
     .toText{
-        height: 7vw;
-        width: 7vw;
-        font-size: 4vw;
-        margin-left: 47%;
+        height: 10vw;
+        width: 10vw;
+        margin-left: 45%;
+        margin-top: 10%;
+    }
+    #iframe{
+        width: 80vw;
+        height: 65vw;
+    }
+    #mobProbImg{
+        display: block;
+    }
+    #probImg{
+        display: none;
+    }
+    .probPicture{
+        height: 88vw;
     }
 }
