@@ -262,35 +262,17 @@ input[type="radio"]{
     }
 }
 
-.styleBox{
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    clip-path: polygon(0 0, 0% 100%, 100% 100%);
-    background-color: #357376;
-    height: 300px;
-    width: 100%;
-}
-.styleBox2{
-    position: absolute;
-    bottom: -10px;
-    left: 0;
-    clip-path: polygon(100% 0, 0% 100%, 100% 100%);
-    background-color: #6ba8a9;
-    height: 200px;
-    width: 100%;
-}
 
 .trekant{
     width: 100%;
-    height: 15vw;
+    height: 25vw;
     position: absolute;
     left: 0;
     bottom: 0;
 }
 .trekant1{
     width: 100%;
-    height: 15vw;
+    height: 25vw;
     position: absolute;
     left: 0;
     bottom: 0;
