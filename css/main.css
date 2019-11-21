@@ -25,6 +25,10 @@
     --side-nav-poleHeight: 20px;
 }
 
+*, *::before, *::after{
+    offset: 0;
+}
+
 html, body{
     margin: 0;
     padding: 0;
