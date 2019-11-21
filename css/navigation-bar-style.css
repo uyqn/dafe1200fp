@@ -52,6 +52,10 @@ nav:focus{
     height: 3rem;
 }
 
+.logoD{
+    display: none;
+}
+
 .title{
     display: flex;
     justify-content: center;
@@ -201,6 +205,14 @@ nav ul li a{
 @media screen and (min-width: 800px){
     .nav-fill{
         height: 48px;
+    }
+
+    .logoM{
+        display: none;
+    }
+
+    .logoD{
+        display: block;
     }
 
     nav label{
