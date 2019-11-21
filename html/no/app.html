@@ -12,7 +12,6 @@
         <link rel="icon" type="image/png" href="../../img/logoTittel.png">
     </head>
     <body>
-        <form>
         <input type="checkbox" id="dropdown">
         <nav tabindex="0">
             <a href="../no.html" class="logo logoD"><img alt="Our logo" src="../../img/logo.png"></a>
@@ -21,6 +20,7 @@
             <div tabindex="0" class="title">Vår App</div>
 
             <label for="dropdown">
+                menu
                 <div class="burger">
                     <div></div>
                     <div></div>
@@ -39,7 +39,6 @@
                 <li><a href="../app.html">English</a></li>
             </ul>
         </nav>
-        </form>
 
         <div class="push-app" id="app"></div>
 
@@ -79,17 +78,19 @@
             </div>
         </div>
 
-        <div class="next-slide">
+        <form class="next-slide">
             <label for="slide1" class="next1"><div>></div></label>
             <label for="slide2" class="next2"><div>></div></label>
             <label for="slide3" class="next3"><div>></div></label>
-        </div>
+            <input typ="submit" value="next slide">
+        </form>
 
-        <div tabindex="0" class="prev-slide">
+        <form tabindex="0" class="prev-slide">
             <label tabindex="0" for="slide1" class="prev1"><div><</div></label>
             <label tabindex="0" for="slide2" class="prev2"><div><</div></label>
             <label tabindex="0" for="slide3" class="prev3"><div><</div></label>
-        </div>
+            <input typ="submit" value="previous slide">
+        </form>
 
 
         <svg class="trekant" preserveAspectRatio="none" viewBox="0 0 100 100" width="100%">
