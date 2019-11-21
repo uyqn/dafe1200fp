@@ -69,7 +69,7 @@ body{
 @media only screen and (max-width: 650px) {
     .ourTeam{
         width: 100%;
-        left: 0;
+        left: 1vw;
     }
     .member1,.member2,.member3,.member4,.member5,.member6{
         width: 40vw;
