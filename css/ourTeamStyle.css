@@ -68,13 +68,13 @@ body{
 
 @media only screen and (max-width: 650px) {
     .ourTeam{
-        width: 100vw;
+        width: 100%;
         left: 0;
     }
     .member1,.member2,.member3,.member4,.member5,.member6{
         width: 40vw;
         max-width: 40vw;
-        margin: 5vw 5vw;
+        margin: 5vw 4vw;
 
     }
 }
@@ -85,7 +85,7 @@ body{
     }
 
     .ourTeam h2{
-        font-size: 17px;
+        font-size: 16px;
     }
     .btnContact p{
         font-size: 16px;
