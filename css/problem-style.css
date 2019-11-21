@@ -101,7 +101,7 @@
     text-align: center;
     position: relative;
     margin-left: 48%;
-    border-radius: 5px;
+    border-radius: 50%;
     background-color: white;
     transform: rotate(90deg);
     color: black;
@@ -130,51 +130,11 @@
     cursor:pointer;
 }
 
-input[type="checkbox"]{
-    display: none;
-}
-
-.readmore1, .readmore2{
-    height: 0;
-    transform: scale(1,0);
-    transform-origin: top;
-}
 
 input[id="read-more1"]:checked ~ .readmore1{
     height: auto;
     transform: scale(1,1);
     transition: all 250ms ease-in-out;
-}
-
-input[id="read-more2"]:checked ~ .readmore2{
-    height: auto;
-    transform: scale(1,1);
-    transition: all 250ms ease-in-out;
-}
-
-label[for="read-more1"]:focus ~ .readmore1{
-    height: auto;
-    transform: scale(1,1);
-    transition: all 250ms ease-in-out;
-}
-label[for="read-more2"]:focus ~ .readmore2{
-    height: auto;
-    transform: scale(1,1);
-    transition: all 250ms ease-in-out;
-}
-
-.readmore1:focus{
-    height: auto;
-    transform: scale(1,1);
-}
-
-.readmore2:focus{
-    height: auto;
-    transform: scale(1,1);
-}
-
-label[for="read-more1"], label[for="read-more2"]{
-    /* Legg til styling here Anders */
 }
 
 
