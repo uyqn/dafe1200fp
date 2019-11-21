@@ -12,32 +12,32 @@
     </head>
     <body>
         <input type="checkbox" id="dropdown">
-        <div class="nav-fill"></div>
-        <nav>
-            <header>
-                <a href="../index.html" class="logo"><img src="../img/logo.png" alt="Our logo"></a>
-                <div class="title">Solution</div>
-                <label for="dropdown">
-                    <div class="burger">
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                    </div>
-                </label>
-            </header>
-            <ul>
+        <nav tabindex="0">
+            <a href="../index.html" class="logo"><img alt="Our logo" src="../img/logo.png"></a>
+
+            <div tabindex="0" class="title">Solution</div>
+
+            <label for="dropdown">
+                <div class="burger">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </label>
+        
+            <ul class="nav-links">
                 <li><a href="../index.html">Home</a></li>
                 <li><a href="problem.html">Problem</a></li>
-                <li><a class="active" href="solution.html">Solution</a></li>
+                <li><a class="active" href="#solution">Solution</a></li>
                 <li><a href="app.html">Our App</a></li>
             </ul>
-            <ul class="download-here">
-                <li><a href="../html/no/løsning.html">Norsk</a></li>
-                <li><a href="../html/solution.html">English</a></li>
+            <ul class="language">
+                <li><a href="./no/løsning.html">Norsk</a></li>
+                <li><a class="active" href="#solution">English</a></li>
             </ul>
         </nav>
 
-        <div class="container">
+        <div class="container" id="solution">
             <div class="probPicture">
                 <img id="probImg" src="../img/solutionForside.jpeg" alt="Bilde av noe natur?" tabindex=0>
 
@@ -123,7 +123,7 @@
                 </div>
                   <div class="links">
                         
-                        <p><a href="app.html">Our app</a></p>
+                        <p><a href="app.html"><button class="buttonStyle">Our App</button></a></p>
                             
                     </div>
             </div>
@@ -163,10 +163,7 @@
                     <p>&copy; 2019 Climate plus</p>
                 </div>
             </div>
-            <div class="styleBox3">
-            </div>
-            <div class="styleBox4">
-            </div>
+
             <svg class="sideTriangleRight" preserveAspectRatio="none" viewBox="0 0 100 100" width="3%">
                 <polygon style="width: 3%" points="0 0, 100 80, 0 100" fill="#357376"></polygon>
             </svg>

@@ -12,34 +12,32 @@
     </head>
     <body>
         <input type="checkbox" id="dropdown">
-        <div class="nav-fill"></div>
-        <nav>
-            <header>
-                <a href="../../html/no.html" class="logo"><img src="../../img/logo.png" alt="Our logo"></a>
-                <div class="title">Løsning</div>
-                <label for="dropdown">
-                    <div class="burger">
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                    </div>
-                </label>
-            </header>
+        <nav tabindex="0">
+            <a href="index.html" class="logo"><img alt="Our logo" src="../../img/logo.png"></a>
 
-            <ul>
-                <li><a href="../../html/no.html">Hjem</a></li>
-                <li><a href="../../html/no/problem.html">Problem</a></li>
-                <li><a class="active"  href="../../html/no/løsning.html">Løsning</a></li>
-                <li><a  href="../../html/no/app.html">Vår App</a></li>
+            <div tabindex="0" class="title">Løsning</div>
+
+            <label for="dropdown">
+                <div class="burger">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </label>
+        
+            <ul class="nav-links">
+                <li><a href="../no.html">Hjem</a></li>
+                <li><a href="problem.html">Problem</a></li>
+                <li><a class="active" href="#solution">Løsning</a></li>
+                <li><a href="app.html">Vår App</a></li>
             </ul>
-            <ul class="download-here">
-                <li><a href="../../html/no/løsning.html">Norsk</a></li>
-                <li><a href="../../html/solution.html">English</a></li>
-
+            <ul class="language">
+                <li><a class="active" href="#solution">Norsk</a></li>
+                <li><a href="../solution.html">English</a></li>
             </ul>
         </nav>
 
-        <div class="container">
+        <div class="container" id="solution">
             <div class="probPicture">
                 <img id="probImg" src="../../img/solutionForside.jpeg" alt="Bilde av noe natur?" tabindex=0>
 
@@ -146,10 +144,6 @@
                     <p>&copy; 2019 Climate plus</p>
                 </div>
             </div>
-            <div class="styleBox3">
-            </div>
-            <div class="styleBox4">
-            </div>
             <svg class="sideTriangleRight" preserveAspectRatio="none" viewBox="0 0 100 100" width="3%">
                 <polygon style="width: 3%" points="0 0, 100 80, 0 100" fill="#357376"></polygon>
             </svg>
@@ -157,7 +151,6 @@
             <svg class="sideTriangleLeft" preserveAspectRatio="none" viewBox="0 0 100 100" width="3%">
                 <polygon style="width: 3%" points="100 0, 0 80, 100 100" fill="#357376"></polygon>
             </svg>
-
         </footer>
     </body>
 </html>

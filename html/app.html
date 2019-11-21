@@ -7,37 +7,37 @@
         <link rel="stylesheet" type="text/css" href="../css/main.css">
         <link rel="stylesheet" type="text/css" href="../css/app-style.css">
         <title>
-            Our App
+            Vår App
         </title>
         <link rel="icon" type="image/png" href="../img/logo.png">
     </head>
     <body>
         <input type="checkbox" id="dropdown">
-        <div class="nav-fill"></div>
-        <nav>
-            <header>
-                <a href="../index.html" class="logo"><img alt="Our logo" src="../img/logo.png"></a>
-                <div class="title">Our App</div>
-                <label for="dropdown">
-                    <div class="burger">
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                    </div>
-                </label>
-            </header>
-            <ul>
+        <nav tabindex="0">
+            <a href="../index.html" class="logo"><img alt="Our logo" src="../img/logo.png"></a>
+
+            <div tabindex="0" class="title">Our App</div>
+
+            <label for="dropdown">
+                <div class="burger">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </label>
+        
+            <ul class="nav-links">
                 <li><a href="../index.html">Home</a></li>
                 <li><a href="problem.html">Problem</a></li>
                 <li><a href="solution.html">Solution</a></li>
-                <li><a class="active" href="app.html">Our App</a></li>
+                <li><a class="active" href="#app">Our App</a></li>
             </ul>
-            <ul class="download-here">
-                <li><a href="../html/no/app.html">Norsk</a></li>
-                <li><a href="../html/app.html">English</a></li>
+            <ul class="language">
+                <li><a href="./no/app.html">Norsk</a></li>
+                <li><a class="active" href="#app">English</a></li>
             </ul>
         </nav>
-        <div class="push-app"></div>
+        <div class="push-app" id="app"></div>
 
         <input type="radio" name="slide-show" id="slide1" checked>
         <input type="radio" name="slide-show" id="slide2">
@@ -46,7 +46,7 @@
             <div class="slide-img">
                 <img src="../img/app1.png">
             </div>
-            <div class="slide-text">
+            <div class="slide-text" tabindex="0">
                 <h2>Events</h2>
                 <p>This page on the will serve as our home page. With a list readily at the app's opening makes it easy to pick an event to join. Each event also shows the amount of points you will get upon completion.</p>
             </div>
@@ -56,7 +56,7 @@
             <div class="slide-img">
                 <img src="../img/app2.png">
             </div>
-            <div class="slide-text">
+            <div class="slide-text" tabindex="0">
                 <h2>Benefits</h2>
                 <p>This page display all the benefits you can spend your accumulated points on. The cost of each rewards is also displayed.</p>
             </div>
@@ -66,7 +66,7 @@
             <div class="slide-img">
                 <img src="../img/app3.png">
             </div>
-            <div class="slide-text">
+            <div class="slide-text" tabindex="0">
                 <h2>Leaderboard</h2>
                 <p>The Leaderboard is where you can keep track of all your ladders. In this demo we see that the leaderboard readily displays the current points your friends have accumulated this season.</p>
             </div>
@@ -85,6 +85,7 @@
         </div>
 
 
+        
         <svg class="trekant" preserveAspectRatio="none" viewBox="0 0 100 100" width="100%">
             <polygon style="width: 100%" points="0 100, 100 100, 100 0" fill="#6ba8a9"></polygon>
         </svg>
@@ -92,6 +93,7 @@
         <svg class="trekant1" preserveAspectRatio="none" viewBox="0 0 100 100" width="100%">
             <polygon style="width: 100%" points="0 100, 100 100, 0 0" fill="#357376"></polygon>
         </svg>
+        
 
 
         <footer>

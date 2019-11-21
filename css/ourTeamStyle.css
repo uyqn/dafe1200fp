@@ -7,10 +7,10 @@ body{
     display: flex;
     flex-wrap: wrap;
     position: relative;
-    top: 12%;
-    left: 5%;
-    width: 90%;
-    margin-bottom: 10%;
+    top: 10vh;
+    left: 8vw;
+    width: 90vw;
+    margin-bottom: 10vh;
 }
 
 .ourTeam img{
@@ -18,6 +18,7 @@ body{
     height: 30vh;
     object-fit: cover;
     object-position: center;
+
 }
 .study{
     color: gray;
@@ -25,13 +26,13 @@ body{
 }
 .member1,.member2,.member3,.member4,.member5,.member6{
     box-shadow: 0 4px 8px 0 rgba(0, 0,0,0.7);
-    width: 25%;
-    max-width: 25%;
+    width: 20vw;
+    max-width: 20vw;
     text-align: center;
-    margin: 3% 4%;
+    margin: 4vw 4vw;
 }
 .ourTeam h2{
-    font-size: 18px;
+    font-size: 20px;
 }
 .btnContact{
     position: relative;
@@ -46,14 +47,14 @@ body{
 }
 
 .btnContact:hover{
-    background-color: gray;
+    background-color: #e5dfdf;
+    color: #1d4d4f;
 }
 .school{
     padding-bottom: 20px;
 }
 .ourTeam p{
     margin: 0;
-
 }
 .ourTeam a{
     text-decoration: none;
@@ -63,45 +64,32 @@ body{
 .btnContact a:visited{
     text-decoration: none;
 }
-@media only screen and (max-width: 1425px) {
+
+
+@media only screen and (max-width: 650px) {
     .ourTeam{
-        left: 8%;
+        width: 100%;
+        left: 0;
     }
     .member1,.member2,.member3,.member4,.member5,.member6{
-        width: 25%;
-        margin: 2.5% 3%;
-        max-width: 25%;
-    }
-    .ourTeam h2{
-        font-size: 22px;
-    }
-}
-@media only screen and (max-width: 900px) {
-    .ourTeam{
-        top: 10%;
-        left: 5%;
-    }
-    .member1,.member2,.member3,.member4,.member5,.member6{
-        margin: 5% 5%;
-        width: 40%;
-        max-width: 40%;
+        width: 40vw;
+        max-width: 40vw;
+        margin: 5vw 4vw;
+
     }
 }
 @media only screen and (max-width: 550px) {
     .ourTeam{
-        left: 6%;
         top: 12%;
         margin-bottom: 30%;
     }
-    .member1,.member2,.member3,.member4,.member5,.member6{
-        margin: 3% 3%;
-        width: 43%;
-        max-width: 43%;
-    }
+
     .ourTeam h2{
         font-size: 16px;
     }
     .btnContact p{
         font-size: 16px;
     }
+
+
 }

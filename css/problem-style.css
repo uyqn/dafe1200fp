@@ -17,7 +17,6 @@
     right: 12%;
     font-size: 50px;
     color: #357376;
-    
 }
 .content h2{
     font-size: 32px;
@@ -67,7 +66,7 @@
     margin: 5px;
 }
 .probPicture{
-    padding-top: 54px;
+    padding-top: 47px;
     width: 100%;
     height: 44vw;
 }
@@ -109,12 +108,33 @@
     opacity: 0.6;
     box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.75);
 }
+.buttonStyle{
+    border: none;
+    border-radius: 5px;
+    background-color: #357376;
+    height: 60px;
+    width: 120px;
+    padding-bottom: 10px;
+    color: white;
+    cursor: pointer;
+    font-family:  "Bulo";
+    font-weight: bolder;
+    font-size: 20px;
+    box-shadow: 3px 3px 5px 0 grey;
+}
+.buttonStyle:hover{
+    background-color: #1d4d4f;
+
+    transition: 0.4s;
+}
 .backToTop:hover{
     background-color: #da4302;
 }
 .button{
     font-size: 22px;
     font-weight: 700;
+
+
 }
 .button:hover{
     color: #da4302;

@@ -3,14 +3,37 @@
     margin-left: 10%;
     padding: 100px 0;
 }
-.container-sources ul{
+.container-sources ul, .references ul{
     padding: 0;
-    list-style-type: disc;
+    list-style: circle;
 }
 
 h2{
-    font-size: 30px;
+    font-size: 3em;
 }
 span{
     font-style: italic;
+}
+.references{
+    margin-block-start: 0;
+    margin-block-end: 0;
+    padding-inline-start: 0;
+}
+
+.cite{
+    text-decoration: none;
+    color: blue;
+}
+
+.references li, .container-sources li {
+    font-size: 19px;
+    margin-bottom: 1.5em;
+    line-height: 1.5em;
+    margin-left: 2em;
+    text-indent: -2em;
+}
+
+.references li a{
+    color: blue;
+    word-break: break-all;
 }
