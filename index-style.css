@@ -21,6 +21,11 @@ body{
     width: 50vw;
     margin-bottom: 30px;
 }
+
+.section2 .finnes{
+    transform: skewY(0deg);
+    -webkit-transform: skewY(0deg);
+} 
 .buttonStyle{
     border: none;
     border-radius: 5px;
@@ -94,6 +99,7 @@ body{
     -webkit-transform: skewY(-3deg);
 }
 
+
 .section2 .tekst{
     transform: skewY(-3deg);
     -webkit-transform: skewY(-3deg);
@@ -129,6 +135,8 @@ body{
         height: auto;
         text-align: center;
     }
+
+
     .section3{
         flex-direction: column;
         height: auto;
