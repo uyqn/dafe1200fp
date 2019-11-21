@@ -9,80 +9,85 @@
         <title>
             Vår App
         </title>
-        <link rel="icon" type="image/png" href="../img/logo.png">
+        <link rel="icon" type="image/png" href="../img/logoTittel.png">
     </head>
     <body>
-        <input type="checkbox" id="dropdown">
-        <nav tabindex="0">
-            <a href="../index.html" class="logo"><img alt="Our logo" src="../img/logo.png"></a>
+        <form name="navigationbar">
+            <input type="checkbox" id="dropdown">
+            <nav tabindex="0">
+                <a href="index.html" class="logo logoD"><img alt="Our logo" src="../img/logo.png"></a>
+                <a href="index.html" class="logo logoM"><img alt="Our logo" src="../img/logo2.png"></a>
 
-            <div tabindex="0" class="title">Our App</div>
+                <div tabindex="0" class="title">Our App</div>
 
-            <label for="dropdown">
-                <div class="burger">
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                </div>
-            </label>
+                <label for="dropdown">
+                    <div class="burger">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                </label>
+            
+                <ul class="nav-links">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="problem.html">Problem</a></li>
+                    <li><a href="solution.html">Solution</a></li>
+                    <li><a class="active" href="#app">Our App</a></li>
+                </ul>
+                <ul class="language">
+                    <li><a href="./no/app.html">Norsk</a></li>
+                    <li><a class="active" href="#app">English</a></li>
+                </ul>
+            </nav>
+        </form>
         
-            <ul class="nav-links">
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="problem.html">Problem</a></li>
-                <li><a href="solution.html">Solution</a></li>
-                <li><a class="active" href="#app">Our App</a></li>
-            </ul>
-            <ul class="language">
-                <li><a href="./no/app.html">Norsk</a></li>
-                <li><a class="active" href="#app">English</a></li>
-            </ul>
-        </nav>
         <div class="push-app" id="app"></div>
+        <form>
+            <input type="radio" name="slide-show" id="slide1" checked>
+            <input type="radio" name="slide-show" id="slide2">
+            <input type="radio" name="slide-show" id="slide3">
+            <div class="slide slide1">
+                <div class="slide-img">
+                    <img src="../img/app1.png" alt="Climate+ home page">
+                </div>
+                <div class="slide-text" tabindex="0">
+                    <h2>Events</h2>
+                    <p>This page on the will serve as our home page. With a list readily at the app's opening makes it easy to pick an event to join. Each event also shows the amount of points you will get upon completion.</p>
+                </div>
+            </div>
 
-        <input type="radio" name="slide-show" id="slide1" checked>
-        <input type="radio" name="slide-show" id="slide2">
-        <input type="radio" name="slide-show" id="slide3">
-        <div class="slide slide1">
-            <div class="slide-img">
-                <img src="../img/app1.png">
+            <div class="slide slide2">
+                <div class="slide-img">
+                    <img src="../img/app2.png" alt="Climate+ benefit page">
+                </div>
+                <div class="slide-text" tabindex="0">
+                    <h2>Benefits</h2>
+                    <p>This page display all the benefits you can spend your accumulated points on. The cost of each rewards is also displayed.</p>
+                </div>
             </div>
-            <div class="slide-text" tabindex="0">
-                <h2>Events</h2>
-                <p>This page on the will serve as our home page. With a list readily at the app's opening makes it easy to pick an event to join. Each event also shows the amount of points you will get upon completion.</p>
-            </div>
-        </div>
 
-        <div class="slide slide2">
-            <div class="slide-img">
-                <img src="../img/app2.png">
+            <div class="slide slide3">
+                <div class="slide-img">
+                    <img src="../img/app3.png" alt="Climate+ leaderboard page">
+                </div>
+                <div class="slide-text" tabindex="0">
+                    <h2>Leaderboard</h2>
+                    <p>The Leaderboard is where you can keep track of all your ladders. In this demo we see that the leaderboard readily displays the current points your friends have accumulated this season.</p>
+                </div>
             </div>
-            <div class="slide-text" tabindex="0">
-                <h2>Benefits</h2>
-                <p>This page display all the benefits you can spend your accumulated points on. The cost of each rewards is also displayed.</p>
-            </div>
-        </div>
 
-        <div class="slide slide3">
-            <div class="slide-img">
-                <img src="../img/app3.png">
+            <div class="next-slide">
+                <label for="slide1" class="next1"><div>></div></label>
+                <label for="slide2" class="next2"><div>></div></label>
+                <label for="slide3" class="next3"><div>></div></label>
             </div>
-            <div class="slide-text" tabindex="0">
-                <h2>Leaderboard</h2>
-                <p>The Leaderboard is where you can keep track of all your ladders. In this demo we see that the leaderboard readily displays the current points your friends have accumulated this season.</p>
+
+            <div tabindex="0" class="prev-slide">
+                <label tabindex="0" for="slide1" class="prev1"><div><</div></label>
+                <label tabindex="0" for="slide2" class="prev2"><div><</div></label>
+                <label tabindex="0" for="slide3" class="prev3"><div><</div></label>
             </div>
-        </div>
-
-        <div class="next-slide">
-            <label for="slide1" class="next1"><div>></div></label>
-            <label for="slide2" class="next2"><div>></div></label>
-            <label for="slide3" class="next3"><div>></div></label>
-        </div>
-
-        <div tabindex="0" class="prev-slide">
-            <label tabindex="0" for="slide1" class="prev1"><div><</div></label>
-            <label tabindex="0" for="slide2" class="prev2"><div><</div></label>
-            <label tabindex="0" for="slide3" class="prev3"><div><</div></label>
-        </div>
+        </form>
 
 
         
@@ -132,7 +137,7 @@
             </svg>
 
             <svg class="sideTriangleLeft" preserveAspectRatio="none" viewBox="0 0 100 100" width="3%">
-                <polygon style="width: 3%" points="100 0, 0 80, 100 100" fill="#357376"></polygon>
+                <polygon style="width: 3%" points="100 0, 0 80, 100 100" fill="#6ba8a9"></polygon>
             </svg>
 
         </footer>
