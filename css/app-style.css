@@ -74,7 +74,7 @@
     text-decoration: none;
 }
 
-@media screen and (min-width: 800px){
+@media screen and (min-width: 900px){
     .scroll-wrap{
         scroll-snap-type: mandatory;
         scroll-snap-type: x mandatory;
