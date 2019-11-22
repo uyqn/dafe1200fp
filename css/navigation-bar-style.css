@@ -162,7 +162,7 @@ nav ul li a{
 }
 
 .language li a{
-    padding: 1rem;
+    padding: 0 .5rem;
 }
 
 .language li a.active{
