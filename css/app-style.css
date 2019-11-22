@@ -100,6 +100,7 @@
         margin-left: 5rem;
         font-size: 25px;
         align-items: flex-start;
+        word-wrap: break-word;
     }
 
     .slide-img img{
