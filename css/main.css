@@ -26,10 +26,10 @@ html, body{
     font-family: "bulo", "Computer Modern", sans-serif;
     scroll-behavior: smooth;
     background-color: white;
+    font-weight: 600;
      -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     -webkit-text-stroke: 0.45px;
-
 }
 
 header{
