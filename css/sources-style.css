@@ -6,6 +6,7 @@
 .container-sources ul, .references ul{
     padding: 0;
     list-style: circle;
+    list-style-position: outside;
 }
 
 h2{
