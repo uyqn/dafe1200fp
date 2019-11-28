@@ -28,6 +28,9 @@ html, body{
     font-weight: 1000;
     scroll-behavior: smooth;
     background-color: white;
+     -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-stroke: 0.45px;
 
 }
 
