@@ -14,7 +14,6 @@
     src: url("../font-family/Bulo/Bulo Hair Dark.otf");
 }
 
-
 *, *::before, *::after{
     offset: 0;
 }
@@ -25,7 +24,6 @@ html, body{
     width: 100%;
     height: 100%;
     font-family: "bulo", "Computer Modern", sans-serif;
-    font-weight: 1000;
     scroll-behavior: smooth;
     background-color: white;
      -webkit-font-smoothing: antialiased;

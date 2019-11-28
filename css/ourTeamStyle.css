@@ -90,6 +90,12 @@ body{
         width: 98vw;
         left: 2vw;
     }
+
+    .btnContact:hover{
+        background-color: unset;
+        color: unset;
+    }
+
     .member1,.member2,.member3,.member4,.member5,.member6{
         width: 40vw;
         max-width: 40vw;

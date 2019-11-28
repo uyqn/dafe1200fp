@@ -4,22 +4,26 @@
     padding: 100px 0;
 }
 .container-sources ul, .references ul{
-    padding: 0;
-    list-style-position: outside;
+    padding: auto;
+    list-style-position: inside;
 }
 
 h2{
     font-size: 3em;
     color: #357376;
 }
+
 span{
     font-style: italic;
 }
+
+
 .references{
     margin-block-start: 0;
     margin-block-end: 0;
     padding-inline-start: 10px;
 }
+
 
 .cite{
     text-decoration: none;
@@ -32,7 +36,6 @@ span{
     line-height: 1.5em;
     margin-left: 2em;
     text-indent: -2em;
-    list-style: circle;
 }
 
 .references li a{
