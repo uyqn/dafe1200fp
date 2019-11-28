@@ -91,7 +91,6 @@ footer .sideTriangleLeft{
 
 @media only screen and (max-width: 880px) {
     .footer-container{
-        font: bold 16px sans-serif;
         padding-left: 0;
     }
     .footer-left, .footer-center, .footer-right{
