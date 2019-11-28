@@ -171,7 +171,7 @@
 }
 
 @media screen and (min-width: 600px){
-    .next:hover, .prev.hover{
+    .next:hover, .prev:hover{
         transform: scale(1.5);
         color: #da4302;
     }
