@@ -16,7 +16,7 @@ span{
     font-style: italic;
 }
 .references{
-    margin-block-start: 10px;
+    margin-block-start: 0;
     margin-block-end: 0;
     padding-inline-start: 10px;
 }
@@ -32,6 +32,7 @@ span{
     line-height: 1.5em;
     margin-left: 2em;
     text-indent: -2em;
+    list-style: circle;
 }
 
 .references li a{
@@ -55,4 +56,9 @@ span{
     top: -30px;
     left: 0;
     vertical-align: top;
+}
+@media only screen and (max-width: 600px){
+    .container-sources p{
+        font-size: 22px;
+    }
 }
