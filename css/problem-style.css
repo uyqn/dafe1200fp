@@ -25,13 +25,13 @@
 .content p{
     font-size: 22px;
     letter-spacing: 0.75px;
-<<<<<<< HEAD
     filter: contrast(200%);
     line-height: 40px;
-=======
     line-height: 50px;
     color: black;
->>>>>>> 35cf78bd5fbe5822cdd2623cd5d1dc885c6d55d3
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-stroke: 0.45px;
 }
 
 
