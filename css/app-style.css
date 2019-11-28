@@ -27,7 +27,7 @@
     height: 100%;
     flex-shrink: 0;
     padding: 0;
-    margin-top: 0vh;
+    margin-top: 0;
 
     z-index: 1;
 
@@ -129,6 +129,7 @@
         height: 15vw;
     }
 }
+
 
 .trekant{
     width: 100%;
