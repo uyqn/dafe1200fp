@@ -203,10 +203,6 @@ nav ul li a{
 }
 
 @media screen and (min-width: 860px){
-    .nav-fill{
-        height: 48px;
-    }
-
     .logoM{
         display: none;
     }
@@ -229,7 +225,7 @@ nav ul li a{
         flex-wrap: nowrap;
         justify-content: flex-start;
         align-items: center;
-        height: 48px;
+        height: 70px;
     }
 
     .nav-links{

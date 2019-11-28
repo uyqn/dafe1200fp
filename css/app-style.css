@@ -14,11 +14,11 @@
 
     scroll-behavior: smooth;
 
-    scroll-snap-type: x proximity; /* Chrome Canary */
-    scroll-snap-type: proximity; /* Firefox */
-    -ms-scroll-snap-type: proximity; /* IE/Edge */
-    -webkit-scroll-snap-type: proximity; /* Safari */
-    -webkit-overflow-scrolling: touch; /* important for iOS */
+    scroll-snap-type: x proximity;
+    scroll-snap-type: proximity;
+    -ms-scroll-snap-type: proximity;
+    -webkit-scroll-snap-type: proximity;
+    -webkit-overflow-scrolling: touch;
 }
 
 .slide {
@@ -86,7 +86,6 @@
     text-transform: uppercase;
     color: black;
     text-decoration: none;
-    font-size: 16px;
     transform: scale(1);
     transition: transform 150ms ease-in-out;
 }
