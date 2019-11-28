@@ -12,14 +12,15 @@
         <link rel="icon" type="image/png" href="../../img/logoTittel.png">
     </head>
     <body>
-
         <input type="checkbox" id="dropdown">
         <nav tabindex="0">
-            <a href="index.html" class="logo"><img alt="Our logo" src="../../img/logo.png"></a>
+            <a href="../no.html" class="logo logoD"><img alt="Our logo" src="../../img/logo.png"></a>
+            <a href="../no.html" class="logo logoM"><img alt="Our logo" src="../../img/logo2.png"></a>
 
             <div tabindex="0" class="title">Vår App</div>
 
             <label for="dropdown">
+                menu
                 <div class="burger">
                     <div></div>
                     <div></div>
@@ -39,64 +40,58 @@
             </ul>
         </nav>
 
-        <div class="push-app" id="app"></div>
-
-        <input type="radio" name="slide-show" id="slide1" checked>
-        <input type="radio" name="slide-show" id="slide2">
-        <input type="radio" name="slide-show" id="slide3">
-        <div class="slide slide1">
-            <div class="slide-img">
-                <img src="../../img/app1.png">
+        
+        <div class="container">
+                <div class="scroll-wrap">
+                    <div class="slide" id="slide1">
+                        <div class="slide-img">
+                            <img src="../../img/app1.png" alt="Climate+ home page">
+                        </div>
+                        <div class="slide-text" tabindex="0">
+                            <h2>Eventer</h2>
+                            <p> Denne siden vil fungere som startside. Første øyeglans i det appen åpnes vil enkelt vise til
+                            begivenheter du vil være med på. Hver hendelse viser også hvor mange poeng du får fra å delta. </p>
+                        </div>
+                        <a class="next" href="#slide2">Next</a>
+                        <a class="prev" href="#slide3">Prev</a>
+                    </div>
+    
+                    <div class="slide" id="slide2">
+                        <div class="slide-img">
+                            <img src="../../img/app2.png" alt="Climate+ benefit page">
+                        </div>
+                        <div class="slide-text" tabindex="0">
+                            <h2>Fordeler</h2>
+                            <p>Denne siden viser alle fordelene du kan bruke dine oppsamlede poeng på. Det vises også hvor mye hver
+                                belønning koster.</p>
+                        </div>
+                        <a class="prev" href="#slide1">Prev</a>
+                        <a class="next" href="#slide3">Next</a>
+                    </div>
+    
+                    <div class="slide" id="slide3">
+                        <div class="slide-img">
+                            <img src="../../img/app3.png" alt="Climate+ leaderboard page">
+                        </div>
+                        <div class="slide-text" tabindex="0">
+                            <h2>Topplisten</h2>
+                            <p>Topplisten er der du kan følge med på alle de ulike topplistene. I denne demonstrasjonen kan vi
+                            enkelt se at topplisten viser den nåværende poengsummen vennene dine har samlet denne sesongen.</p>
+                        </div>
+                        <a class="prev" href="#slide2">Prev</a>
+                        <a class="next" href="#slide1">Next</a>
+                    </div>
+                </div>
             </div>
-            <div class="slide-text">
-                <h2>Eventer</h2>
-                <p> Denne siden vil fungere som startside. Første øyeglans i det appen åpnes vil enkelt vise til
-                    begivenheter du vil være med på. Hver hendelse viser også hvor mange poeng du får fra å delta. </p>
+            <div class="triangles">
+                <svg class="trekant" preserveAspectRatio="none" viewBox="0 0 100 100" width="100%">
+                    <polygon style="width: 100%" points="0 100, 100 100, 100 0" fill="#6ba8a9"></polygon>
+                </svg>
+    
+                <svg class="trekant1" preserveAspectRatio="none" viewBox="0 0 100 100" width="100%">
+                    <polygon style="width: 100%" points="0 100, 100 100, 0 0" fill="#357376"></polygon>
+                </svg>
             </div>
-        </div>
-
-        <div class="slide slide2">
-            <div class="slide-img">
-                <img src="../../img/app2.png">
-            </div>
-            <div class="slide-text">
-                <h2>Fordeler</h2>
-                <p>Denne siden viser alle fordelene du kan bruke dine oppsamlede poeng på. Det vises også hvor mye hver
-                    belønning koster.</p>
-            </div>
-        </div>
-
-        <div class="slide slide3">
-            <div class="slide-img">
-                <img src="../../img/app3.png">
-            </div>
-            <div class="slide-text">
-                <h2>Topplisten</h2>
-                <p>Topplisten er der du kan følge med på alle de ulike topplistene. I denne demonstrasjonen kan vi
-                    enkelt se at topplisten viser den nåværende poengsummen vennene dine har samlet denne sesongen.</p>
-            </div>
-        </div>
-
-        <div class="next-slide">
-            <label for="slide1" class="next1"><div>></div></label>
-            <label for="slide2" class="next2"><div>></div></label>
-            <label for="slide3" class="next3"><div>></div></label>
-        </div>
-
-        <div tabindex="0" class="prev-slide">
-            <label tabindex="0" for="slide1" class="prev1"><div><</div></label>
-            <label tabindex="0" for="slide2" class="prev2"><div><</div></label>
-            <label tabindex="0" for="slide3" class="prev3"><div><</div></label>
-        </div>
-
-
-        <svg class="trekant" preserveAspectRatio="none" viewBox="0 0 100 100" width="100%">
-            <polygon style="width: 100%" points="0 100, 100 100, 100 0" fill="#6ba8a9"></polygon>
-        </svg>
-
-        <svg class="trekant1" preserveAspectRatio="none" viewBox="0 0 100 100" width="100%">
-            <polygon style="width: 100%" points="0 100, 100 100, 0 0" fill="#357376"></polygon>
-        </svg>
 
 
         <footer>
@@ -105,7 +100,7 @@
 
                     <div class="footer-left">
                         <ul>
-                            <li class="topLink-Footer">Klima+</li>
+                            <li class="topLink-Footer">Climate+</li>
                             <li class="footer-links"><a href="../no/team.html">Vårt team</a></li>
                             <li class="footer-links"><a href="../no/kilder.html">Kilder</a></li>
                         </ul>
@@ -127,7 +122,7 @@
                     </div>
 
                     <div class="footer-copyRight">
-                        <p>&copy; 2019 Climate plus</p>
+                        <p>&copy; 2019 Climate+</p>
                     </div>
                 </div>
 

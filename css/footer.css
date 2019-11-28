@@ -1,8 +1,6 @@
-body {
-    margin: 0;
-    padding: 0;
-    width: 100%;
+body{
     overflow-x: hidden;
+
 }
 footer{
     position: relative;
@@ -23,7 +21,6 @@ footer{
     padding-top: 30px;
     padding-left: 20px;
     padding-bottom: 10px;
-    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
     box-sizing: border-box;
     text-align: left;
     font: 16px sans-serif Arial;
@@ -94,7 +91,7 @@ footer .sideTriangleLeft{
 
 @media only screen and (max-width: 880px) {
     .footer-container{
-        font: bold 14px sans-serif;
+        font: bold 16px sans-serif;
         padding-left: 0;
     }
     .footer-left, .footer-center, .footer-right{

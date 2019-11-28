@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <meta charset='utf-8'>
         <meta http-equiv='X-UA-Compatible' content='IE=edge'>
@@ -7,19 +7,22 @@
         <link rel="icon" type="image/png" href="img/logoTittel.png">
 
         <meta name='viewport' content='width=device-width, initial-scale=1'>
-        <link rel='stylesheet' type='text/css' media='screen' href='index2-style.css'>
+        <link rel='stylesheet' type='text/css' media='screen' href='index-style.css'>
         <link rel="stylesheet" type="text/css" href="css/navigation-bar-style.css">
         <link rel="stylesheet" type="text/css" href="css/main.css">
-        <link rel="stylesheet" type="text/css" href="css/app-style.css">
     </head>
     <body>
-        <input type="checkbox" id="dropdown">
+        
+        <input type="checkbox" id="dropdown" title="click for a dropdown menu">
         <nav tabindex="0">
-            <a href="index.html" class="logo"><img alt="Our logo" src="img/logo.png"></a>
+            <a href="index.html" class="logo logoD"><img alt="Our logo" src="img/logo.png"></a>
+            <a href="index.html" class="logo logoM"><img alt="Our logo" src="img/logo2.png"></a>
+            
 
             <div tabindex="0" class="title">Home</div>
 
             <label for="dropdown">
+                menu
                 <div class="burger">
                     <div></div>
                     <div></div>
@@ -38,13 +41,14 @@
                 <li><a class="active" href="#index">English</a></li>
             </ul>
         </nav>
+        
 
         <div class = "main" id="index">
 
             <div class = "section1">
                 <div class ="tekst">
                     <h1>Save the world</h1>
-                    <img class = "finnes" src = "img/world.png">
+                    <img class = "finnes" src = "img/logo2.png" alt="icon of a globe">
                     <p>Get together with your friends and start
                         saving the world today.</p>
 
@@ -52,7 +56,7 @@
                     <img tabindex=0 class="nav-appStore" src="img/appStore.png" alt = "Link to Appstore">
                 </div>
                 <div class = "jordklode">
-                    <img src = "img/world.png" height="500" width="500">
+                    <img src = "img/logo2.png" alt="icon of a globe">
                 </div>
                <!--- <svg class="trekant" preserveAspectRatio="none" viewBox="0 0 100 100" width="100%">
                     <polygon style="width: 100%" points="0 100, 100 100, 100 0" fill="#6ba8a9"></polygon>
@@ -65,10 +69,11 @@
 
             <div class = "section2">
                 <div class = "fabrikk">
-                    <img src="img/fabrikk.png" height="500" width="500">
+                    <img src="img/fabrikk.png" alt="icon of a factory">
                 </div>
                 <div class = tekst>
                     <h1 tabindex=0 >Problem</h1>
+                    <img class = "finnes" src = "img/fabrikk.png" alt="icon of factory">
                     <p tabindex=0 >The single biggest problem mankind faces today
                          is the enviromental crisis. High emission-rates and waste of resources
                          are just some of the many causes for it, that we as a society are behind.</p>
@@ -80,16 +85,16 @@
             <div class = "section3">
                 <div class = "tekst">
                     <h1 tabindex=0 >Solution</h1>
+                    <img class = "finnes" src = "img/folk.png" alt="icon of people">
                     <p tabindex=0>Although we cannot fix the entire enviromental crisis with one app, small
                         steps in the right direction can make a big difference. We want to make it easier
                         for people to make conscious choices in their everyday life, together with their friends.
-                        Little by little, we'll make those steps towards a better world a little shorter.
                     </p>
 
                     <a href = "html/solution.html"><button class="buttonStyle">Read more</button></a>
                 </div>
                 <div class = "folk">
-                    <img src="img/folk.png" height="500" width="500">
+                    <img src="img/folk.png" alt="icon of people">
                 </div>
             </div>
         </div>
@@ -97,7 +102,7 @@
             <div class="footer-container">
                 <div class="footer-left">
                     <ul>
-                        <li class="topLink-Footer">KlimaPluss</li>
+                        <li class="topLink-Footer">Climate+</li>
                         <li tabindex=0 class="footer-links"><a href="html/team.html">Our team</a></li>
                         <li tabindex=0 class="footer-links"><a href="html/sources.html">Sources</a></li>
                     </ul>
@@ -116,7 +121,7 @@
                     </ul>
                 </div>
                 <div class="footer-copyRight">
-                    <p>&copy; 2019 Climate plus</p>
+                    <p>&copy; 2019 Climate+</p>
                 </div>
             </div>
 

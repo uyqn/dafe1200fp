@@ -5,12 +5,8 @@
 
 @font-face {
     /*font-family: 'Titillium', sans-serif;*/
-
     font-family: "Computer Modern";
     src: url("../font-family/cmunss.otf");
-
-
-
 }
 
 @font-face{
@@ -18,12 +14,6 @@
     src: url("../font-family/Bulo/Bulo Hair Dark.otf");
 }
 
-:root{
-    --nav-color: white;
-    --side-nav-color: black;
-    --side-nav-radius: 10px;
-    --side-nav-poleHeight: 20px;
-}
 
 *, *::before, *::after{
     offset: 0;
@@ -38,6 +28,7 @@ html, body{
     font-weight: bolder;
     scroll-behavior: smooth;
     background-color: white;
+
 }
 
 header{
@@ -50,7 +41,7 @@ header{
 
 .content{
     min-height: 100%;
-    margin-bottom: -50px;
+    margin-bottom: -30px;
 }
 
 @media screen and (min-width: 800px){

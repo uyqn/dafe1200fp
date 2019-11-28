@@ -21,6 +21,11 @@ body{
     width: 50vw;
     margin-bottom: 30px;
 }
+
+.section2 .finnes{
+    transform: skewY(0deg);
+    -webkit-transform: skewY(0deg);
+} 
 .buttonStyle{
     border: none;
     border-radius: 5px;
@@ -33,12 +38,13 @@ body{
     font-weight: bolder;
     font-size: 20px;
     box-shadow: 3px 3px 5px 0 grey;
+    cursor: pointer;
 }
 .buttonStyle:hover{
     background-color: #1d4d4f;
     transition: 0.4s;
 }
-.tekst img{
+.nav-googlePlay, .nav-appStore{
     height: 50px;
 }
 
@@ -66,6 +72,10 @@ body{
 
 }
 
+.jordklode img{
+    width: 30vw;
+}
+
 .section2{
     display: flex;
     flex-direction: row;
@@ -89,9 +99,14 @@ body{
     -webkit-transform: skewY(-3deg);
 }
 
+
 .section2 .tekst{
     transform: skewY(-3deg);
     -webkit-transform: skewY(-3deg);
+}
+
+.fabrikk img{
+    width: 30vw;
 }
 
 
@@ -105,6 +120,10 @@ body{
     align-items: center;
 }
 
+.folk img{
+    width: 30vw;
+}
+
 @media only screen and (max-width:813px){
     .section1{
         flex-direction: column;
@@ -116,6 +135,8 @@ body{
         height: auto;
         text-align: center;
     }
+
+
     .section3{
         flex-direction: column;
         height: auto;
@@ -124,19 +145,17 @@ body{
 
     .tekst{
         width: 80vw;
+        font-size: 4.5vw;
+
     }
 
-    .fabrikk img, .folk img, .jordklode img{
-        height:25vw;
-    }
-
-    .jordklode{
+    .jordklode, .folk, .fabrikk{
         display: none;
     }
 
     .finnes{
         display: unset;
+        height: 25vw;
     }
-
     
 }
