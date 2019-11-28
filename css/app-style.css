@@ -13,7 +13,7 @@
     transform: translate(-50%, -50%);
     font-size: 20px;
     text-align: center;
-    width: 100%;
+    width: 80%;
 }
 
 .head-text h1{
@@ -26,7 +26,7 @@
     height: 100%;
     display: flex;
     align-items: center;
-    overflow-y: hidden;
+    overflow: auto;
     scroll-behavior: smooth;
     scroll-snap-type: x proximity;
     scroll-snap-type: proximity;
@@ -100,6 +100,10 @@
 }
 
 @media screen and (min-width: 900px){
+    .head-text{
+        font-size: 20px;
+    }
+
     .container{
         padding-bottom: 0;
     }
@@ -152,6 +156,13 @@
     }
     .trekant1{
         height: 15vw;
+    }
+}
+
+@media screen and (min-width: 450px){
+    .next:hover, .prev:hover{
+        transform: scale(1.5);
+        color: #da4302;
     }
 }
 
