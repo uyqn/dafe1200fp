@@ -25,8 +25,13 @@
 .content p{
     font-size: 22px;
     letter-spacing: 0.75px;
+<<<<<<< HEAD
     filter: contrast(200%);
     line-height: 40px;
+=======
+    line-height: 50px;
+    color: black;
+>>>>>>> 35cf78bd5fbe5822cdd2623cd5d1dc885c6d55d3
 }
 
 
@@ -161,7 +166,7 @@
 }
 @media only screen and (max-width: 600px){
     .content p{
-        font-size: 16px;
+        font-size: 22px;
     }
     .sidebarMob a{
         width: 100%;
@@ -190,4 +195,23 @@
     .probPicture{
         height: 88vw;
     }
+}
+
+.trekant {
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    max-height: 20vw;
+    left: 0;
+    top: -40px;
+    vertical-align: top;
+}
+.trekant1 {
+    width: 100%;
+    position: absolute;
+    height: 40px;
+    max-height: 20vw;
+    top: -30px;
+    left: 0;
+    vertical-align: top;
 }

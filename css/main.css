@@ -6,7 +6,7 @@
 @font-face {
     /*font-family: 'Titillium', sans-serif;*/
     font-family: "Computer Modern";
-    src: url("../font-family/cmunss.otf");
+    src: url("../font-family/Bulo/Bulo Hair Dark.otf");
 }
 
 @font-face{
@@ -37,10 +37,6 @@ header{
     width: 90%;
     margin: 0 auto 0 auto;
     z-index: 299;
-}
-
-.content{
-    min-height: 100%;
 }
 
 @media screen and (min-width: 800px){
