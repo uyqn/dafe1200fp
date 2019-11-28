@@ -5,11 +5,12 @@
 }
 .container-sources ul, .references ul{
     padding: 0;
-    list-style: circle;
+    list-style-position: outside;
 }
 
 h2{
     font-size: 3em;
+    color: #357376;
 }
 span{
     font-style: italic;
@@ -17,7 +18,7 @@ span{
 .references{
     margin-block-start: 0;
     margin-block-end: 0;
-    padding-inline-start: 0;
+    padding-inline-start: 10px;
 }
 
 .cite{
@@ -31,9 +32,33 @@ span{
     line-height: 1.5em;
     margin-left: 2em;
     text-indent: -2em;
+    list-style: circle;
 }
 
 .references li a{
     color: blue;
     word-break: break-all;
+}
+.trekant {
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    max-height: 20vw;
+    left: 0;
+    top: -40px;
+    vertical-align: top;
+}
+.trekant1 {
+    width: 100%;
+    position: absolute;
+    height: 40px;
+    max-height: 20vw;
+    top: -30px;
+    left: 0;
+    vertical-align: top;
+}
+@media only screen and (max-width: 600px){
+    .container-sources p{
+        font-size: 22px;
+    }
 }

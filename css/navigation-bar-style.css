@@ -61,7 +61,7 @@ nav:focus{
     justify-content: center;
     align-items: center;
     font-size: 22px;
-    color: #1d4d4f;
+    color: #222222;
     text-transform: uppercase;
     height: 48px;
     width: 34%;
@@ -86,7 +86,7 @@ nav label{
 .burger div{
     width: 30px;
     height: 2px;
-    background-color: #1d4d4f;
+    background-color: #222222;
 }
 
 .burger div:nth-child(1){
@@ -115,7 +115,7 @@ nav ul{
 nav ul li a{
     text-transform: uppercase;
     text-decoration: none;
-    color: #1d4d4f;
+    color: #222222;
 }
 
 .nav-links{
@@ -203,10 +203,6 @@ nav ul li a{
 }
 
 @media screen and (min-width: 860px){
-    .nav-fill{
-        height: 48px;
-    }
-
     .logoM{
         display: none;
     }
@@ -229,7 +225,7 @@ nav ul li a{
         flex-wrap: nowrap;
         justify-content: flex-start;
         align-items: center;
-        height: 48px;
+        height: 70px;
     }
 
     .nav-links{
