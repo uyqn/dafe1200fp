@@ -35,7 +35,7 @@ body{
     padding-bottom: 10px;
     color: white;
     font-family: "Bulo";
-    font-weight: bolder;
+    font-weight: 1000;
     font-size: 20px;
     box-shadow: 3px 3px 5px 0 grey;
     cursor: pointer;
@@ -50,7 +50,7 @@ body{
 
 .tekst p, .tekst a{
     color: #4b4b4b;
-    font-weight: bolder;
+    font-weight: 1000;
 }
 
 .tekst h1{
@@ -160,7 +160,7 @@ body{
     
 }
 
-@media only screen and (max-width:813px){
+@media only screen and (max-width:400px){
     .tekst{
         font-size: 4vw;
     }
