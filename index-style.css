@@ -50,7 +50,7 @@ body{
 
 .tekst p, .tekst a{
     color: #4b4b4b;
-    font-weight: bold;
+    font-weight: bolder;
 }
 
 .tekst h1{
@@ -158,4 +158,10 @@ body{
         height: 25vw;
     }
     
+}
+
+@media only screen and (max-width:813px){
+    .tekst{
+        font-size: 4vw;
+    }
 }
