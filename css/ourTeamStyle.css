@@ -24,13 +24,20 @@ body{
     color: gray;
     font-size: 17px;
 }
-.member1,.member2,.member3,.member4,.member5,.member6{
-    box-shadow: 0 4px 8px 0 rgba(0, 0,0,0.7);
+.member1,.member2,.member3,.member4,.member5,.member6 {
+    transition: box-shadow .3s;
+    border: 1px solid #ccc;
+
     width: 20vw;
     max-width: 20vw;
     text-align: center;
     margin: 4vw 4vw;
 }
+.member1:hover,.member2:hover,.member3:hover,.member4:hover,.member5:hover,.member6:hover{
+    box-shadow: 0 0 11px rgba(43,43,43,.4);
+}
+
+
 .ourTeam h2{
     font-size: 20px;
 }

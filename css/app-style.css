@@ -62,7 +62,7 @@
 }
 
 .slide-img img{
-    height: 40vh;
+    height: 200px;
 }
 
 
@@ -108,6 +108,14 @@
 .slide-text h2{
     display: none;
 }
+@media screen and (max-width: 600px) {
+
+    footer {
+        bottom: -50px;
+
+    }
+}
+
 
 @media screen and (min-width: 900px){
     .push{
@@ -162,13 +170,19 @@
     .trekant1{
         height: 15vw;
     }
+    footer{
+        bottom: 0;
+
+    }
+
 }
 
-@media screen and (min-width: 600px){
+@media screen and (min-width: 860px){
     .next:hover, .prev:hover{
         transform: scale(1.5);
         color: #da4302;
     }
+
 }
 
 .trekant {
