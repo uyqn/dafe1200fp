@@ -4,8 +4,9 @@
     padding: 100px 0;
 }
 .container-sources ul, .references ul{
-    padding: auto;
+    padding: 0;
     list-style-position: inside;
+    padding-inline-start: 0;
 }
 
 h2{
@@ -16,6 +17,7 @@ h2{
 span{
     font-style: italic;
 }
+
 .cite{
     text-decoration: none;
     color: blue;
@@ -53,6 +55,6 @@ span{
 }
 @media only screen and (max-width: 600px){
     .container-sources p{
-        font-size: 22px;
+        font-size: 16px;
     }
 }
