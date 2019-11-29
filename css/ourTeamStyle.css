@@ -89,6 +89,8 @@ body{
     .ourTeam{
         width: 98vw;
         left: 2vw;
+        top: 20vh;
+
     }
 
     .btnContact:hover{
