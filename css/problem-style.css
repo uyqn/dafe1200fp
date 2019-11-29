@@ -74,6 +74,7 @@
     margin: 5px;
 }
 .probPicture{
+    position: relative;
     padding-top: 47px;
     width: 100%;
     height: 44vw;
@@ -99,10 +100,10 @@
     align-self: center;
 }
 .mainHeader{
-    font-family: Tahoma, Geneva, sans-serif;
+    /* font-family: Tahoma, Geneva, sans-serif; */
     position: relative;
     margin-top: -32%;
-    margin-left: 29%;
+    margin-left: 35%;
     font-size: 10vw;
     color: white;
 }
@@ -111,18 +112,15 @@
 }
 .toText{
     font-size: 2.6vw;
-    height: 4.4vw;
     width: 4.4vw;
     text-align: center;
     position: relative;
     margin-left: 48%;
-    border-radius: 50%;
-    background-color: white;
     transform: rotate(180deg);
-    color: black;
     font-weight: bold;
-    opacity: 0.6;
-    box-shadow: 0 0 5px 2px rgba(0,0,0,0.75);
+}
+.toText:hover{
+    width: 5vw;
 }
 .buttonStyle{
     border: none;
@@ -173,7 +171,7 @@
     } 
     .mainHeader{
         font-size: 14vw;
-        margin-left: 20%;
+        margin-left: 28%;
         margin-top: -55%;
     }
     .toText{
