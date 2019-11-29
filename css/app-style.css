@@ -33,11 +33,10 @@
 
     scroll-behavior: smooth;
 
-    scroll-snap-type: x proximity; 
-    scroll-snap-type: proximity; 
-    -ms-scroll-snap-type: proximity; 
-    -webkit-scroll-snap-type: proximity; 
-    -webkit-overflow-scrolling: touch;
+    scroll-snap-type: x mandatory; 
+    scroll-snap-type: mandatory; 
+    -ms-scroll-snap-type: mandatory; 
+    -webkit-scroll-snap-type: mandatory; 
 }
 
 .slide {
@@ -114,7 +113,6 @@ footer{
 
 }
 
-
 @media screen and (min-width: 900px){
     .push{
         height: 70px;
@@ -129,7 +127,7 @@ footer{
     }
 
     .scroll-wrap{
-        scroll-snap-type: proximity;
+        scroll-snap-type: mandatory;
         scroll-snap-type: x mandatory;
     }
     
@@ -175,7 +173,7 @@ footer{
 
 }
 
-@media screen and (min-width: 600px){
+@media screen and (min-width: 860px){
     .next:hover, .prev:hover{
         transform: scale(1.5);
         color: #da4302;

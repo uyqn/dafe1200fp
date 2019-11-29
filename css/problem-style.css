@@ -167,12 +167,12 @@
 }
 #header1, #header2, #header3, #header4{
     position: relative;
-    bottom: 50px;
+    bottom: 65px;
     content: " ";
 }
 
 
-@media only screen and (max-width: 800px){
+@media only screen and (max-width: 860px){
     .sidebar{
         display: none;
     }
@@ -204,7 +204,6 @@
         margin-top: -55%;
     }
     .toText{
-        height: 10vw;
         width: 10vw;
     }
     #iframe{
