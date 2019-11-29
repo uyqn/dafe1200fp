@@ -27,11 +27,8 @@
     letter-spacing: 0.75px;
     filter: contrast(200%);
     line-height: 40px;
-    line-height: 50px;
     color: black;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-text-stroke: 0.45px;
+    
 }
 
 
@@ -166,7 +163,7 @@
 }
 @media only screen and (max-width: 600px){
     .content p{
-        font-size: 22px;
+        font-size: 16px;
     }
     .sidebarMob a{
         width: 100%;
