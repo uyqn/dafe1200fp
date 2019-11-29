@@ -112,18 +112,15 @@
 }
 .toText{
     font-size: 2.6vw;
-    height: 4.4vw;
     width: 4.4vw;
     text-align: center;
     position: relative;
     margin-left: 48%;
-    border-radius: 50%;
-    background-color: white;
     transform: rotate(180deg);
-    color: black;
     font-weight: bold;
-    opacity: 0.6;
-    box-shadow: 0 0 5px 2px rgba(0,0,0,0.75);
+}
+.toText:hover{
+    width: 5vw;
 }
 .buttonStyle{
     border: none;
