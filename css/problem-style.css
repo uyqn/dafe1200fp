@@ -193,6 +193,7 @@
 @media only screen and (max-width: 600px){
     .content p{
         font-size: 18px;
+        line-height: 1.8;
     }
     .sidebarMob a{
         width: 100%;

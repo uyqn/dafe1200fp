@@ -30,7 +30,7 @@ html, body{
     font-weight: 600;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    -webkit-text-stroke: 0.45px;
+    -webkit-text-stroke: 0.55px;
     letter-spacing: 1px;
 }
 
