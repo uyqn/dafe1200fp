@@ -120,7 +120,7 @@
     font-weight: bold;
 }
 .toText:hover{
-    width: 5vw;
+    
 }
 .buttonStyle{
     border: none;
@@ -175,7 +175,6 @@
         margin-top: -55%;
     }
     .toText{
-        height: 10vw;
         width: 10vw;
         margin-left: 45%;
         margin-top: 10%;
