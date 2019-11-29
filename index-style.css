@@ -145,7 +145,7 @@ body{
 
     .tekst{
         width: 80vw;
-        font-size: 3.5vw;
+        font-size: 20px;
 
     }
 
@@ -160,9 +160,6 @@ body{
     
 }
 
-<<<<<<< HEAD
-@media only screen and (max-width:400px){
-=======
 .trekant {
     width: 100%;
     height: 50px;
@@ -182,9 +179,8 @@ body{
     vertical-align: top;
 }
 
-@media only screen and (max-width:813px){
->>>>>>> ed18c8b692c7d4ed19c00013356ecbabc99a99aa
+@media only screen and (max-width:400px){
     .tekst{
-        font-size: 4vw;
+        font-size: 18px;
     }
 }
