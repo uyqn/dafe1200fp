@@ -33,11 +33,10 @@
 
     scroll-behavior: smooth;
 
-    scroll-snap-type: x proximity; 
-    scroll-snap-type: proximity; 
-    -ms-scroll-snap-type: proximity; 
-    -webkit-scroll-snap-type: proximity; 
-    -webkit-overflow-scrolling: touch;
+    scroll-snap-type: x mandatory; 
+    scroll-snap-type: mandatory; 
+    -ms-scroll-snap-type: mandatory; 
+    -webkit-scroll-snap-type: mandatory; 
 }
 
 .slide {
@@ -62,7 +61,7 @@
 }
 
 .slide-img img{
-    height: 200px;
+    height: 40vh;
 }
 
 
@@ -108,14 +107,11 @@
 .slide-text h2{
     display: none;
 }
-@media screen and (max-width: 600px) {
 
-    footer {
-        bottom: -50px;
+footer{
+    bottom: -50px;
 
-    }
 }
-
 
 @media screen and (min-width: 900px){
     .push{
@@ -131,7 +127,7 @@
     }
 
     .scroll-wrap{
-        scroll-snap-type: proximity;
+        scroll-snap-type: mandatory;
         scroll-snap-type: x mandatory;
     }
     
