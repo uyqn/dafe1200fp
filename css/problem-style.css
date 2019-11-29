@@ -1,3 +1,12 @@
+@keyframes toText{
+    from{
+        transform: translateY(0px) rotate(180deg);
+    }
+    to{
+        transform: translateY(25px) rotate(180deg);
+    }
+}
+
 .container{
     display: flex;
     flex-flow: row wrap;
@@ -115,13 +124,29 @@
     width: 4.4vw;
     text-align: center;
     position: relative;
-    margin-left: 48%;
     transform: rotate(180deg);
     font-weight: bold;
+    margin-top: 1rem;
 }
-.toText:hover{
-    width: 5vw;
+
+.targetArea{
+    position: absolute;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    left: 50%;
+    width: 15vw;
+    height: 15vh;
 }
+
+.targetArea:hover .toText{
+    animation-name: toText;
+    animation-duration: 500ms;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
 .buttonStyle{
     border: none;
     border-radius: 5px;
@@ -161,6 +186,10 @@
     .content h1{
         left: 0;
     }
+
+    .targetArea:hover .toText{
+        animation: none;
+    }
 }
 @media only screen and (max-width: 600px){
     .content p{
@@ -177,8 +206,6 @@
     .toText{
         height: 10vw;
         width: 10vw;
-        margin-left: 45%;
-        margin-top: 10%;
     }
     #iframe{
         width: 80vw;
