@@ -271,9 +271,6 @@ nav ul li a{
         transform: scale(1,1);
     }
 
-}
-
-@media screen and (min-width: 600px){
     .nav-links li a:hover{
         color: #da4302;
     }
@@ -289,4 +286,5 @@ nav ul li a{
     nav label:hover .burger div{
         background-color: #da4302;
     }
+
 }
