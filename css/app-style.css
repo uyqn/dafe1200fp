@@ -108,10 +108,12 @@
 .slide-text h2{
     display: none;
 }
+@media screen and (max-width: 600px) {
 
-footer{
-    bottom: -50px;
+    footer {
+        bottom: -50px;
 
+    }
 }
 
 
