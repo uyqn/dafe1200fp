@@ -92,8 +92,8 @@ body{
     }
 
     .btnContact:hover{
-        background-color: unset;
-        color: unset;
+        background-color: #1d4d4f;
+        color: #FFFFFF;
     }
 
     .member1,.member2,.member3,.member4,.member5,.member6{
