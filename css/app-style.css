@@ -109,6 +109,12 @@
     display: none;
 }
 
+footer{
+    bottom: -50px;
+
+}
+
+
 @media screen and (min-width: 900px){
     .push{
         height: 70px;
@@ -162,6 +168,11 @@
     .trekant1{
         height: 15vw;
     }
+    footer{
+        bottom: 0;
+
+    }
+
 }
 
 @media screen and (min-width: 600px){
@@ -169,6 +180,7 @@
         transform: scale(1.5);
         color: #da4302;
     }
+
 }
 
 .trekant {
