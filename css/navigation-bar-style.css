@@ -247,7 +247,7 @@ nav ul li a{
     }
 
     .language{
-        height: autO;
+        height: auto;
         offset: 0;
 
         display: flex;
