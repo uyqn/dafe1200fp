@@ -43,7 +43,7 @@
     color: black;
 }
 .links a:hover{
-    color: #A50707;
+    color: #da4302;
 }
 .sidebar{
     flex: 1;
@@ -66,7 +66,7 @@
     color: #357376;
 }
 .sidebar a:hover, .sidebarMob a:hover{   
-    color: #A50707;
+    color: #da4302;
 }
 .sidebarMob{
     font-size: 22px;

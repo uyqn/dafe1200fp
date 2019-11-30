@@ -168,7 +168,7 @@ footer{
 @media screen and (min-width: 860px){
     .next:hover, .prev:hover{
         transform: scale(1.5);
-        color: #A50707;
+        color: #da4302;
     }
 
 }
