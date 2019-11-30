@@ -1,7 +1,0 @@
-Fikse navbar for internet explorer.
-Bilder til problem og solution.
-Ikke den animasjonen på "our app".
-Hastigheten på bildeskiftet på "Home". 
-Få ferdig logo og satt den inn.
-Tekst på solution.
-Fikse linker så tabindex blir bedre. På problem.
