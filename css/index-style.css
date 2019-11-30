@@ -1,13 +1,3 @@
-body{
-    margin: 0;
-    padding: 0;
-}
-
-@font-face {
-    font-family: "Bulo";
-    src: url("font-family/Bulo/Bulo\ Hair\ Dark.otf");
-}
-
 .main{
     display: flex;
     flex-direction: column;
@@ -22,7 +12,6 @@ body{
     margin-bottom: 30px;
 }
 
-
 .section2 .finnes{
     transform: skewY(0deg);
     -webkit-transform: skewY(0deg);
@@ -36,7 +25,6 @@ body{
     padding-bottom: 10px;
     color: white;
     font-family: "Bulo";
-    font-weight: 1000;
     font-size: 20px;
     box-shadow: 3px 3px 5px 0 grey;
     cursor: pointer;
@@ -51,7 +39,6 @@ body{
 
 .tekst p, .tekst a{
     color: #4b4b4b;
-    font-weight: 1000;
 }
 
 .tekst h1{
@@ -82,13 +69,9 @@ body{
     flex-direction: row;
     height: 100vh;
     flex-wrap: wrap;
-
     justify-content: space-around;
-    align-items: center; 
-    
+    align-items: center;
     background-color: #e5dfdf;
-    
-
     transform: skewY(3deg);
     -webkit-transform: skewY(3deg);
 }
