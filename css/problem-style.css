@@ -200,7 +200,7 @@
     .toText{
         width: 10vw;
     }
-    #iframe{
+    #iframe, .iframe-nojs{
         width: 80vw;
         height: 65vw;
     }
