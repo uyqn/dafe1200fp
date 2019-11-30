@@ -98,7 +98,7 @@
 #mobProbImg{
     display: none;
 }
-#iframe{
+#iframe, .iframe-nojs{
     width: 40vw;
     height: 25vw;
     align-self: center;

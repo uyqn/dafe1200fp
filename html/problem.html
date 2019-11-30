@@ -106,8 +106,18 @@
                     </p>
                 </div>
                 
-                    <iframe src="https://data.worldbank.org/share/widget?end=2014&indicators=EN.ATM.CO2E.PC&locations=NO-1W&most_recent_value_desc=false&start=1960&view=chart" id="iframe" frameBorder='0' scrolling="no" 
-                            tabindex=0 alt="Graph which shows the emissions per citizen in Norway compared to the rest of the world" title="Graph with data from the World bank"></iframe>
+                    <iframe style="display: none" src="https://data.worldbank.org/share/widget?end=2014&indicators=EN.ATM.CO2E.PC&locations=NO-1W&most_recent_value_desc=false&start=1960&view=chart" id="iframe" frameBorder='0' scrolling="no"
+                            tabindex=0 alt="Graph which shows the emissions per citizen in Norway compared to the rest of the world"
+                            title="Graph with data from the World bank"></iframe>
+                <script>
+                    var iframe = document.getElementById("iframe");
+                    iframe.style.display = "block";
+                </script>
+                <noscript>
+
+                    <img class="iframe-nojs" src="../img/iframe-nojs.JPG">
+
+                </noscript>
 
                 <div id="header2"></div>
                 <div class="text" tabindex=0>
