@@ -141,6 +141,10 @@
         display: unset;
         height: 25vw;
     }
+    .buttonStyle{
+        font-size: 18px;
+        padding-bottom: 4px;
+    }
     
 }
 
