@@ -274,19 +274,19 @@ nav ul li a{
     }
 
     .nav-links li a:hover{
-        color: #da4302;
+        color: #D44102;
     }
 
     .nav-links li a.active:hover{
-        border-bottom: 1px solid #da4302;
+        border-bottom: 1px solid #D44102;
     }
 
     .language li a:hover{
-        color: #da4302;
+        color: #D44102;
     }
 
     nav label:hover .burger div{
-        background-color: #da4302;
+        background-color: #D44102;
     }
 
 }
