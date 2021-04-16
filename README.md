@@ -1,4 +1,4 @@
-# dafe1200fp
+# Web Development and Inclusive Design
 DAFE1200 - Final Project
 
 ### Assignment
